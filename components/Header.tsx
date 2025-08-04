@@ -26,9 +26,9 @@ export default function Header() {
     { name: 'Home', href: '/' },
     { name: 'Services', href: '/services' },
     { name: 'Portfolio', href: '/portfolio' },
-    { name: 'About', href: '#about' },
+    { name: 'About', href: '/#about' },
     { name: 'Blog', href: '/blog' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   // Mock search data - in production, this would come from an API
@@ -158,9 +158,30 @@ export default function Header() {
     }
   };
 
-  const handleSearchResultClick = () => {
+  const handleSearchResultClick = (url: string) => {
     setShowSearchResults(false);
     setSearchQuery('');
+    
+    // Handle different types of navigation
+    if (url.startsWith('/services')) {
+      // For services, we need to navigate to the services page and set the active service
+      window.location.href = url;
+    } else if (url.startsWith('/portfolio')) {
+      // For portfolio items, navigate directly
+      window.location.href = url;
+    } else if (url.startsWith('/blog')) {
+      // For blog posts, navigate directly
+      window.location.href = url;
+    } else if (url.startsWith('#')) {
+      // For anchor links, scroll to the element
+      const element = document.querySelector(url);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Default navigation
+      window.location.href = url;
+    }
   };
 
   return (
@@ -195,11 +216,10 @@ export default function Header() {
               {showSearchResults && searchResults.length > 0 && (
                 <div className="absolute top-full left-0 right-0 mt-2 bg-slate-800 border border-slate-700 rounded-lg shadow-xl max-h-96 overflow-y-auto z-50">
                   {searchResults.map((result, index) => (
-                    <Link
+                    <div
                       key={`${result.type}-${index}`}
-                      href={result.url}
                       className="flex items-center px-4 py-3 hover:bg-slate-700 transition-colors duration-200 border-b border-slate-700 last:border-b-0 cursor-pointer"
-                      onClick={handleSearchResultClick}
+                      onClick={() => handleSearchResultClick(result.url)}
                     >
                       <img
                         src={result.thumbnail}
@@ -219,7 +239,7 @@ export default function Header() {
                         <p className="text-slate-400 text-xs mt-1 line-clamp-1">{result.description}</p>
                       </div>
                       <i className="ri-arrow-right-line text-slate-400"></i>
-                    </Link>
+                    </div>
                   ))}
                 </div>
               )}
@@ -255,8 +275,14 @@ export default function Header() {
             )}
 
             <a
-              href="#quote"
-              className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-6 py-2 rounded-lg font-semibold transition-all duration-200 whitespace-nowrap cursor-pointer transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-50"
+              href="/#contact"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 whitespace-nowrap cursor-pointer transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50"
+            >
+              Contact
+            </a>
+            <a
+              href="/#quote"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 whitespace-nowrap cursor-pointer transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50"
             >
               Get Quote
             </a>

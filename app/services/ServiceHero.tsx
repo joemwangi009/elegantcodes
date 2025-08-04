@@ -12,6 +12,20 @@ interface ServiceHeroProps {
 }
 
 export default function ServiceHero({ service }: ServiceHeroProps) {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If we're not on the homepage, navigate to it and scroll to contact
+      window.location.href = '/#contact';
+    }
+  };
+
+  const navigateToPortfolio = () => {
+    window.location.href = '/portfolio';
+  };
+
   return (
     <section className="relative py-20 bg-slate-900 overflow-hidden">
       <div className="absolute inset-0">
@@ -42,10 +56,16 @@ export default function ServiceHero({ service }: ServiceHeroProps) {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-            <button className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 whitespace-nowrap cursor-pointer">
+            <button 
+              onClick={scrollToContact}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 whitespace-nowrap cursor-pointer inline-block text-center"
+            >
               Get Started Today
             </button>
-            <button className="border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 whitespace-nowrap cursor-pointer">
+            <button 
+              onClick={navigateToPortfolio}
+              className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 whitespace-nowrap cursor-pointer inline-block text-center"
+            >
               View Case Studies
             </button>
           </div>

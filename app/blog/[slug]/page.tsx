@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import BlogArticle from './BlogArticle';
+import { notFound } from 'next/navigation';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -64,8 +65,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   
   if (!post) {
     return {
-      title: 'Blog Post - ElegantCodes',
-      description: 'Read our latest insights on software development and technology.',
+      title: 'Article Not Found - ElegantCodes Blog',
+      description: 'The requested blog article could not be found.',
     };
   }
 
@@ -105,5 +106,25 @@ export async function generateStaticParams() {
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  
+  const validSlugs = [
+    'future-of-custom-software-development',
+    'ecommerce-optimization-strategies-2025',
+    'building-scalable-pos-systems',
+    'api-security-best-practices',
+    'mobile-app-performance-optimization',
+    'cloud-migration-strategies',
+    'ai-integration-business-applications',
+    'database-design-high-performance',
+    'microservices-architecture-best-practices',
+    'devops-automation-modern-teams',
+    'blockchain-integration-business-solutions',
+    'ux-design-enterprise-applications',
+  ];
+
+  if (!validSlugs.includes(slug)) {
+    notFound();
+  }
+
   return <BlogArticle slug={slug} />;
 }

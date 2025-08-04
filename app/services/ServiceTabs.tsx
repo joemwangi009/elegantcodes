@@ -112,9 +112,12 @@ export default function ServiceTabs({ services, activeService, setActiveService 
           <p className="text-slate-400 text-sm mb-4">
             Our experts can help you find the perfect solution for your business.
           </p>
-          <button className="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 px-4 py-2 rounded-lg font-semibold transition-all duration-200 whitespace-nowrap cursor-pointer">
+          <a 
+            href="#contact" 
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-200 whitespace-nowrap cursor-pointer inline-block text-center"
+          >
             Get Consultation
-          </button>
+          </a>
         </div>
       </div>
     </div>

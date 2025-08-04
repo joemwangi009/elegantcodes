@@ -703,7 +703,7 @@ export default function ServicesPage() {
             </div>
           </div>
           
-          <RelatedServices currentService={activeService} services={services} />
+          <RelatedServices currentService={activeService} services={services} setActiveService={setActiveService} />
         </div>
       </main>
       <Footer />

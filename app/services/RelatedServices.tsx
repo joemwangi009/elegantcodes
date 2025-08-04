@@ -4,9 +4,10 @@
 interface RelatedServicesProps {
   currentService: string;
   services: Record<string, any>;
+  setActiveService: (service: string) => void;
 }
 
-export default function RelatedServices({ currentService, services }: RelatedServicesProps) {
+export default function RelatedServices({ currentService, services, setActiveService }: RelatedServicesProps) {
   const currentCategory = services[currentService].category;
   
   // Get related services from the same category, excluding current service
@@ -15,6 +16,12 @@ export default function RelatedServices({ currentService, services }: RelatedSer
     .slice(0, 3);
 
   if (relatedServices.length === 0) return null;
+
+  const handleServiceClick = (serviceKey: string) => {
+    setActiveService(serviceKey);
+    // Scroll to top of services section
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <div className="mt-16">
@@ -32,6 +39,7 @@ export default function RelatedServices({ currentService, services }: RelatedSer
           <div
             key={serviceKey}
             className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer overflow-hidden"
+            onClick={() => handleServiceClick(serviceKey)}
           >
             <div className="relative h-48 overflow-hidden">
               <img
@@ -56,7 +64,13 @@ export default function RelatedServices({ currentService, services }: RelatedSer
               </p>
               
               <div className="flex items-center justify-between">
-                <button className="text-amber-600 hover:text-amber-700 font-semibold transition-colors duration-200 cursor-pointer">
+                <button 
+                  className="text-amber-600 hover:text-amber-700 font-semibold transition-colors duration-200 cursor-pointer"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleServiceClick(serviceKey);
+                  }}
+                >
                   Learn More
                 </button>
                 <div className="w-10 h-10 flex items-center justify-center bg-slate-100 group-hover:bg-amber-500 rounded-full transition-all duration-200">

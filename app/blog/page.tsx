@@ -147,13 +147,13 @@ export default function BlogPage() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 pt-32 pb-20">
+        <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 pt-32 pb-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 font-poppins">
-                Tech <span className="text-amber-500">Insights</span>
+                Tech <span className="text-blue-400">Insights</span>
               </h1>
-              <p className="text-xl text-slate-300 max-w-3xl mx-auto font-inter">
+              <p className="text-xl text-blue-100 max-w-3xl mx-auto font-inter">
                 Discover the latest trends, best practices, and innovations in software development, 
                 e-commerce, and digital transformation.
               </p>
@@ -174,7 +174,7 @@ export default function BlogPage() {
                       className="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-4 left-4">
-                      <span className="bg-amber-500 text-slate-900 px-3 py-1 rounded-full text-sm font-semibold">
+                      <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                         {post.category}
                       </span>
                     </div>
@@ -189,7 +189,7 @@ export default function BlogPage() {
                       <span>{post.readTime}</span>
                     </div>
                     
-                    <h3 className="text-xl font-bold text-slate-900 mb-3 font-poppins group-hover:text-amber-600 transition-colors duration-200">
+                    <h3 className="text-xl font-bold text-slate-900 mb-3 font-poppins group-hover:text-blue-600 transition-colors duration-200">
                       {post.title}
                     </h3>
                     
@@ -199,7 +199,7 @@ export default function BlogPage() {
                     
                     <Link
                       href={`/blog/${post.slug}`}
-                      className="inline-flex items-center text-amber-500 hover:text-amber-600 font-semibold transition-colors duration-200 cursor-pointer"
+                      className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-200 cursor-pointer"
                     >
                       Read More
                       <i className="ri-arrow-right-line ml-2"></i>

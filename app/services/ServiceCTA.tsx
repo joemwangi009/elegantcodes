@@ -7,6 +7,26 @@ interface ServiceCTAProps {
 }
 
 export default function ServiceCTA({ ctaText, serviceTitle }: ServiceCTAProps) {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If we're not on the homepage, navigate to it and scroll to contact
+      window.location.href = '/#contact';
+    }
+  };
+
+  const scrollToQuote = () => {
+    const quoteSection = document.getElementById('quote');
+    if (quoteSection) {
+      quoteSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If we're not on the homepage, navigate to it and scroll to quote
+      window.location.href = '/#quote';
+    }
+  };
+
   return (
     <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-8 text-center">
       <div className="max-w-2xl mx-auto">
@@ -19,10 +39,16 @@ export default function ServiceCTA({ ctaText, serviceTitle }: ServiceCTAProps) {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 whitespace-nowrap cursor-pointer transform hover:scale-105">
+          <button 
+            onClick={scrollToQuote}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 whitespace-nowrap cursor-pointer transform hover:scale-105 inline-block text-center"
+          >
             {ctaText}
           </button>
-          <button className="border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 whitespace-nowrap cursor-pointer">
+          <button 
+            onClick={scrollToContact}
+            className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 whitespace-nowrap cursor-pointer inline-block text-center"
+          >
             Schedule Consultation
           </button>
         </div>
