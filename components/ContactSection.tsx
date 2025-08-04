@@ -83,23 +83,23 @@ export default function ContactSection() {
     }
 
     setIsSubmitting(true);
-
+    
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
+    // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    
       // Here you would typically send the data to your backend
       console.log('Form submitted:', formData);
-      
+    
       setIsSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        service: '',
-        message: ''
-      });
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      company: '',
+      service: '',
+      message: ''
+    });
     } catch (error) {
       console.error('Error submitting form:', error);
     } finally {
@@ -123,7 +123,7 @@ export default function ContactSection() {
   };
 
   if (isSubmitted) {
-    return (
+  return (
       <section id="contact" className="section-padding bg-gradient-to-br from-slate-50 to-slate-100">
         <div className="max-w-7xl mx-auto container-padding">
           <motion.div
@@ -190,14 +190,14 @@ export default function ContactSection() {
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
                   <i className="ri-mail-line text-primary-600 text-xl"></i>
-                </div>
-                <div>
+                  </div>
+                  <div>
                   <h4 className="font-semibold text-slate-900 mb-1">Email</h4>
                   <a href="mailto:info@elegantcodes.com" className="text-primary-600 hover:text-primary-700 transition-colors">
                     info@elegantcodes.com
                   </a>
                 </div>
-              </div>
+            </div>
 
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -221,21 +221,21 @@ export default function ContactSection() {
                     123 Tech Street<br />
                     San Francisco, CA 94105
                   </p>
-                </div>
-              </div>
+            </div>
+          </div>
 
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
                   <i className="ri-time-line text-primary-600 text-xl"></i>
-                </div>
-                <div>
+                  </div>
+                  <div>
                   <h4 className="font-semibold text-slate-900 mb-1">Business Hours</h4>
                   <p className="text-slate-600">
                     Monday - Friday: 9:00 AM - 6:00 PM<br />
                     Saturday: 10:00 AM - 4:00 PM
                   </p>
                 </div>
-              </div>
+                  </div>
             </motion.div>
           </motion.div>
 
@@ -249,12 +249,12 @@ export default function ContactSection() {
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <motion.div variants={itemVariants} className="grid sm:grid-cols-2 gap-6">
-                <div>
+                  <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
                     Full Name *
-                  </label>
+                    </label>
                   <input
-                    type="text"
+                      type="text"
                     id="name"
                     name="name"
                     value={formData.name}
@@ -381,7 +381,7 @@ export default function ContactSection() {
                   )}
                 </button>
               </motion.div>
-            </form>
+              </form>
           </motion.div>
         </div>
       </div>
