@@ -375,8 +375,10 @@ export default function ProjectDetail({ slug }: { slug: string }) {
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('keydown', handleKeyDown);
+      return () => window.removeEventListener('keydown', handleKeyDown);
+    }
   }, [lightboxOpen, currentImageIndex, project]);
 
   const openLightbox = (image: string, index: number) => {

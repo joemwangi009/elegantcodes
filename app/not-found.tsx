@@ -1,3 +1,15 @@
+import type { Metadata, Viewport } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Page Not Found - ElegantCodes',
+  description: 'The page you are looking for could not be found.',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
+
 export default function NotFound() {
     return (
       <div className="flex flex-col items-center justify-center h-screen text-center px-4">

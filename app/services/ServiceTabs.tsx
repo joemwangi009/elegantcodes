@@ -1,18 +1,38 @@
 
 'use client';
 
+interface Service {
+  category: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  image: string;
+  features: string[];
+  benefits: string[];
+  techStack: { name: string; tooltip: string; }[];
+  caseStudy: {
+    client: string;
+    quote: string;
+    outcome: string;
+    metrics: string[];
+  };
+  ctaText: string;
+}
+
+type Services = Record<string, Service>;
+
 interface ServiceTabsProps {
-  services: Record<string, any>;
+  services: Services;
   activeService: string;
   setActiveService: (service: string) => void;
 }
 
 export default function ServiceTabs({ services, activeService, setActiveService }: ServiceTabsProps) {
   const servicesByCategory = {
-    'Custom Applications': ['mobile-apps', 'web-apps', 'desktop-apps', 'api-development'],
-    'E-commerce Solutions': ['shopify', 'woocommerce', 'magento', 'custom-ecommerce'],
-    'POS Systems': ['retail-pos', 'restaurant-pos', 'cloud-pos', 'mobile-pos'],
-    'Business Automation': ['crm-integration', 'workflow-automation', 'erp-solutions', 'ai-automation']
+    'Custom Applications': ['mobile-apps', 'web-apps', 'desktop-apps', 'api-development'] as string[],
+    'E-commerce Solutions': ['shopify', 'woocommerce', 'magento', 'custom-ecommerce'] as string[],
+    'POS Systems': ['retail-pos', 'restaurant-pos', 'cloud-pos', 'mobile-pos'] as string[],
+    'Business Automation': ['crm-integration', 'workflow-automation', 'erp-solutions', 'ai-automation'] as string[]
   };
 
   const breadcrumbs = [

@@ -11,10 +11,30 @@ import ServiceCaseStudy from './ServiceCaseStudy';
 import ServiceCTA from './ServiceCTA';
 import RelatedServices from './RelatedServices';
 
-export default function ServicesPage() {
-  const [activeService, setActiveService] = useState('mobile-apps');
+interface Service {
+  category: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  image: string;
+  features: string[];
+  benefits: string[];
+  techStack: { name: string; tooltip: string; }[];
+  caseStudy: {
+    client: string;
+    quote: string;
+    outcome: string;
+    metrics: string[];
+  };
+  ctaText: string;
+}
 
-  const services = {
+type Services = Record<string, Service>;
+
+export default function ServicesPage() {
+  const [activeService, setActiveService] = useState<string>('mobile-apps');
+
+  const services: Services = {
     'mobile-apps': {
       category: 'Custom Applications',
       title: 'Mobile Apps (iOS, Android)',

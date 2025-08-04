@@ -22,13 +22,17 @@ export default function ProjectSidebar({ project }: ProjectSidebarProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const shouldBeSticky = scrollTop > 300;
-      setIsSticky(shouldBeSticky);
+      if (typeof window !== 'undefined') {
+        const scrollTop = window.scrollY;
+        const shouldBeSticky = scrollTop > 300;
+        setIsSticky(shouldBeSticky);
+      }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }
   }, []);
 
   const projectHighlights = [
@@ -45,6 +49,8 @@ export default function ProjectSidebar({ project }: ProjectSidebarProps) {
     { label: 'Tech Stack', href: '#technologies', icon: 'ri-code-line' },
     { label: 'Results', href: '#results', icon: 'ri-trophy-line' },
   ];
+
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
 
   return (
     <aside className={`transition-all duration-300 ${isSticky ? 'lg:sticky lg:top-24' : ''}`}>
@@ -123,13 +129,13 @@ export default function ProjectSidebar({ project }: ProjectSidebarProps) {
           <div className="flex space-x-3">
             <button
               onClick={() => {
-                if (navigator.share) {
+                if (typeof window !== 'undefined' && navigator.share) {
                   navigator.share({
                     title: `ElegantCodes - ${project.client}`,
-                    url: window.location.href,
+                    url: currentUrl,
                   });
-                } else {
-                  navigator.clipboard.writeText(window.location.href);
+                } else if (typeof window !== 'undefined' && navigator.clipboard) {
+                  navigator.clipboard.writeText(currentUrl);
                 }
               }}
               className="flex-1 bg-slate-700 hover:bg-slate-600 text-white px-3 py-2 rounded-lg transition-colors duration-200 cursor-pointer"
@@ -141,7 +147,7 @@ export default function ProjectSidebar({ project }: ProjectSidebarProps) {
             </button>
             
             <a
-              href={`https://twitter.com/intent/tweet?text=Check out this amazing project by ElegantCodes&url=${encodeURIComponent(window.location.href)}`}
+              href={`https://twitter.com/intent/tweet?text=Check out this amazing project by ElegantCodes&url=${encodeURIComponent(currentUrl)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 bg-slate-700 hover:bg-slate-600 text-white px-3 py-2 rounded-lg transition-colors duration-200 cursor-pointer"
@@ -153,7 +159,7 @@ export default function ProjectSidebar({ project }: ProjectSidebarProps) {
             </a>
             
             <a
-              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`}
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 bg-slate-700 hover:bg-slate-600 text-white px-3 py-2 rounded-lg transition-colors duration-200 cursor-pointer"
