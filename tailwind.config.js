@@ -43,6 +43,7 @@ module.exports = {
         'bounce-slow': 'bounce 2s infinite',
         'pulse-slow': 'pulse 3s infinite',
         'float': 'float 3s ease-in-out infinite',
+        'float-delayed': 'floatDelayed 8s ease-in-out infinite',
         'glow': 'glow 2s ease-in-out infinite alternate',
       },
       keyframes: {
@@ -72,7 +73,11 @@ module.exports = {
         },
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-10px)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        floatDelayed: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-15px)' },
         },
         glow: {
           '0%': { boxShadow: '0 0 5px rgba(245, 158, 11, 0.5)' },
