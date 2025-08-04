@@ -7,10 +7,13 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    font-size: 16px; /* Prevent zoom issues */
   }
   
   body {
     @apply font-inter text-slate-900 bg-white;
+    font-size: 1rem;
+    line-height: 1.6;
   }
   
   /* Focus styles for accessibility */
