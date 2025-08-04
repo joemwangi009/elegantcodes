@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import EmailForm from '@/components/EmailForm';
 
 interface PortfolioItem {
   id: number;
@@ -24,6 +25,8 @@ export default function PortfolioPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedProject, setSelectedProject] = useState<PortfolioItem | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showRequestForm, setShowRequestForm] = useState(false);
+  const [requestSuccess, setRequestSuccess] = useState(false);
 
   const portfolioItems: PortfolioItem[] = [
     {
@@ -160,6 +163,8 @@ export default function PortfolioPage() {
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedProject(null);
+    setShowRequestForm(false);
+    setRequestSuccess(false);
     document.body.style.overflow = 'unset';
   };
 
@@ -173,6 +178,21 @@ export default function PortfolioPage() {
     };
     
     window.open(shareUrls[platform as keyof typeof shareUrls], '_blank');
+  };
+
+  const handleRequestSimilar = () => {
+    setShowRequestForm(true);
+  };
+
+  const handleRequestSuccess = () => {
+    setRequestSuccess(true);
+    setTimeout(() => {
+      closeModal();
+    }, 3000);
+  };
+
+  const handleRequestError = (error: string) => {
+    console.error('Portfolio request error:', error);
   };
 
   return (
@@ -425,70 +445,109 @@ export default function PortfolioPage() {
 
                 {/* Modal Content */}
                 <div className="p-8">
-                  {/* Image Gallery */}
-                  <div className="mb-8">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      {selectedProject.gallery.map((image, index) => (
-                        <img
-                          key={index}
-                          src={image}
-                          alt={`${selectedProject.title} - Image ${index + 1}`}
-                          className="w-full h-48 object-cover rounded-xl shadow-lg"
-                          loading="lazy"
-                        />
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    {/* Project Details */}
-                    <div>
-                      <h3 className="text-xl font-bold text-slate-900 mb-4">Project Overview</h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        {selectedProject.description}
-                      </p>
-                      
-                      <h4 className="text-lg font-bold text-slate-900 mb-3">Technologies Used</h4>
-                      <div className="flex flex-wrap gap-2 mb-6">
-                        {selectedProject.technologies.map((tech, index) => (
-                          <span 
-                            key={index} 
-                            className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium"
-                          >
-                            {tech}
-                          </span>
-                        ))}
+                  {!showRequestForm ? (
+                    <>
+                      {/* Image Gallery */}
+                      <div className="mb-8">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                          {selectedProject.gallery.map((image, index) => (
+                            <img
+                              key={index}
+                              src={image}
+                              alt={`${selectedProject.title} - Image ${index + 1}`}
+                              className="w-full h-48 object-cover rounded-xl shadow-lg"
+                              loading="lazy"
+                            />
+                          ))}
+                        </div>
                       </div>
-                    </div>
 
-                    {/* Metrics and CTA */}
-                    <div>
-                      <h4 className="text-lg font-bold text-slate-900 mb-3">Key Achievements</h4>
-                      <div className="space-y-3 mb-8">
-                        {selectedProject.metrics.map((metric, index) => (
-                          <div key={index} className="flex items-center text-slate-600">
-                            <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${getColorClasses(selectedProject.color)} mr-3`}></div>
-                            {metric}
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        {/* Project Details */}
+                        <div>
+                          <h3 className="text-xl font-bold text-slate-900 mb-4">Project Overview</h3>
+                          <p className="text-slate-600 mb-6 leading-relaxed">
+                            {selectedProject.description}
+                          </p>
+                          
+                          <h4 className="text-lg font-bold text-slate-900 mb-3">Technologies Used</h4>
+                          <div className="flex flex-wrap gap-2 mb-6">
+                            {selectedProject.technologies.map((tech, index) => (
+                              <span 
+                                key={index} 
+                                className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium"
+                              >
+                                {tech}
+                              </span>
+                            ))}
                           </div>
-                        ))}
-                      </div>
+                        </div>
 
-                      <div className="space-y-4">
-                        <Link
-                          href={`/portfolio/${selectedProject.slug}`}
-                          className={`block w-full bg-gradient-to-r ${getColorClasses(selectedProject.color)} text-white px-6 py-4 rounded-xl font-semibold text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg`}
-                        >
-                          View Full Project
-                        </Link>
-                        <Link
-                          href="/#contact"
-                          className="block w-full bg-slate-900 text-white px-6 py-4 rounded-xl font-semibold text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-                        >
-                          Request Similar Project
-                        </Link>
+                        {/* Metrics and CTA */}
+                        <div>
+                          <h4 className="text-lg font-bold text-slate-900 mb-3">Key Achievements</h4>
+                          <div className="space-y-3 mb-8">
+                            {selectedProject.metrics.map((metric, index) => (
+                              <div key={index} className="flex items-center text-slate-600">
+                                <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${getColorClasses(selectedProject.color)} mr-3`}></div>
+                                {metric}
+                              </div>
+                            ))}
+                          </div>
+
+                          <div className="space-y-4">
+                            <Link
+                              href={`/portfolio/${selectedProject.slug}`}
+                              className={`block w-full bg-gradient-to-r ${getColorClasses(selectedProject.color)} text-white px-6 py-4 rounded-xl font-semibold text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg`}
+                            >
+                              View Full Project
+                            </Link>
+                            <button
+                              onClick={handleRequestSimilar}
+                              className="block w-full bg-slate-900 text-white px-6 py-4 rounded-xl font-semibold text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+                            >
+                              Request Similar Project
+                            </button>
+                          </div>
+                        </div>
                       </div>
+                    </>
+                  ) : (
+                    /* Request Form */
+                    <div className="max-w-2xl mx-auto">
+                      {requestSuccess ? (
+                        <div className="text-center py-12">
+                          <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i className="ri-check-line text-3xl text-green-600"></i>
+                          </div>
+                          <h3 className="text-2xl font-bold text-slate-900 mb-4">Request Sent Successfully!</h3>
+                          <p className="text-slate-600 mb-6">
+                            Thank you for your interest in a similar project. We'll get back to you within 24 hours with a detailed proposal.
+                          </p>
+                          <button
+                            onClick={closeModal}
+                            className="bg-gradient-to-r from-[#D4A017] to-[#F4D03F] text-[#1A2A44] px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      ) : (
+                        <EmailForm
+                          templateId={process.env.NEXT_PUBLIC_EMAILJS_PORTFOLIO_TEMPLATE_ID || process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || ''}
+                          title={`Request Similar to ${selectedProject.title}`}
+                          subtitle={`Tell us about your project requirements and we'll create a custom solution inspired by ${selectedProject.title}.`}
+                          submitText="Send Request"
+                          showCompany={true}
+                          showProjectType={true}
+                          showPhone={true}
+                          showBudget={true}
+                          showTimeline={true}
+                          onSuccess={handleRequestSuccess}
+                          onError={handleRequestError}
+                        />
+                      )}
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
             </div>
