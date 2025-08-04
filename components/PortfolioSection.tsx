@@ -77,13 +77,13 @@ export default function PortfolioSection() {
     : projects.filter(project => project.category === activeFilter);
 
   return (
-    <section id="portfolio" className="py-20 bg-slate-900">
+    <section id="portfolio" className="py-20 bg-gradient-to-br from-blue-50 to-blue-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 font-poppins">
-            Our <span className="text-amber-400">Portfolio</span>
+          <h2 className="text-4xl lg:text-5xl font-bold text-blue-900 mb-6 font-poppins">
+            Our <span className="text-blue-600">Portfolio</span>
           </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto font-inter">
+          <p className="text-xl text-blue-700 max-w-3xl mx-auto font-inter">
             Explore our recent projects and see how we've helped businesses transform 
             their operations with cutting-edge technology solutions.
           </p>
@@ -96,8 +96,8 @@ export default function PortfolioSection() {
               onClick={() => setActiveFilter(filter.id)}
               className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 whitespace-nowrap cursor-pointer ${
                 activeFilter === filter.id
-                  ? 'bg-amber-500 text-slate-900'
-                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-white text-blue-700 hover:bg-blue-50 border border-blue-200'
               }`}
             >
               {filter.label}
@@ -107,25 +107,24 @@ export default function PortfolioSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
-            <div key={project.id} className="bg-slate-800 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group">
+            <div key={project.id} className="bg-white rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group border border-gray-100">
               <div className="relative overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-slate-900/50 group-hover:bg-slate-900/30 transition-colors duration-300"></div>
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-2 font-poppins">{project.title}</h3>
-                <p className="text-slate-400 mb-4 font-inter">{project.description}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-2 font-poppins">{project.title}</h3>
+                <p className="text-gray-600 mb-4 font-inter">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, index) => (
                     <span
                       key={index}
-                      className="bg-slate-700 text-amber-400 px-3 py-1 rounded-full text-sm font-medium"
+                      className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium"
                     >
                       {tech}
                     </span>
@@ -133,8 +132,8 @@ export default function PortfolioSection() {
                 </div>
                 
                 <Link
-                  href="/services"
-                  className="inline-flex items-center text-amber-400 hover:text-amber-300 font-semibold transition-colors duration-200 cursor-pointer"
+                  href={`/portfolio/${project.slug}`}
+                  className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-200 cursor-pointer"
                 >
                   View Project
                   <i className="ri-arrow-right-line ml-2"></i>
