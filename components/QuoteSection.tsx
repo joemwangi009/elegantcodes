@@ -150,7 +150,7 @@ export default function QuoteSection() {
               className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-8"
             >
               <EmailForm
-                templateId={process.env.NEXT_PUBLIC_EMAILJS_QUOTE_TEMPLATE_ID || process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || ''}
+                formType="quote"
                 title="Request Your Quote"
                 subtitle="Tell us about your project and we'll provide a detailed quote within 24 hours."
                 submitText="Get Free Quote"

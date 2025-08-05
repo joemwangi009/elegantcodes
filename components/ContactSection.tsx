@@ -184,7 +184,7 @@ export default function ContactSection() {
             className="bg-white rounded-2xl shadow-xl p-8"
           >
             <EmailForm
-              templateId={process.env.NEXT_PUBLIC_EMAILJS_CONTACT_TEMPLATE_ID || process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || ''}
+              formType="contact"
               title="Send Us a Message"
               subtitle="Fill out the form below and we'll get back to you as soon as possible."
               submitText="Send Message"

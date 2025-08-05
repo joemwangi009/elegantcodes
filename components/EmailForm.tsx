@@ -3,7 +3,6 @@
 import { useState, useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion, AnimatePresence } from 'framer-motion';
-import emailjs from '@emailjs/browser';
 
 interface EmailFormData {
   name: string;
@@ -17,7 +16,7 @@ interface EmailFormData {
 }
 
 interface EmailFormProps {
-  templateId: string;
+  formType: 'contact' | 'quote' | 'portfolio';
   title: string;
   subtitle: string;
   submitText: string;
@@ -61,7 +60,7 @@ const timelineOptions = [
 ];
 
 export default function EmailForm({
-  templateId,
+  formType,
   title,
   subtitle,
   submitText,
@@ -93,30 +92,25 @@ export default function EmailForm({
     setErrorMessage('');
 
     try {
-      // Initialize EmailJS
-      emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_USER_ID!);
+      // Send email using our Resend API
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...data,
+          formType
+        }),
+      });
 
-      // Prepare template parameters
-      const templateParams = {
-        from_name: data.name,
-        from_email: data.email,
-        company: data.company || 'Not specified',
-        project_type: data.projectType || 'Not specified',
-        phone: data.phone || 'Not provided',
-        budget: data.budget || 'Not specified',
-        timeline: data.timeline || 'Not specified',
-        message: data.message,
-        to_name: 'ElegantCodes Team'
-      };
+      const result = await response.json();
 
-      // Send email
-      const result = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        templateId,
-        templateParams
-      );
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to send email');
+      }
 
-      if (result.status === 200) {
+      if (result.success) {
         setSubmitStatus('success');
         reset();
         onSuccess?.();
@@ -126,7 +120,7 @@ export default function EmailForm({
           setSubmitStatus('idle');
         }, 5000);
       } else {
-        throw new Error('Failed to send email');
+        throw new Error(result.error || 'Failed to send email');
       }
     } catch (error) {
       console.error('Email submission error:', error);

@@ -533,7 +533,7 @@ export default function PortfolioPage() {
                         </div>
                       ) : (
                         <EmailForm
-                          templateId={process.env.NEXT_PUBLIC_EMAILJS_PORTFOLIO_TEMPLATE_ID || process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || ''}
+                          formType="portfolio"
                           title={`Request Similar to ${selectedProject.title}`}
                           subtitle={`Tell us about your project requirements and we'll create a custom solution inspired by ${selectedProject.title}.`}
                           submitText="Send Request"
