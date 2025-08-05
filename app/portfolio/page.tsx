@@ -13,6 +13,7 @@ interface PortfolioItem {
   description: string;
   category: string;
   image: string;
+  fallbackImage?: string;
   slug: string;
   technologies: string[];
   metrics: string[];
@@ -35,15 +36,16 @@ export default function PortfolioPage() {
       subtitle: 'Customer Relationship Management System',
       description: 'A comprehensive CRM solution designed to streamline customer management, sales tracking, and business operations for modern enterprises.',
       category: 'Custom Apps',
-      image: 'https://readdy.ai/api/search-image?query=Professional%20CRM%20dashboard%20with%20customer%20management%20interface%2C%20modern%20business%20software%20design%2C%20clean%20blue%20and%20white%20theme%2C%20sophisticated%20enterprise%20solution%2C%20professional%20business%20technology&width=400&height=300&seq=portfolio-1&orientation=landscape',
+      image: '/images/portfolio/techflow-crm.jpg',
+      fallbackImage: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiBmaWxsPSIjMUUyQjQ0Ii8+CjxwYXRoIGQ9Ik0xMDAgMTAwaDMwMHYxNTBIMTAwVjEwMHoiIGZpbGw9IiM0QTU1N0YiLz4KPHN2ZyB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMTAiPgo8cmVjdCB3aWR0aD0iMjYwIiBoZWlnaHQ9IjExMCIgZmlsbD0iIzFBMkE0NCIvPgo8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSIyMCIgZmlsbD0iI0Q0QTAxNyIvPgo8cmVjdCB4PSI4MCIgeT0iMTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgZmlsbD0iI0Q0QTAxNyIvPgo8cmVjdCB4PSIxMzAiIHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIGZpbGw9IiNEQ0EwMTciLz4KPHN2ZyB4PSIxMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q3VzdG9tZXI8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWFuYWdlbWVudDwvdGV4dD4KPC9zdmc+CjxzdmcgeD0iMTIwIiB5PSI0MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiMzQzRBNTUiLz4KPHRleHQgeD0iNTAiIHk9IjM1IiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TYWxlczwvdGV4dD4KPHRleHQgeD0iNTAiIHk9IjUwIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5UcmFja2luZzwvdGV4dD4KPC9zdmc+CjxzdmcgeD0iMjMwIiB5PSI0MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiMzQzRBNTUiLz4KPHRleHQgeD0iNTAiIHk9IjM1IiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BbmFseXRpY3M8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UmVwb3J0czwvdGV4dD4KPC9zdmc+Cjwvc3ZnPgo8L3N2Zz4K',
       slug: 'techflow-crm',
       technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
       metrics: ['50,000+ users', '99.9% uptime', '40% efficiency gain'],
       color: 'blue',
       gallery: [
-        'https://readdy.ai/api/search-image?query=CRM%20dashboard%20main%20interface%2C%20professional%20business%20software&width=800&height=500&seq=techflow-1&orientation=landscape',
-        'https://readdy.ai/api/search-image?query=CRM%20customer%20management%20screen%2C%20professional%20business%20interface&width=800&height=500&seq=techflow-2&orientation=landscape',
-        'https://readdy.ai/api/search-image?query=CRM%20analytics%20dashboard%2C%20professional%20business%20intelligence&width=800&height=500&seq=techflow-3&orientation=landscape'
+        '/images/portfolio/techflow-crm-1.jpg',
+        '/images/portfolio/techflow-crm-2.jpg',
+        '/images/portfolio/techflow-crm-3.jpg'
       ]
     },
     {
@@ -52,15 +54,16 @@ export default function PortfolioPage() {
       subtitle: 'Advanced Point of Sale System',
       description: 'Modern point-of-sale solution with inventory management, customer tracking, and comprehensive reporting for retail businesses.',
       category: 'POS',
-      image: 'https://readdy.ai/api/search-image?query=Professional%20point%20of%20sale%20system%20interface%2C%20modern%20retail%20technology%2C%20clean%20blue%20and%20white%20theme%2C%20sophisticated%20business%20solution%2C%20professional%20retail%20software&width=400&height=300&seq=portfolio-2&orientation=landscape',
+      image: '/images/portfolio/retailpro-pos.jpg',
+      fallbackImage: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiBmaWxsPSIjMUUyQjQ0Ii8+CjxwYXRoIGQ9Ik0xMDAgMTAwaDMwMHYxNTBIMTAwVjEwMHoiIGZpbGw9IiM0QTU1N0YiLz4KPHN2ZyB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMTAiPgo8cmVjdCB3aWR0aD0iMjYwIiBoZWlnaHQ9IjExMCIgZmlsbD0iIzFBMkE0NCIvPgo8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSIyMCIgZmlsbD0iIzEwQjI4QSIvPgo8cmVjdCB4PSI4MCIgeT0iMTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgZmlsbD0iIzEwQjI4QSIvPgo8cmVjdCB4PSIxMzAiIHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIGZpbGw9IiMxMEIyOEEiLz4KPHN2ZyB4PSIxMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UG9pbnQ8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+b2YgU2FsZTwvdGV4dD4KPC9zdmc+CjxzdmcgeD0iMTIwIiB5PSI0MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiMzQzRBNTUiLz4KPHRleHQgeD0iNTAiIHk9IjM1IiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5JbnZlbnRvcnk8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWFuYWdlbWVudDwvdGV4dD4KPC9zdmc+CjxzdmcgeD0iMjMwIiB5PSI0MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiMzQzRBNTUiLz4KPHRleHQgeD0iNTAiIHk9IjM1IiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QYXltZW50PC90ZXh0Pgo8dGV4dCB4PSI1MCIgeT0iNTAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlByb2Nlc3Npbmc8L3RleHQ+Cjwvc3ZnPgo8c3ZnIHg9IjI0MCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U3VzdGFpbmFibGU8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QnJhbmRzPC90ZXh0Pgo8L3N2Zz4KPC9zdmc+Cg==',
       slug: 'retailpro-pos',
       technologies: ['React Native', 'Node.js', 'MongoDB', 'Stripe'],
       metrics: ['100+ stores', '60% faster checkout', '99.5% accuracy'],
       color: 'emerald',
       gallery: [
-        'https://readdy.ai/api/search-image?query=POS%20system%20interface%2C%20retail%20point%20of%20sale&width=800&height=500&seq=retailpro-1&orientation=landscape',
-        'https://readdy.ai/api/search-image?query=POS%20inventory%20management%2C%20retail%20system&width=800&height=500&seq=retailpro-2&orientation=landscape',
-        'https://readdy.ai/api/search-image?query=POS%20sales%20reporting%2C%20retail%20analytics&width=800&height=500&seq=retailpro-3&orientation=landscape'
+        '/images/portfolio/retailpro-pos-1.jpg',
+        '/images/portfolio/retailpro-pos-2.jpg',
+        '/images/portfolio/retailpro-pos-3.jpg'
       ]
     },
     {
@@ -69,15 +72,16 @@ export default function PortfolioPage() {
       subtitle: 'Multi-Vendor E-commerce Platform',
       description: 'A sophisticated marketplace platform connecting vendors and customers with advanced features and seamless user experience.',
       category: 'E-commerce',
-      image: 'https://readdy.ai/api/search-image?query=Professional%20e-commerce%20marketplace%20interface%2C%20modern%20online%20shopping%20platform%2C%20clean%20blue%20and%20white%20theme%2C%20sophisticated%20retail%20solution%2C%20professional%20marketplace%20design&width=400&height=300&seq=portfolio-3&orientation=landscape',
+      image: '/images/portfolio/ecoshop-marketplace.jpg',
+      fallbackImage: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiBmaWxsPSIjMUUyQjQ0Ii8+CjxwYXRoIGQ9Ik0xMDAgMTAwaDMwMHYxNTBIMTAwVjEwMHoiIGZpbGw9IiM0QTU1N0YiLz4KPHN2ZyB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMTAiPgo8cmVjdCB3aWR0aD0iMjYwIiBoZWlnaHQ9IjExMCIgZmlsbD0iIzFBMkE0NCIvPgo8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSIyMCIgZmlsbD0iI0E3N0Y0QSIvPgo8cmVjdCB4PSI4MCIgeT0iMTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgZmlsbD0iI0E3N0Y0QSIvPgo8cmVjdCB4PSIxMzAiIHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIGZpbGw9IiNBNzdGNEEiLz4KPHN2ZyB4PSIxMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RWNvPC90ZXh0Pgo8dGV4dCB4PSI1MCIgeT0iNTAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlNob3A8L3RleHQ+Cjwvc3ZnPgo8c3ZnIHg9IjEyMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWFya2V0PC90ZXh0Pgo8dGV4dCB4PSI1MCIgeT0iNTAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlBsYWNlPC90ZXh0Pgo8L3N2Zz4KPHN2ZyB4PSIyMzAiIHk9IjQwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIj4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzNDNEE1NSIvPgo8dGV4dCB4PSI1MCIgeT0iMzUiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlN1c3RhaW5hYmxlPC90ZXh0Pgo8dGV4dCB4PSI1MCIgeT0iNTAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkJyYW5kczwvdGV4dD4KPC9zdmc+Cjwvc3ZnPgo8L3N2Zz4K',
       slug: 'ecoshop-marketplace',
       technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Stripe'],
       metrics: ['500+ vendors', '25,000+ products', '200% growth'],
       color: 'purple',
       gallery: [
-        'https://readdy.ai/api/search-image?query=ecommerce%20marketplace%20homepage%2C%20online%20shopping&width=800&height=500&seq=ecoshop-1&orientation=landscape',
-        'https://readdy.ai/api/search-image?query=ecommerce%20product%20listing%2C%20marketplace%20interface&width=800&height=500&seq=ecoshop-2&orientation=landscape',
-        'https://readdy.ai/api/search-image?query=ecommerce%20vendor%20dashboard%2C%20marketplace%20management&width=800&height=500&seq=ecoshop-3&orientation=landscape'
+        '/images/portfolio/ecoshop-marketplace-1.jpg',
+        '/images/portfolio/ecoshop-marketplace-2.jpg',
+        '/images/portfolio/ecoshop-marketplace-3.jpg'
       ]
     },
     {
@@ -86,15 +90,16 @@ export default function PortfolioPage() {
       subtitle: 'Healthcare Management App',
       description: 'Mobile application for healthcare providers and patients with appointment scheduling, medical records, and telemedicine capabilities.',
       category: 'Custom Apps',
-      image: 'https://readdy.ai/api/search-image?query=Professional%20healthcare%20mobile%20app%20interface%2C%20modern%20medical%20technology%2C%20clean%20blue%20and%20white%20theme%2C%20sophisticated%20healthcare%20solution%2C%20professional%20medical%20software&width=400&height=300&seq=portfolio-4&orientation=landscape',
+      image: '/images/portfolio/healthsync-mobile.jpg',
+      fallbackImage: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiBmaWxsPSIjMUUyQjQ0Ii8+CjxwYXRoIGQ9Ik0xMDAgMTAwaDMwMHYxNTBIMTAwVjEwMHoiIGZpbGw9IiM0QTU1N0YiLz4KPHN2ZyB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMTAiPgo8cmVjdCB3aWR0aD0iMjYwIiBoZWlnaHQ9IjExMCIgZmlsbD0iIzFBMkE0NCIvPgo8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSIyMCIgZmlsbD0iIzEwQjI4QSIvPgo8cmVjdCB4PSI4MCIgeT0iMTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgZmlsbD0iIzEwQjI4QSIvPgo8cmVjdCB4PSIxMzAiIHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIGZpbGw9IiMxMEIyOEEiLz4KPHN2ZyB4PSIxMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SGVhbHRoPC90ZXh0Pgo8dGV4dCB4PSI1MCIgeT0iNTAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlN5bmM8L3RleHQ+Cjwvc3ZnPgo8c3ZnIHg9IjEyMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QXBwb2ludG1lbnQ8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U2NoZWR1bGluZzwvdGV4dD4KPC9zdmc+CjxzdmcgeD0iMjMwIiB5PSI0MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiMzQzRBNTUiLz4KPHRleHQgeD0iNTAiIHk9IjM1IiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5UZWxlbWVkaWNpbmU8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VmlkZW8gQ2FsbDwvdGV4dD4KPC9zdmc+Cjwvc3ZnPgo8L3N2Zz4K',
       slug: 'healthsync-mobile',
       technologies: ['React Native', 'Firebase', 'Twilio', 'AWS'],
       metrics: ['10,000+ patients', '4.8/5 rating', 'HIPAA compliant'],
       color: 'rose',
       gallery: [
-        'https://readdy.ai/api/search-image?query=healthcare%20mobile%20app%20interface%2C%20medical%20app&width=800&height=500&seq=healthsync-1&orientation=landscape',
-        'https://readdy.ai/api/search-image?query=healthcare%20appointment%20scheduling%2C%20medical%20app&width=800&height=500&seq=healthsync-2&orientation=landscape',
-        'https://readdy.ai/api/search-image?query=healthcare%20telemedicine%20interface%2C%20medical%20app&width=800&height=500&seq=healthsync-3&orientation=landscape'
+        '/images/portfolio/healthsync-mobile-1.jpg',
+        '/images/portfolio/healthsync-mobile-2.jpg',
+        '/images/portfolio/healthsync-mobile-3.jpg'
       ]
     },
     {
@@ -103,15 +108,16 @@ export default function PortfolioPage() {
       subtitle: 'Financial Management System',
       description: 'Comprehensive financial management platform for businesses with budgeting, expense tracking, and financial reporting capabilities.',
       category: 'Automation',
-      image: 'https://readdy.ai/api/search-image?query=Professional%20financial%20management%20dashboard%2C%20modern%20business%20finance%20software%2C%20clean%20blue%20and%20white%20theme%2C%20sophisticated%20financial%20solution%2C%20professional%20accounting%20software&width=400&height=300&seq=portfolio-5&orientation=landscape',
+      image: '/images/portfolio/financetracker-pro.jpg',
+      fallbackImage: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiBmaWxsPSIjMUUyQjQ0Ii8+CjxwYXRoIGQ9Ik0xMDAgMTAwaDMwMHYxNTBIMTAwVjEwMHoiIGZpbGw9IiM0QTU1N0YiLz4KPHN2ZyB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMTAiPgo8cmVjdCB3aWR0aD0iMjYwIiBoZWlnaHQ9IjExMCIgZmlsbD0iIzFBMkE0NCIvPgo8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSIyMCIgZmlsbD0iI0Q0QTAxNyIvPgo8cmVjdCB4PSI4MCIgeT0iMTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgZmlsbD0iI0Q0QTAxNyIvPgo8cmVjdCB4PSIxMzAiIHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIGZpbGw9IiNEQ0EwMTciLz4KPHN2ZyB4PSIxMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U2FsZXM8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VHJhY2tpbmc8L3RleHQ+Cjwvc3ZnPgo8c3ZnIHg9IjI0MCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QW5hbHl0aWNzPC90ZXh0Pgo8dGV4dCB4PSI1MCIgeT0iNTAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlJlcG9ydHM8L3RleHQ+Cjwvc3ZnPgo8L3N2Zz4K',
       slug: 'financetracker-pro',
       technologies: ['Vue.js', 'Python', 'PostgreSQL', 'AWS'],
       metrics: ['$2M+ managed', '80% time savings', 'Real-time reporting'],
       color: 'amber',
       gallery: [
-        'https://readdy.ai/api/search-image?query=financial%20management%20dashboard%2C%20finance%20software&width=800&height=500&seq=financetracker-1&orientation=landscape',
-        'https://readdy.ai/api/search-image?query=financial%20reporting%20interface%2C%20finance%20analytics&width=800&height=500&seq=financetracker-2&orientation=landscape',
-        'https://readdy.ai/api/search-image?query=financial%20budgeting%20interface%2C%20finance%20planning&width=800&height=500&seq=financetracker-3&orientation=landscape'
+        '/images/portfolio/financetracker-pro-1.jpg',
+        '/images/portfolio/financetracker-pro-2.jpg',
+        '/images/portfolio/financetracker-pro-3.jpg'
       ]
     },
     {
@@ -120,15 +126,16 @@ export default function PortfolioPage() {
       subtitle: 'Event Management Solution',
       description: 'Complete event management platform for organizers with ticketing, attendee management, and event analytics.',
       category: 'Custom Apps',
-      image: 'https://readdy.ai/api/search-image?query=Professional%20event%20management%20platform%20interface%2C%20modern%20event%20technology%2C%20clean%20blue%20and%20white%20theme%2C%20sophisticated%20event%20solution%2C%20professional%20event%20software&width=400&height=300&seq=portfolio-6&orientation=landscape',
+      image: '/images/portfolio/eventmaster-app.jpg',
+      fallbackImage: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiBmaWxsPSIjMUUyQjQ0Ii8+CjxwYXRoIGQ9Ik0xMDAgMTAwaDMwMHYxNTBIMTAwVjEwMHoiIGZpbGw9IiM0QTU1N0YiLz4KPHN2ZyB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMTAiPgo8cmVjdCB3aWR0aD0iMjYwIiBoZWlnaHQ9IjExMCIgZmlsbD0iIzFBMkE0NCIvPgo8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSIyMCIgZmlsbD0iIzEwQjI4QSIvPgo8cmVjdCB4PSI4MCIgeT0iMTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgZmlsbD0iIzEwQjI4QSIvPgo8cmVjdCB4PSIxMzAiIHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIGZpbGw9IiMxMEIyOEEiLz4KPHN2ZyB4PSIxMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RXZlbnQ8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWFuYWdlbWVudDwvdGV4dD4KPC9zdmc+CjxzdmcgeD0iMjMwIiB5PSI0MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiMzQzRBNTUiLz4KPHRleHQgeD0iNTAiIHk9IjM1IiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5JbnZlbnRvcnk8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QnJhbmRzPC90ZXh0Pgo8L3N2Zz4KPC9zdmc+Cg==',
       slug: 'eventmaster-app',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       metrics: ['500+ events', '50,000+ attendees', '95% satisfaction'],
       color: 'indigo',
       gallery: [
-        'https://readdy.ai/api/search-image?query=event%20management%20platform%2C%20event%20planning%20software&width=800&height=500&seq=eventmaster-1&orientation=landscape',
-        'https://readdy.ai/api/search-image?query=event%20ticketing%20interface%2C%20event%20management&width=800&height=500&seq=eventmaster-2&orientation=landscape',
-        'https://readdy.ai/api/search-image?query=event%20analytics%20dashboard%2C%20event%20reporting&width=800&height=500&seq=eventmaster-3&orientation=landscape'
+        '/images/portfolio/eventmaster-app-1.jpg',
+        '/images/portfolio/eventmaster-app-2.jpg',
+        '/images/portfolio/eventmaster-app-3.jpg'
       ]
     }
   ];
@@ -303,8 +310,12 @@ export default function PortfolioPage() {
                   <div className="relative overflow-hidden h-64">
                     <img
                       src={item.image}
-                      alt={item.title}
+                      alt={`${item.title} - ${item.description}`}
                       className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = item.fallbackImage || 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiBmaWxsPSIjMUUyQjQ0Ii8+Cjx0ZXh0IHg9IjI1MCIgeT0iMTc1IiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5JbWFnZTwvdGV4dD4KPHRleHQgeD0iMjUwIiB5PSIyMDAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk5vdCBBdmFpbGFibGU8L3RleHQ+Cjwvc3ZnPgo=';
+                      }}
                       loading="lazy"
                     />
                     
