@@ -188,7 +188,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 bg-slate-900/95 backdrop-blur-sm z-50 border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+          {/* Logo - Far Left */}
           <div className="flex items-center flex-shrink-0">
             <Link href="#home" className="flex items-center space-x-2 group">
               <div className="w-8 h-8 flex items-center justify-center bg-amber-500 rounded-lg group-hover:bg-amber-400 transition-colors duration-200">
@@ -198,8 +198,8 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-6 flex-shrink-0">
+          {/* Desktop Navigation - Center Left with Better Spacing */}
+          <nav className="hidden lg:flex items-center space-x-8 flex-shrink-0 ml-8">
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -212,8 +212,8 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Global Search - Desktop */}
-          <div className="hidden md:flex flex-1 max-w-md mx-6 relative" ref={searchRef}>
+          {/* Global Search - Center with More Space */}
+          <div className="hidden md:flex flex-1 max-w-lg mx-8 relative" ref={searchRef}>
             <div className="relative w-full">
               <input
                 type="text"
@@ -260,8 +260,8 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Desktop Actions */}
-          <div className="hidden md:flex items-center space-x-3 flex-shrink-0">
+          {/* Desktop Actions - Far Right */}
+          <div className="hidden md:flex items-center space-x-4 flex-shrink-0">
             {/* High Contrast Toggle */}
             {isMounted && (
               <button
