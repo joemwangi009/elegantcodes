@@ -53,8 +53,8 @@ export default function PortfolioSection() {
       slug: 'healthsync-mobile',
       description: 'Healthcare management app connecting patients with healthcare providers seamlessly.',
       technologies: ['React Native', 'Firebase', 'TypeScript', 'GraphQL'],
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500&h=350&fit=crop&crop=center',
-      fallbackImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=350&fit=crop&crop=center',
+      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=350&fit=crop&crop=center',
+      fallbackImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500&h=350&fit=crop&crop=center',
     },
     {
       id: 5,
