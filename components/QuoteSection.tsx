@@ -57,7 +57,7 @@ export default function QuoteSection() {
 
   return (
     <>
-      <section id="quote" className="section-padding bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <section id="quote" className="section-padding bg-gradient-to-br from-slate-50 to-slate-100">
         <div className="max-w-7xl mx-auto container-padding">
           <motion.div
             variants={containerVariants}
@@ -66,11 +66,11 @@ export default function QuoteSection() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <motion.h2 variants={itemVariants} className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            <motion.h2 variants={itemVariants} className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
               Get Your Free
               <span className="gradient-text block">Project Quote</span>
             </motion.h2>
-            <motion.p variants={itemVariants} className="text-xl text-slate-300 max-w-3xl mx-auto">
+            <motion.p variants={itemVariants} className="text-xl text-slate-600 max-w-3xl mx-auto">
               Ready to start your project? Get a detailed quote tailored to your specific requirements and budget.
             </motion.p>
           </motion.div>
@@ -85,8 +85,8 @@ export default function QuoteSection() {
               className="space-y-8"
             >
               <motion.div variants={itemVariants}>
-                <h3 className="text-2xl font-bold text-white mb-6">Why Choose Our Quote Process?</h3>
-                <p className="text-slate-300 mb-8">
+                <h3 className="text-2xl font-bold text-slate-900 mb-6">Why Choose Our Quote Process?</h3>
+                <p className="text-slate-600 mb-8">
                   We provide detailed, transparent quotes that include all costs, timelines, and deliverables. 
                   No hidden fees, no surprises.
                 </p>
@@ -97,44 +97,44 @@ export default function QuoteSection() {
                   <motion.div
                     key={index}
                     variants={itemVariants}
-                    className="flex items-start space-x-4 p-6 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10"
+                    className="flex items-start space-x-4 p-6 bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300"
                   >
-                    <div className="w-12 h-12 bg-gradient-to-r from-[#D4A017] to-[#F4D03F] rounded-lg flex items-center justify-center flex-shrink-0">
-                      <i className={`${feature.icon} text-[#1A2A44] text-xl`}></i>
+                    <div className="w-12 h-12 bg-gradient-to-r from-amber-500 to-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <i className={`${feature.icon} text-white text-xl`}></i>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white mb-2">{feature.title}</h4>
-                      <p className="text-slate-300 text-sm">{feature.description}</p>
+                      <h4 className="font-semibold text-slate-900 mb-2">{feature.title}</h4>
+                      <p className="text-slate-600 text-sm">{feature.description}</p>
                     </div>
                   </motion.div>
                 ))}
               </motion.div>
 
-              <motion.div variants={itemVariants} className="bg-gradient-to-r from-[#D4A017]/10 to-[#F4D03F]/10 rounded-2xl p-6 border border-[#D4A017]/20">
-                <h4 className="font-semibold text-white mb-3">What's Included in Your Quote?</h4>
-                <ul className="space-y-2 text-sm text-slate-300">
+              <motion.div variants={itemVariants} className="bg-gradient-to-r from-amber-50 to-amber-100 rounded-2xl p-6 border border-amber-200">
+                <h4 className="font-semibold text-slate-900 mb-3">What's Included in Your Quote?</h4>
+                <ul className="space-y-2 text-sm text-slate-600">
                   <li className="flex items-center">
-                    <i className="ri-check-line text-[#D4A017] mr-2"></i>
+                    <i className="ri-check-line text-amber-600 mr-2"></i>
                     Detailed project scope and requirements
                   </li>
                   <li className="flex items-center">
-                    <i className="ri-check-line text-[#D4A017] mr-2"></i>
+                    <i className="ri-check-line text-amber-600 mr-2"></i>
                     Technology stack recommendations
                   </li>
                   <li className="flex items-center">
-                    <i className="ri-check-line text-[#D4A017] mr-2"></i>
+                    <i className="ri-check-line text-amber-600 mr-2"></i>
                     Timeline and milestone breakdown
                   </li>
                   <li className="flex items-center">
-                    <i className="ri-check-line text-[#D4A017] mr-2"></i>
+                    <i className="ri-check-line text-amber-600 mr-2"></i>
                     Cost breakdown with no hidden fees
                   </li>
                   <li className="flex items-center">
-                    <i className="ri-check-line text-[#D4A017] mr-2"></i>
+                    <i className="ri-check-line text-amber-600 mr-2"></i>
                     Post-launch support and maintenance
                   </li>
                   <li className="flex items-center">
-                    <i className="ri-check-line text-[#D4A017] mr-2"></i>
+                    <i className="ri-check-line text-amber-600 mr-2"></i>
                     Free consultation and revisions
                   </li>
                 </ul>
@@ -147,7 +147,7 @@ export default function QuoteSection() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-8"
+              className="bg-white rounded-2xl shadow-xl border border-slate-200 p-8"
             >
               <EmailForm
                 formType="quote"

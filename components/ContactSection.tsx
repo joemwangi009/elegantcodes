@@ -52,7 +52,7 @@ export default function ContactSection() {
       if (result.success) {
         setSubmitStatus('success');
         reset();
-        setIsSubmitted(true);
+    setIsSubmitted(true);
         
         setTimeout(() => {
           setSubmitStatus('idle');
