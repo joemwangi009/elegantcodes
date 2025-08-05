@@ -36,16 +36,16 @@ export default function PortfolioPage() {
       subtitle: 'Customer Relationship Management System',
       description: 'A comprehensive CRM solution designed to streamline customer management, sales tracking, and business operations for modern enterprises.',
       category: 'Custom Apps',
-      image: '/images/portfolio/techflow-crm.jpg',
-      fallbackImage: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiBmaWxsPSIjMUUyQjQ0Ii8+CjxwYXRoIGQ9Ik0xMDAgMTAwaDMwMHYxNTBIMTAwVjEwMHoiIGZpbGw9IiM0QTU1N0YiLz4KPHN2ZyB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMTAiPgo8cmVjdCB3aWR0aD0iMjYwIiBoZWlnaHQ9IjExMCIgZmlsbD0iIzFBMkE0NCIvPgo8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSIyMCIgZmlsbD0iI0Q0QTAxNyIvPgo8cmVjdCB4PSI4MCIgeT0iMTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgZmlsbD0iI0Q0QTAxNyIvPgo8cmVjdCB4PSIxMzAiIHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIGZpbGw9IiNEQ0EwMTciLz4KPHN2ZyB4PSIxMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q3VzdG9tZXI8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWFuYWdlbWVudDwvdGV4dD4KPC9zdmc+CjxzdmcgeD0iMTIwIiB5PSI0MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiMzQzRBNTUiLz4KPHRleHQgeD0iNTAiIHk9IjM1IiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TYWxlczwvdGV4dD4KPHRleHQgeD0iNTAiIHk9IjUwIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5UcmFja2luZzwvdGV4dD4KPC9zdmc+CjxzdmcgeD0iMjMwIiB5PSI0MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiMzQzRBNTUiLz4KPHRleHQgeD0iNTAiIHk9IjM1IiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BbmFseXRpY3M8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UmVwb3J0czwvdGV4dD4KPC9zdmc+Cjwvc3ZnPgo8L3N2Zz4K',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=center',
+      fallbackImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center',
       slug: 'techflow-crm',
       technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
       metrics: ['50,000+ users', '99.9% uptime', '40% efficiency gain'],
       color: 'blue',
       gallery: [
-        '/images/portfolio/techflow-crm-1.jpg',
-        '/images/portfolio/techflow-crm-2.jpg',
-        '/images/portfolio/techflow-crm-3.jpg'
+        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center'
       ]
     },
     {
@@ -54,16 +54,16 @@ export default function PortfolioPage() {
       subtitle: 'Advanced Point of Sale System',
       description: 'Modern point-of-sale solution with inventory management, customer tracking, and comprehensive reporting for retail businesses.',
       category: 'POS',
-      image: '/images/portfolio/retailpro-pos.jpg',
-      fallbackImage: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiBmaWxsPSIjMUUyQjQ0Ii8+CjxwYXRoIGQ9Ik0xMDAgMTAwaDMwMHYxNTBIMTAwVjEwMHoiIGZpbGw9IiM0QTU1N0YiLz4KPHN2ZyB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMTAiPgo8cmVjdCB3aWR0aD0iMjYwIiBoZWlnaHQ9IjExMCIgZmlsbD0iIzFBMkE0NCIvPgo8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSIyMCIgZmlsbD0iIzEwQjI4QSIvPgo8cmVjdCB4PSI4MCIgeT0iMTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgZmlsbD0iIzEwQjI4QSIvPgo8cmVjdCB4PSIxMzAiIHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIGZpbGw9IiMxMEIyOEEiLz4KPHN2ZyB4PSIxMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UG9pbnQ8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+b2YgU2FsZTwvdGV4dD4KPC9zdmc+CjxzdmcgeD0iMTIwIiB5PSI0MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiMzQzRBNTUiLz4KPHRleHQgeD0iNTAiIHk9IjM1IiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5JbnZlbnRvcnk8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWFuYWdlbWVudDwvdGV4dD4KPC9zdmc+CjxzdmcgeD0iMjMwIiB5PSI0MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiMzQzRBNTUiLz4KPHRleHQgeD0iNTAiIHk9IjM1IiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QYXltZW50PC90ZXh0Pgo8dGV4dCB4PSI1MCIgeT0iNTAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlByb2Nlc3Npbmc8L3RleHQ+Cjwvc3ZnPgo8c3ZnIHg9IjI0MCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U3VzdGFpbmFibGU8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QnJhbmRzPC90ZXh0Pgo8L3N2Zz4KPC9zdmc+Cg==',
+      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop&crop=center',
+      fallbackImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center',
       slug: 'retailpro-pos',
       technologies: ['React Native', 'Node.js', 'MongoDB', 'Stripe'],
       metrics: ['100+ stores', '60% faster checkout', '99.5% accuracy'],
       color: 'emerald',
       gallery: [
-        '/images/portfolio/retailpro-pos-1.jpg',
-        '/images/portfolio/retailpro-pos-2.jpg',
-        '/images/portfolio/retailpro-pos-3.jpg'
+        'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop&crop=center'
       ]
     },
     {
@@ -72,16 +72,16 @@ export default function PortfolioPage() {
       subtitle: 'Multi-Vendor E-commerce Platform',
       description: 'A sophisticated marketplace platform connecting vendors and customers with advanced features and seamless user experience.',
       category: 'E-commerce',
-      image: '/images/portfolio/ecoshop-marketplace.jpg',
-      fallbackImage: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiBmaWxsPSIjMUUyQjQ0Ii8+CjxwYXRoIGQ9Ik0xMDAgMTAwaDMwMHYxNTBIMTAwVjEwMHoiIGZpbGw9IiM0QTU1N0YiLz4KPHN2ZyB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMTAiPgo8cmVjdCB3aWR0aD0iMjYwIiBoZWlnaHQ9IjExMCIgZmlsbD0iIzFBMkE0NCIvPgo8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSIyMCIgZmlsbD0iI0E3N0Y0QSIvPgo8cmVjdCB4PSI4MCIgeT0iMTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgZmlsbD0iI0E3N0Y0QSIvPgo8cmVjdCB4PSIxMzAiIHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIGZpbGw9IiNBNzdGNEEiLz4KPHN2ZyB4PSIxMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RWNvPC90ZXh0Pgo8dGV4dCB4PSI1MCIgeT0iNTAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlNob3A8L3RleHQ+Cjwvc3ZnPgo8c3ZnIHg9IjEyMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWFya2V0PC90ZXh0Pgo8dGV4dCB4PSI1MCIgeT0iNTAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlBsYWNlPC90ZXh0Pgo8L3N2Zz4KPHN2ZyB4PSIyMzAiIHk9IjQwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIj4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzNDNEE1NSIvPgo8dGV4dCB4PSI1MCIgeT0iMzUiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlN1c3RhaW5hYmxlPC90ZXh0Pgo8dGV4dCB4PSI1MCIgeT0iNTAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkJyYW5kczwvdGV4dD4KPC9zdmc+Cjwvc3ZnPgo8L3N2Zz4K',
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center',
+      fallbackImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center',
       slug: 'ecoshop-marketplace',
       technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Stripe'],
       metrics: ['500+ vendors', '25,000+ products', '200% growth'],
       color: 'purple',
       gallery: [
-        '/images/portfolio/ecoshop-marketplace-1.jpg',
-        '/images/portfolio/ecoshop-marketplace-2.jpg',
-        '/images/portfolio/ecoshop-marketplace-3.jpg'
+        'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop&crop=center'
       ]
     },
     {
@@ -90,16 +90,16 @@ export default function PortfolioPage() {
       subtitle: 'Healthcare Management App',
       description: 'Mobile application for healthcare providers and patients with appointment scheduling, medical records, and telemedicine capabilities.',
       category: 'Custom Apps',
-      image: '/images/portfolio/healthsync-mobile.jpg',
-      fallbackImage: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiBmaWxsPSIjMUUyQjQ0Ii8+CjxwYXRoIGQ9Ik0xMDAgMTAwaDMwMHYxNTBIMTAwVjEwMHoiIGZpbGw9IiM0QTU1N0YiLz4KPHN2ZyB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMTAiPgo8cmVjdCB3aWR0aD0iMjYwIiBoZWlnaHQ9IjExMCIgZmlsbD0iIzFBMkE0NCIvPgo8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSIyMCIgZmlsbD0iIzEwQjI4QSIvPgo8cmVjdCB4PSI4MCIgeT0iMTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgZmlsbD0iIzEwQjI4QSIvPgo8cmVjdCB4PSIxMzAiIHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIGZpbGw9IiMxMEIyOEEiLz4KPHN2ZyB4PSIxMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SGVhbHRoPC90ZXh0Pgo8dGV4dCB4PSI1MCIgeT0iNTAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlN5bmM8L3RleHQ+Cjwvc3ZnPgo8c3ZnIHg9IjEyMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QXBwb2ludG1lbnQ8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U2NoZWR1bGluZzwvdGV4dD4KPC9zdmc+CjxzdmcgeD0iMjMwIiB5PSI0MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiMzQzRBNTUiLz4KPHRleHQgeD0iNTAiIHk9IjM1IiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5UZWxlbWVkaWNpbmU8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VmlkZW8gQ2FsbDwvdGV4dD4KPC9zdmc+Cjwvc3ZnPgo8L3N2Zz4K',
+      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center',
+      fallbackImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop&crop=center',
       slug: 'healthsync-mobile',
       technologies: ['React Native', 'Firebase', 'Twilio', 'AWS'],
       metrics: ['10,000+ patients', '4.8/5 rating', 'HIPAA compliant'],
       color: 'rose',
       gallery: [
-        '/images/portfolio/healthsync-mobile-1.jpg',
-        '/images/portfolio/healthsync-mobile-2.jpg',
-        '/images/portfolio/healthsync-mobile-3.jpg'
+        'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=500&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=500&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=500&fit=crop&crop=center'
       ]
     },
     {
@@ -108,34 +108,34 @@ export default function PortfolioPage() {
       subtitle: 'Financial Management System',
       description: 'Comprehensive financial management platform for businesses with budgeting, expense tracking, and financial reporting capabilities.',
       category: 'Automation',
-      image: '/images/portfolio/financetracker-pro.jpg',
-      fallbackImage: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiBmaWxsPSIjMUUyQjQ0Ii8+CjxwYXRoIGQ9Ik0xMDAgMTAwaDMwMHYxNTBIMTAwVjEwMHoiIGZpbGw9IiM0QTU1N0YiLz4KPHN2ZyB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMTAiPgo8cmVjdCB3aWR0aD0iMjYwIiBoZWlnaHQ9IjExMCIgZmlsbD0iIzFBMkE0NCIvPgo8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSIyMCIgZmlsbD0iI0Q0QTAxNyIvPgo8cmVjdCB4PSI4MCIgeT0iMTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgZmlsbD0iI0Q0QTAxNyIvPgo8cmVjdCB4PSIxMzAiIHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIGZpbGw9IiNEQ0EwMTciLz4KPHN2ZyB4PSIxMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U2FsZXM8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VHJhY2tpbmc8L3RleHQ+Cjwvc3ZnPgo8c3ZnIHg9IjI0MCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QW5hbHl0aWNzPC90ZXh0Pgo8dGV4dCB4PSI1MCIgeT0iNTAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlJlcG9ydHM8L3RleHQ+Cjwvc3ZnPgo8L3N2Zz4K',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center',
+      fallbackImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=center',
       slug: 'financetracker-pro',
       technologies: ['Vue.js', 'Python', 'PostgreSQL', 'AWS'],
       metrics: ['$2M+ managed', '80% time savings', 'Real-time reporting'],
       color: 'amber',
       gallery: [
-        '/images/portfolio/financetracker-pro-1.jpg',
-        '/images/portfolio/financetracker-pro-2.jpg',
-        '/images/portfolio/financetracker-pro-3.jpg'
+        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&crop=center'
       ]
     },
     {
       id: 6,
       title: 'EventMaster App',
-      subtitle: 'Event Management Solution',
-      description: 'Complete event management platform for organizers with ticketing, attendee management, and event analytics.',
+      subtitle: 'Event Management Platform',
+      description: 'Comprehensive event management solution for organizers with ticketing, registration, and attendee management features.',
       category: 'Custom Apps',
-      image: '/images/portfolio/eventmaster-app.jpg',
-      fallbackImage: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiBmaWxsPSIjMUUyQjQ0Ii8+CjxwYXRoIGQ9Ik0xMDAgMTAwaDMwMHYxNTBIMTAwVjEwMHoiIGZpbGw9IiM0QTU1N0YiLz4KPHN2ZyB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMTAiPgo8cmVjdCB3aWR0aD0iMjYwIiBoZWlnaHQ9IjExMCIgZmlsbD0iIzFBMkE0NCIvPgo8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSIyMCIgZmlsbD0iIzEwQjI4QSIvPgo8cmVjdCB4PSI4MCIgeT0iMTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgZmlsbD0iIzEwQjI4QSIvPgo8cmVjdCB4PSIxMzAiIHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIGZpbGw9IiMxMEIyOEEiLz4KPHN2ZyB4PSIxMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RXZlbnQ8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWFuYWdlbWVudDwvdGV4dD4KPC9zdmc+CjxzdmcgeD0iMjMwIiB5PSI0MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiIGZpbGw9IiMzQzRBNTUiLz4KPHRleHQgeD0iNTAiIHk9IjM1IiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5JbnZlbnRvcnk8L3RleHQ+Cjx0ZXh0IHg9IjUwIiB5PSI1MCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QnJhbmRzPC90ZXh0Pgo8L3N2Zz4KPC9zdmc+Cg==',
+      image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=300&fit=crop&crop=center',
+      fallbackImage: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=300&fit=crop&crop=center',
       slug: 'eventmaster-app',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      technologies: ['Flutter', 'Node.js', 'Redis', 'Google Cloud'],
       metrics: ['500+ events', '50,000+ attendees', '95% satisfaction'],
       color: 'indigo',
       gallery: [
-        '/images/portfolio/eventmaster-app-1.jpg',
-        '/images/portfolio/eventmaster-app-2.jpg',
-        '/images/portfolio/eventmaster-app-3.jpg'
+        'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=500&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=500&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=500&fit=crop&crop=center'
       ]
     }
   ];
@@ -314,7 +314,7 @@ export default function PortfolioPage() {
                       className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
-                        target.src = item.fallbackImage || 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiBmaWxsPSIjMUUyQjQ0Ii8+Cjx0ZXh0IHg9IjI1MCIgeT0iMTc1IiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5JbWFnZTwvdGV4dD4KPHRleHQgeD0iMjUwIiB5PSIyMDAiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk5vdCBBdmFpbGFibGU8L3RleHQ+Cjwvc3ZnPgo=';
+                        target.src = item.fallbackImage || 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiBmaWxsPSIjMUUyQjQ0Ii8+CjxwYXRoIGQ9Ik0xMDAgMTAwaDMwMHYxNTBIMTAwVjEwMHoiIGZpbGw9IiM0QTU1N0YiLz4KPHN2ZyB4PSIxMjAiIHk9IjEyMCIgd2lkdGg9IjI2MCIgaGVpZ2h0PSIxMTAiPgo8cmVjdCB3aWR0aD0iMjYwIiBoZWlnaHQ9IjExMCIgZmlsbD0iIzFBMkE0NCIvPgo8cmVjdCB4PSIxMCIgeT0iMTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSIyMCIgZmlsbD0iI0Q0QTAxNyIvPgo8cmVjdCB4PSI4MCIgeT0iMTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgZmlsbD0iI0Q0QTAxNyIvPgo8cmVjdCB4PSIxMzAiIHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIGZpbGw9IiNEQ0EwMTciLz4KPHN2ZyB4PSIxMCIgeT0iNDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNjAiPgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjM0M0QTU1Ii8+Cjx0ZXh0IHg9IjUwIiB5PSIzNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SW1hZ2U8L3RleHQ+Cjx0ZXh0IHg9IjI1MCIgeT0iMjAwIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Ob3QgQXZhaWxhYmxlPC90ZXh0Pgo8L3N2Zz4K';
                       }}
                       loading="lazy"
                     />
