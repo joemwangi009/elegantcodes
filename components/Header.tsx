@@ -187,9 +187,9 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-slate-900/95 backdrop-blur-sm z-50 border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center flex-shrink-0">
             <Link href="#home" className="flex items-center space-x-2 group">
               <div className="w-8 h-8 flex items-center justify-center bg-amber-500 rounded-lg group-hover:bg-amber-400 transition-colors duration-200">
                 <i className="ri-code-s-slash-line text-slate-900 text-lg"></i>
@@ -198,8 +198,22 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Global Search */}
-          <div className="hidden md:flex flex-1 max-w-md mx-8 relative" ref={searchRef}>
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-6 flex-shrink-0">
+            {navigation.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-slate-300 hover:text-amber-400 transition-colors duration-200 font-medium whitespace-nowrap cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-50 rounded px-2 py-1"
+                aria-label={`Navigate to ${item.name}`}
+              >
+                {item.name}
+              </a>
+            ))}
+          </nav>
+
+          {/* Global Search - Desktop */}
+          <div className="hidden md:flex flex-1 max-w-md mx-6 relative" ref={searchRef}>
             <div className="relative w-full">
               <input
                 type="text"
@@ -246,27 +260,13 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-slate-300 hover:text-amber-400 transition-colors duration-200 font-medium whitespace-nowrap cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-50 rounded px-2 py-1"
-                aria-label={`Navigate to ${item.name}`}
-              >
-                {item.name}
-              </a>
-            ))}
-          </nav>
-
           {/* Desktop Actions */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-3 flex-shrink-0">
             {/* High Contrast Toggle */}
             {isMounted && (
               <button
                 onClick={toggleHighContrast}
-                className="w-10 h-10 flex items-center justify-center text-slate-300 hover:text-amber-400 transition-colors duration-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-50"
+                className="w-9 h-9 flex items-center justify-center text-slate-300 hover:text-amber-400 transition-colors duration-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-50"
                 aria-label={`${isHighContrast ? 'Disable' : 'Enable'} high contrast mode`}
                 title={`${isHighContrast ? 'Disable' : 'Enable'} high contrast mode`}
               >
@@ -276,20 +276,30 @@ export default function Header() {
 
             <a
               href="/#contact"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 whitespace-nowrap cursor-pointer transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50"
+              className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-200 whitespace-nowrap cursor-pointer transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-50 text-sm"
             >
               Contact
             </a>
             <a
               href="/#quote"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 whitespace-nowrap cursor-pointer transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50"
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-200 whitespace-nowrap cursor-pointer transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 text-sm"
             >
               Get Quote
             </a>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+            {/* Mobile Search Button */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="w-9 h-9 flex items-center justify-center text-slate-300 hover:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-50"
+              aria-label="Toggle search"
+            >
+              <i className="ri-search-line text-lg"></i>
+            </button>
+            
+            {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-slate-300 hover:text-white p-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-50 rounded"
@@ -305,14 +315,49 @@ export default function Header() {
           <div className="md:hidden bg-slate-800 border-t border-slate-700">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {/* Mobile Search */}
-              <div className="px-3 py-2">
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => handleSearch(e.target.value)}
-                  placeholder="Search..."
-                  className="w-full pl-10 pr-4 py-2 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-amber-400 focus:outline-none transition-colors duration-200"
-                />
+              <div className="px-3 py-2" ref={searchRef}>
+                <div className="relative">
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => handleSearch(e.target.value)}
+                    onFocus={() => searchQuery.length > 1 && setShowSearchResults(true)}
+                    placeholder="Search services, projects, articles..."
+                    className="w-full pl-10 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-amber-400 focus:outline-none transition-colors duration-200"
+                  />
+                  <i className="ri-search-line absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400"></i>
+                  
+                  {/* Mobile Search Results */}
+                  {showSearchResults && searchResults.length > 0 && (
+                    <div className="absolute top-full left-0 right-0 mt-2 bg-slate-700 border border-slate-600 rounded-lg shadow-xl max-h-64 overflow-y-auto z-50">
+                      {searchResults.map((result, index) => (
+                        <div
+                          key={`mobile-${result.type}-${index}`}
+                          className="flex items-center px-3 py-2 hover:bg-slate-600 transition-colors duration-200 border-b border-slate-600 last:border-b-0 cursor-pointer"
+                          onClick={() => {
+                            handleSearchResultClick(result.url);
+                            setIsMenuOpen(false);
+                          }}
+                        >
+                          <img
+                            src={result.thumbnail}
+                            alt=""
+                            className="w-6 h-6 rounded object-cover mr-2"
+                            loading="lazy"
+                          />
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-1 mb-1">
+                              <i className={`${getTypeIcon(result.type)} text-amber-400 text-xs`}></i>
+                              <span className="text-amber-400 text-xs uppercase tracking-wide">{result.type}</span>
+                            </div>
+                            <h4 className="text-white font-medium text-xs truncate">{result.title}</h4>
+                            <p className="text-slate-400 text-xs mt-1 line-clamp-1">{result.description}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
               
               {/* Mobile Navigation */}
@@ -340,14 +385,23 @@ export default function Header() {
                 </div>
               )}
               
-              {/* Mobile Get Quote Button */}
-              <a
-                href="#quote"
-                className="block px-3 py-2 bg-amber-500 text-slate-900 rounded-md font-semibold mt-4 text-center cursor-pointer"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Get Quote
-              </a>
+              {/* Mobile Action Buttons */}
+              <div className="px-3 pt-2 space-y-2">
+                <a
+                  href="#contact"
+                  className="block w-full bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 rounded-md font-semibold py-2 text-center cursor-pointer"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Contact
+                </a>
+                <a
+                  href="#quote"
+                  className="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-md font-semibold py-2 text-center cursor-pointer"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Get Quote
+                </a>
+              </div>
             </div>
           </div>
         )}
