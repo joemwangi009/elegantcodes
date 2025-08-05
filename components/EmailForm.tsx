@@ -158,10 +158,10 @@ export default function EmailForm({
       className={`max-w-2xl mx-auto ${className}`}
     >
       <div className="text-center mb-8">
-        <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 font-poppins">
+        <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4 font-poppins">
           {title}
         </h2>
-        <p className="text-lg text-slate-300 font-inter">
+        <p className="text-lg text-slate-600 font-inter">
           {subtitle}
         </p>
       </div>
@@ -174,7 +174,7 @@ export default function EmailForm({
       >
         {/* Name Field */}
         <div>
-          <label htmlFor="name" className="block text-sm font-semibold text-white mb-2">
+          <label htmlFor="name" className="block text-sm font-semibold text-slate-900 mb-2">
             Full Name *
           </label>
           <input
@@ -184,8 +184,8 @@ export default function EmailForm({
             })}
             type="text"
             id="name"
-            className={`w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:border-[#D4A017] transition-all duration-300 ${
-              errors.name ? 'border-red-400' : ''
+            className={`w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-500 focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300 ${
+              errors.name ? 'border-red-400 bg-red-50' : ''
             }`}
             placeholder="Enter your full name"
           />
@@ -193,7 +193,7 @@ export default function EmailForm({
             <motion.p
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              className="mt-1 text-sm text-red-400 flex items-center"
+              className="mt-1 text-sm text-red-500 flex items-center"
             >
               <i className="ri-error-warning-line mr-1"></i>
               {errors.name.message}
@@ -203,7 +203,7 @@ export default function EmailForm({
 
         {/* Email Field */}
         <div>
-          <label htmlFor="email" className="block text-sm font-semibold text-white mb-2">
+          <label htmlFor="email" className="block text-sm font-semibold text-slate-900 mb-2">
             Email Address *
           </label>
           <input
@@ -216,8 +216,8 @@ export default function EmailForm({
             })}
             type="email"
             id="email"
-            className={`w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:border-[#D4A017] transition-all duration-300 ${
-              errors.email ? 'border-red-400' : ''
+            className={`w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-500 focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300 ${
+              errors.email ? 'border-red-400 bg-red-50' : ''
             }`}
             placeholder="Enter your email address"
           />
@@ -225,7 +225,7 @@ export default function EmailForm({
             <motion.p
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              className="mt-1 text-sm text-red-400 flex items-center"
+              className="mt-1 text-sm text-red-500 flex items-center"
             >
               <i className="ri-error-warning-line mr-1"></i>
               {errors.email.message}
@@ -233,34 +233,34 @@ export default function EmailForm({
           )}
         </div>
 
+        {/* Company Field */}
+        {showCompany && (
+          <div>
+            <label htmlFor="company" className="block text-sm font-semibold text-slate-900 mb-2">
+              Company
+            </label>
+            <input
+              {...register('company')}
+              type="text"
+              id="company"
+              className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-500 focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300"
+              placeholder="Enter your company name (optional)"
+            />
+          </div>
+        )}
+
         {/* Phone Field */}
         {showPhone && (
           <div>
-            <label htmlFor="phone" className="block text-sm font-semibold text-white mb-2">
+            <label htmlFor="phone" className="block text-sm font-semibold text-slate-900 mb-2">
               Phone Number
             </label>
             <input
               {...register('phone')}
               type="tel"
               id="phone"
-              className="w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:border-[#D4A017] transition-all duration-300"
+              className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-500 focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300"
               placeholder="Enter your phone number (optional)"
-            />
-          </div>
-        )}
-
-        {/* Company Field */}
-        {showCompany && (
-          <div>
-            <label htmlFor="company" className="block text-sm font-semibold text-white mb-2">
-              Company Name
-            </label>
-            <input
-              {...register('company')}
-              type="text"
-              id="company"
-              className="w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:border-[#D4A017] transition-all duration-300"
-              placeholder="Enter your company name (optional)"
             />
           </div>
         )}
@@ -268,53 +268,43 @@ export default function EmailForm({
         {/* Project Type Field */}
         {showProjectType && (
           <div>
-            <label htmlFor="projectType" className="block text-sm font-semibold text-white mb-2">
-              Project Type *
+            <label htmlFor="projectType" className="block text-sm font-semibold text-slate-900 mb-2">
+              Project Type
             </label>
             <select
-              {...register('projectType', { required: 'Please select a project type' })}
+              {...register('projectType')}
               id="projectType"
-              className={`w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white focus:outline-none focus:border-[#D4A017] transition-all duration-300 appearance-none cursor-pointer ${
-                errors.projectType ? 'border-red-400' : ''
-              }`}
+              className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300"
             >
               <option value="">Select project type</option>
-              {projectTypes.map((type) => (
-                <option key={type.value} value={type.value} className="bg-slate-800 text-white">
-                  {type.label}
-                </option>
-              ))}
+              <option value="web-application">Web Application</option>
+              <option value="mobile-app">Mobile App</option>
+              <option value="ecommerce">E-commerce Platform</option>
+              <option value="crm-system">CRM System</option>
+              <option value="pos-system">POS System</option>
+              <option value="custom-software">Custom Software</option>
+              <option value="other">Other</option>
             </select>
-            {errors.projectType && (
-              <motion.p
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="mt-1 text-sm text-red-400 flex items-center"
-              >
-                <i className="ri-error-warning-line mr-1"></i>
-                {errors.projectType.message}
-              </motion.p>
-            )}
           </div>
         )}
 
         {/* Budget Field */}
         {showBudget && (
           <div>
-            <label htmlFor="budget" className="block text-sm font-semibold text-white mb-2">
+            <label htmlFor="budget" className="block text-sm font-semibold text-slate-900 mb-2">
               Budget Range
             </label>
             <select
               {...register('budget')}
               id="budget"
-              className="w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white focus:outline-none focus:border-[#D4A017] transition-all duration-300 appearance-none cursor-pointer"
+              className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300"
             >
               <option value="">Select budget range</option>
-              {budgetRanges.map((budget) => (
-                <option key={budget.value} value={budget.value} className="bg-slate-800 text-white">
-                  {budget.label}
-                </option>
-              ))}
+              <option value="under-10k">Under $10,000</option>
+              <option value="10k-25k">$10,000 - $25,000</option>
+              <option value="25k-50k">$25,000 - $50,000</option>
+              <option value="50k-100k">$50,000 - $100,000</option>
+              <option value="over-100k">Over $100,000</option>
             </select>
           </div>
         )}
@@ -322,27 +312,26 @@ export default function EmailForm({
         {/* Timeline Field */}
         {showTimeline && (
           <div>
-            <label htmlFor="timeline" className="block text-sm font-semibold text-white mb-2">
-              Project Timeline
+            <label htmlFor="timeline" className="block text-sm font-semibold text-slate-900 mb-2">
+              Timeline
             </label>
             <select
               {...register('timeline')}
               id="timeline"
-              className="w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white focus:outline-none focus:border-[#D4A017] transition-all duration-300 appearance-none cursor-pointer"
+              className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300"
             >
               <option value="">Select timeline</option>
-              {timelineOptions.map((timeline) => (
-                <option key={timeline.value} value={timeline.value} className="bg-slate-800 text-white">
-                  {timeline.label}
-                </option>
-              ))}
+              <option value="1-2-months">1-2 months</option>
+              <option value="3-4-months">3-4 months</option>
+              <option value="5-6-months">5-6 months</option>
+              <option value="6-months-plus">6+ months</option>
             </select>
           </div>
         )}
 
         {/* Message Field */}
         <div>
-          <label htmlFor="message" className="block text-sm font-semibold text-white mb-2">
+          <label htmlFor="message" className="block text-sm font-semibold text-slate-900 mb-2">
             Message *
           </label>
           <textarea
@@ -351,9 +340,9 @@ export default function EmailForm({
               minLength: { value: 10, message: 'Message must be at least 10 characters' }
             })}
             id="message"
-            rows={6}
-            className={`w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:border-[#D4A017] transition-all duration-300 resize-none ${
-              errors.message ? 'border-red-400' : ''
+            rows={5}
+            className={`w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-500 focus:outline-none focus:border-amber-500 focus:bg-white transition-all duration-300 resize-none ${
+              errors.message ? 'border-red-400 bg-red-50' : ''
             }`}
             placeholder="Tell us about your project or inquiry..."
           />
@@ -361,7 +350,7 @@ export default function EmailForm({
             <motion.p
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              className="mt-1 text-sm text-red-400 flex items-center"
+              className="mt-1 text-sm text-red-500 flex items-center"
             >
               <i className="ri-error-warning-line mr-1"></i>
               {errors.message.message}
@@ -370,49 +359,43 @@ export default function EmailForm({
         </div>
 
         {/* Submit Button */}
-        <motion.button
-          type="submit"
-          disabled={isSubmitting}
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-          className={`w-full bg-gradient-to-r from-[#D4A017] to-[#F4D03F] text-[#1A2A44] py-4 px-8 rounded-xl font-bold text-lg transition-all duration-300 transform hover:shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none`}
-        >
-          {isSubmitting ? (
-            <div className="flex items-center justify-center">
-              <div className="animate-spin rounded-full h-5 w-5 border-2 border-[#1A2A44] border-t-transparent mr-2"></div>
-              Sending...
-            </div>
-          ) : (
-            submitText
-          )}
-        </motion.button>
+        <div className="pt-4">
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className={`w-full bg-gradient-to-r from-amber-500 to-amber-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none ${
+              submitStatus === 'success' ? 'bg-green-500' : ''
+            }`}
+          >
+            {isSubmitting ? (
+              <div className="flex items-center justify-center">
+                <i className="ri-loader-4-line animate-spin mr-2"></i>
+                Sending...
+              </div>
+            ) : submitStatus === 'success' ? (
+              <div className="flex items-center justify-center">
+                <i className="ri-check-line mr-2"></i>
+                Sent Successfully!
+              </div>
+            ) : (
+              submitText
+            )}
+          </button>
+        </div>
 
-        {/* Status Messages */}
-        <AnimatePresence>
-          {submitStatus === 'success' && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              className="p-4 bg-green-500/20 border border-green-500/30 rounded-xl text-green-400 text-center"
-            >
-              <i className="ri-check-line mr-2"></i>
-              Message sent successfully! We'll get back to you soon.
-            </motion.div>
-          )}
-
-          {submitStatus === 'error' && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              className="p-4 bg-red-500/20 border border-red-500/30 rounded-xl text-red-400 text-center"
-            >
+        {/* Error Message */}
+        {submitStatus === 'error' && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-4 p-4 bg-red-50 border border-red-200 rounded-xl"
+          >
+            <p className="text-red-600 text-sm flex items-center">
               <i className="ri-error-warning-line mr-2"></i>
-              {errorMessage || 'Failed to send message. Please try again.'}
-            </motion.div>
-          )}
-        </AnimatePresence>
+              {errorMessage}
+            </p>
+          </motion.div>
+        )}
       </motion.form>
     </motion.div>
   );
