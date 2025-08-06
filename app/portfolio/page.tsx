@@ -33,6 +33,7 @@ export default function PortfolioPage() {
     {
       id: 1,
       title: "TechFlow CRM",
+      subtitle: "Revolutionizing Customer Relationship Management",
       category: "Web Development",
       description: "Revolutionizing Customer Relationship Management for Tech Companies",
       image: "https://media.istockphoto.com/id/1799735862/photo/businessman-using-tablet-analytics-data-kpi-dashboard-tech-with-charts-metrics-and-kpi-to.jpg?s=612x612&w=0&k=20&c=fm7w_DFktn35NXGeu5LrhgDLkcSRRJLMvelQJVbuC1k=",
@@ -42,11 +43,15 @@ export default function PortfolioPage() {
         "https://media.istockphoto.com/id/1317797235/photo/young-office-worker-using-crm-system-on-her-desktop-computer.jpg?s=612x612&w=0&k=20&c=o4K3xWulOW-e28iYEKL3WGDXFQJ2PfivM-XVtjxqowQ=",
         "https://media.istockphoto.com/id/1455455924/vector/dashboard-ui-design-template-vector.jpg?s=612x612&w=0&k=20&c=ZlivDYAXpnKw1RZxLZ4i-4akSCZMA5NU0VnH7gaAfZM="
       ],
+      technologies: ["React", "Node.js", "PostgreSQL", "AWS"],
+      metrics: ["300% increase in lead conversion", "50% reduction in response time"],
+      color: "blue",
       slug: "techflow-crm"
     },
     {
       id: 2,
       title: "RetailPro POS",
+      subtitle: "Next-Generation Point of Sale System",
       category: "POS System",
       description: "Next-Generation Point of Sale System for Modern Retail",
       image: "https://media.istockphoto.com/id/1474786660/photo/manager-looking-at-products-delivery-details-on-computer.jpg?s=612x612&w=0&k=20&c=gh7f0YwStNrVj22Mg34C6NTEa1CFjqc2TrZZKSKNHcg=",
@@ -55,11 +60,15 @@ export default function PortfolioPage() {
         "https://media.istockphoto.com/id/1399531670/video/weekly-business-planner-diagram-with-graphs-and-financial-analytics-white-interface-with.avif?s=640x640&k=20&c=Gjv-lTsDx1gewOFJ13kYEwyr3-2_BjloYDXfhm4Bm6c=",
         "https://media.istockphoto.com/id/1355687798/photo/analytics-data-kpi-dashboard.jpg?s=612x612&w=0&k=20&c=O1iFSWCTsyEDz3nTkFikJdc6pHYKyxb_ZZPQ4vgRTKM="
       ],
+      technologies: ["Vue.js", "Python", "MongoDB", "Docker"],
+      metrics: ["40% faster checkout", "99.9% uptime"],
+      color: "green",
       slug: "retailpro-pos"
     },
     {
       id: 3,
       title: "EcoShop Marketplace",
+      subtitle: "Sustainable E-commerce Platform",
       category: "E-commerce Platform",
       description: "Sustainable E-commerce Platform for Conscious Consumers",
       image: "https://media.istockphoto.com/id/1385048587/photo/person-holding-tablet-and-buying-wine.jpg?s=612x612&w=0&k=20&c=bBFd8gBkPF6FcUOevsawGTkc_B_06YSMHBPXdpsIjpg=",
@@ -69,11 +78,15 @@ export default function PortfolioPage() {
         "https://media.istockphoto.com/id/1371885257/photo/smart-inventory-warehouse-management-system-concept.jpg?s=612x612&w=0&k=20&c=VpMcgpqREZ_c3jBa_qpvjDUPSR1o9JQLnxoCesikluQ=",
         "https://media.istockphoto.com/id/1281959259/photo/warehouse-management-software-application-in-computer-for-real-time-monitoring.jpg?s=612x612&w=0&k=20&c=pqWOmuiDiQp4N1tMZz4As6ynYooAi9Oqy_gZuU7Xasc="
       ],
+      technologies: ["Next.js", "Stripe", "Prisma", "Vercel"],
+      metrics: ["500+ brands onboarded", "250% user growth"],
+      color: "emerald",
       slug: "ecoshop-marketplace"
     },
     {
       id: 4,
       title: "HealthSync Mobile",
+      subtitle: "Healthcare Management App",
       category: "Mobile Application",
       description: "Connecting Patients and Providers Through Technology",
       image: "https://cdn.dribbble.com/userupload/7011384/file/original-028df0655370c6d2f0b12adb638cd4a8.png?resize=2048x1536&vertical=center",
@@ -85,11 +98,15 @@ export default function PortfolioPage() {
         "https://cdn.dribbble.com/userupload/42738109/file/original-665bd2baa68be85ea6debfea2e9365c6.png?resize=2048x1536&vertical=center",
         "https://cdn.dribbble.com/userupload/17691755/file/original-178bb549a586d5229ec8bc8a4cd6a3bc.jpg?resize=2048x1536&vertical=center"
       ],
+      technologies: ["React Native", "Firebase", "TypeScript", "GraphQL"],
+      metrics: ["50,000+ active users", "98% satisfaction"],
+      color: "purple",
       slug: "healthsync-mobile"
     },
     {
       id: 5,
       title: "FinanceTracker Pro",
+      subtitle: "Financial Management System",
       category: "Web Application",
       description: "AI-Powered Personal Finance Management Platform",
       image: "https://cdn.dribbble.com/userupload/43452774/file/original-158850f42f486a196bbab9a84a75bde1.png?resize=1200x900&vertical=center",
@@ -99,11 +116,15 @@ export default function PortfolioPage() {
         "https://cdn.dribbble.com/userupload/18432047/file/original-08781d3dbea876231b70f9db3a3e3ea3.png?resize=2048x1536&vertical=center",
         "https://cdn.dribbble.com/userupload/9331151/file/original-001c441a25ad64d7f1e4e82cd68b923d.png?resize=2048x1536&vertical=center"
       ],
+      technologies: ["Angular", "Spring Boot", "MySQL", "Azure"],
+      metrics: ["100,000+ users", "85% savings improvement"],
+      color: "amber",
       slug: "financetracker-pro"
     },
     {
       id: 6,
       title: "EventMaster App",
+      subtitle: "Event Management Solution",
       category: "Mobile Application",
       description: "Comprehensive Event Management Solution",
       image: "https://cdn.dribbble.com/userupload/43131711/file/original-126d815217ad8e19e53b3b75ebf6dff3.png?resize=2048x1558&vertical=center",
@@ -113,6 +134,9 @@ export default function PortfolioPage() {
         "https://cdn.dribbble.com/userupload/43419701/file/original-af23bd57805a15e6ad7427b2ee4dd822.png?resize=2048x1510&vertical=center",
         "https://cdn.dribbble.com/userupload/42699826/file/original-d86be81df3fc817543642b76b3c16877.png?resize=2048x1558&vertical=center"
       ],
+      technologies: ["Flutter", "Node.js", "Redis", "Google Cloud"],
+      metrics: ["1M+ events managed", "5M+ tickets sold"],
+      color: "indigo",
       slug: "eventmaster-app"
     }
   ];
