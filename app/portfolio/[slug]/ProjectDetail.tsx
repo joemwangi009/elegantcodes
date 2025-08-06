@@ -19,23 +19,23 @@ export const projectsData = {
     client: "Fashion Retailer",
     duration: "3 months",
     technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    heroImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=600&fit=crop&crop=center",
+    heroImage: "https://images.unsplash.com/photo-1548524238-a971a4a3b523?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8RSUyMGNvbW1lcmNlJTIwd2Vic2l0ZSUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
     description: "A modern e-commerce platform with advanced features including real-time inventory management, secure payment processing, and comprehensive analytics dashboard.",
     gallery: [
       {
-        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center",
+        image: "https://images.unsplash.com/photo-1541506618330-7c369fc759b5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzh8fEUlMjBjb21tZXJjZSUyMHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D",
         caption: "Homepage Design"
       },
       {
-        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center",
+        image: "https://images.unsplash.com/photo-1554196278-f6a49cff326c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fEUlMjBjb21tZXJjZSUyMHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D",
         caption: "Product Catalog"
       },
       {
-        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center",
+        image: "https://images.unsplash.com/photo-1581225218177-9a18341ec628?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fEUlMjBjb21tZXJjZSUyMHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D",
         caption: "Shopping Cart"
       },
       {
-        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center",
+        image: "https://plus.unsplash.com/premium_photo-1661551269670-b13b4944907a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8RSUyMGNvbW1lcmNlJTIwd2Vic2l0ZSUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
         caption: "Admin Dashboard"
       }
     ],
@@ -59,23 +59,23 @@ export const projectsData = {
     client: "Digital Bank",
     duration: "4 months",
     technologies: ["React Native", "Firebase", "Node.js", "AWS"],
-    heroImage: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&h=600&fit=crop&crop=center",
+    heroImage: "https://images.unsplash.com/photo-1609851451108-e937620f1210?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TW9iaWxlJTIwQXBwcyUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
     description: "A secure and user-friendly mobile banking application with biometric authentication, real-time transactions, and comprehensive financial management tools.",
     gallery: [
       {
-        image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&crop=center",
+        image: "https://images.unsplash.com/photo-1633250391894-397930e3f5f2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fE1vYmlsZSUyMEFwcHMlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D",
         caption: "Login Screen"
       },
       {
-        image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&crop=center",
+        image: "https://images.unsplash.com/photo-1551650992-ee4fd47df41f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fE1vYmlsZSUyMEFwcHMlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D",
         caption: "Dashboard"
       },
       {
-        image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&crop=center",
+        image: "https://plus.unsplash.com/premium_photo-1661593486413-d279b1a02e28?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TW9iaWxlJTIwQXBwcyUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
         caption: "Transaction History"
       },
       {
-        image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&crop=center",
+        image: "https://images.unsplash.com/photo-1609921141835-710b7fa6e438?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fE1vYmlsZSUyMEFwcHMlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D",
         caption: "Settings"
       }
     ],
@@ -99,23 +99,23 @@ export const projectsData = {
     client: "Fortune 500 Company",
     duration: "2 months",
     technologies: ["Vue.js", "D3.js", "Python", "PostgreSQL"],
-    heroImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop&crop=center",
+    heroImage: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8V2ViJTIwRGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
     description: "A comprehensive business intelligence dashboard providing real-time analytics, KPI tracking, and data visualization for executive decision-making.",
     gallery: [
       {
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
+        image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fFdlYiUyMERldmVsb3BtZW50fGVufDB8fDB8fHww",
         caption: "Analytics Overview"
       },
       {
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
+        image: "https://images.unsplash.com/photo-1659114538192-0f8caaaaa698?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fHdlYiUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
         caption: "KPI Dashboard"
       },
       {
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
+        image: "https://images.unsplash.com/photo-1576595580361-90a855b84b20?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fHdlYiUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
         caption: "Reports Section"
       },
       {
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
+        image: "https://images.unsplash.com/photo-1542744173-b3cd6377db95?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHdlYiUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
         caption: "User Management"
       }
     ],

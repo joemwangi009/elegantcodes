@@ -13,24 +13,24 @@ export default function AboutSection() {
     {
       name: "Sarah Johnson",
       role: "Lead Developer",
-      image: "/images/team/sarah.jpg", // Revert to original authentic photo
+      image: "https://media.istockphoto.com/id/1214925714/photo/happy-successful-businesswoman-posing-in-office-hall.webp?s=1024x1024&w=is&k=20&c=L8hAK9WxEHWnWtXP_AmANgFYhMwsVJNJN9SKxGCFDx4=",
       bio: "Full-stack developer with 8+ years experience in React, Node.js, and cloud architecture."
     },
     {
       name: "Michael Chen",
       role: "UI/UX Designer",
-      image: "/images/team/michael.jpg", // Revert to original authentic photo
+      image: "https://media.istockphoto.com/id/1701982102/photo/confident-businessman-in-his-office.jpg?s=612x612&w=0&k=20&c=cd8DIQxeqXMNjGeDp6vn9xEVIaXZRb_5Rbovdsz3g7g=",
       bio: "Creative designer specializing in user experience and modern interface design."
     },
     {
       name: "Emily Rodriguez",
       role: "Project Manager",
-      image: "/images/team/emily.jpg", // Revert to original authentic photo
+      image: "https://media.istockphoto.com/id/1299077558/photo/lead-yourself-to-a-life-of-success.jpg?s=612x612&w=0&k=20&c=OQZPSnM1Eq-4Xx8bxJE8KQ5olJFfRw_YMc29aQ0Au6U=",
       bio: "Experienced project manager with expertise in agile methodologies and client relations."
     }
   ];
 
-  const teamImage = "/images/team/team-collaboration.jpg"; // Revert to original authentic photo
+  const teamImage = "https://media.istockphoto.com/id/1562983249/photo/portrait-of-happy-and-successful-businessman-indian-man-smiling-and-looking-at-camera.jpg?s=612x612&w=0&k=20&c=tfBv6taG9nTidFwENcrvEEvRHABN5gDAmg-K1G1Etnc=";
 
   return (
     <section id="about" className="py-20 bg-white">
