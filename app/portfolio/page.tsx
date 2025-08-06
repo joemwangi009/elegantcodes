@@ -32,111 +32,88 @@ export default function PortfolioPage() {
   const portfolioItems: PortfolioItem[] = [
     {
       id: 1,
-      title: 'TechFlow CRM',
-      subtitle: 'Customer Relationship Management System',
-      description: 'A comprehensive CRM solution designed to streamline customer management, sales tracking, and business operations for modern enterprises.',
-      category: 'Custom Apps',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=center',
-      fallbackImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center',
-      slug: 'techflow-crm',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
-      metrics: ['50,000+ users', '99.9% uptime', '40% efficiency gain'],
-      color: 'blue',
+      title: "TechFlow CRM",
+      category: "Web Development",
+      description: "Revolutionizing Customer Relationship Management for Tech Companies",
+      image: "https://media.istockphoto.com/id/1799735862/photo/businessman-using-tablet-analytics-data-kpi-dashboard-tech-with-charts-metrics-and-kpi-to.jpg?s=612x612&w=0&k=20&c=fm7w_DFktn35NXGeu5LrhgDLkcSRRJLMvelQJVbuC1k=",
+      fallbackImage: "https://media.istockphoto.com/id/2198624193/photo/ai-artificial-intelligence-technology-for-data-analysis-research-planning-and-work-generate.jpg?s=612x612&w=0&k=20&c=G_SraVFWSTZ1JZ39lyDJ9_vRbBMUliZyYeQYs01Zs2M=",
       gallery: [
-        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center'
-      ]
+        "https://media.istockphoto.com/id/2218186768/photo/crm-system-concept-with-interconnected-digital-icons-representing-data-marketing-ai-and.jpg?s=612x612&w=0&k=20&c=loxh90NaMxF5cgzOVxOrwx-Mt1KfoCUScfdal9LrHW0=",
+        "https://media.istockphoto.com/id/1317797235/photo/young-office-worker-using-crm-system-on-her-desktop-computer.jpg?s=612x612&w=0&k=20&c=o4K3xWulOW-e28iYEKL3WGDXFQJ2PfivM-XVtjxqowQ=",
+        "https://media.istockphoto.com/id/1455455924/vector/dashboard-ui-design-template-vector.jpg?s=612x612&w=0&k=20&c=ZlivDYAXpnKw1RZxLZ4i-4akSCZMA5NU0VnH7gaAfZM="
+      ],
+      slug: "techflow-crm"
     },
     {
       id: 2,
-      title: 'RetailPro POS',
-      subtitle: 'Advanced Point of Sale System',
-      description: 'Modern point-of-sale solution with inventory management, customer tracking, and comprehensive reporting for retail businesses.',
-      category: 'POS',
-      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop&crop=center',
-      fallbackImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center',
-      slug: 'retailpro-pos',
-      technologies: ['React Native', 'Node.js', 'MongoDB', 'Stripe'],
-      metrics: ['100+ stores', '60% faster checkout', '99.5% accuracy'],
-      color: 'emerald',
+      title: "RetailPro POS",
+      category: "POS System",
+      description: "Next-Generation Point of Sale System for Modern Retail",
+      image: "https://media.istockphoto.com/id/1474786660/photo/manager-looking-at-products-delivery-details-on-computer.jpg?s=612x612&w=0&k=20&c=gh7f0YwStNrVj22Mg34C6NTEa1CFjqc2TrZZKSKNHcg=",
+      fallbackImage: "https://media.istockphoto.com/id/1060524232/vector/infographic-dashboard-template-with-flat-design-graphs-and-charts-information-graphics.jpg?s=612x612&w=0&k=20&c=Qzf8TVgUVjVkqGvHMSJaDMf_SGQPX0VPzDc3_sw5HU0=",
       gallery: [
-        'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop&crop=center'
-      ]
+        "https://media.istockphoto.com/id/1399531670/video/weekly-business-planner-diagram-with-graphs-and-financial-analytics-white-interface-with.avif?s=640x640&k=20&c=Gjv-lTsDx1gewOFJ13kYEwyr3-2_BjloYDXfhm4Bm6c=",
+        "https://media.istockphoto.com/id/1355687798/photo/analytics-data-kpi-dashboard.jpg?s=612x612&w=0&k=20&c=O1iFSWCTsyEDz3nTkFikJdc6pHYKyxb_ZZPQ4vgRTKM="
+      ],
+      slug: "retailpro-pos"
     },
     {
       id: 3,
-      title: 'EcoShop Marketplace',
-      subtitle: 'Multi-Vendor E-commerce Platform',
-      description: 'A sophisticated marketplace platform connecting vendors and customers with advanced features and seamless user experience.',
-      category: 'E-commerce',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center',
-      fallbackImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center',
-      slug: 'ecoshop-marketplace',
-      technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Stripe'],
-      metrics: ['500+ vendors', '25,000+ products', '200% growth'],
-      color: 'purple',
+      title: "EcoShop Marketplace",
+      category: "E-commerce Platform",
+      description: "Sustainable E-commerce Platform for Conscious Consumers",
+      image: "https://media.istockphoto.com/id/1385048587/photo/person-holding-tablet-and-buying-wine.jpg?s=612x612&w=0&k=20&c=bBFd8gBkPF6FcUOevsawGTkc_B_06YSMHBPXdpsIjpg=",
+      fallbackImage: "https://media.istockphoto.com/id/518113858/photo/online-shopping-e-business-digital-technology-concept.jpg?s=612x612&w=0&k=20&c=IA4YP6nACUjrQ1xFlesvkXQnJce6Oyn0N8BdEMG-2iI=",
       gallery: [
-        'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center'
-      ]
+        "https://media.istockphoto.com/id/1001327622/photo/hand-holding-smart-phone-with-black-friday-sale-on-screen-device-over-blur-store-background.jpg?s=612x612&w=0&k=20&c=DJPKxkVnEv45m0BcZaP_gNSt69cPtPpOu45CAD4mFsU=",
+        "https://media.istockphoto.com/id/1371885257/photo/smart-inventory-warehouse-management-system-concept.jpg?s=612x612&w=0&k=20&c=VpMcgpqREZ_c3jBa_qpvjDUPSR1o9JQLnxoCesikluQ=",
+        "https://media.istockphoto.com/id/1281959259/photo/warehouse-management-software-application-in-computer-for-real-time-monitoring.jpg?s=612x612&w=0&k=20&c=pqWOmuiDiQp4N1tMZz4As6ynYooAi9Oqy_gZuU7Xasc="
+      ],
+      slug: "ecoshop-marketplace"
     },
     {
       id: 4,
-      title: 'HealthSync Mobile',
-      subtitle: 'Healthcare Management App',
-      description: 'Mobile application for healthcare providers and patients with appointment scheduling, medical records, and telemedicine capabilities.',
-      category: 'Custom Apps',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop&crop=center',
-      fallbackImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center',
-      slug: 'healthsync-mobile',
-      technologies: ['React Native', 'Firebase', 'Twilio', 'AWS'],
-      metrics: ['10,000+ patients', '4.8/5 rating', 'HIPAA compliant'],
-      color: 'rose',
+      title: "HealthSync Mobile",
+      category: "Mobile Application",
+      description: "Connecting Patients and Providers Through Technology",
+      image: "https://cdn.dribbble.com/userupload/7011384/file/original-028df0655370c6d2f0b12adb638cd4a8.png?resize=2048x1536&vertical=center",
+      fallbackImage: "https://cdn.dribbble.com/userupload/44133119/file/original-d3e01ee9d6d6d0f95ff2729fe4fb3ca2.jpg?resize=2048x1536&vertical=center",
       gallery: [
-        'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=500&fit=crop&crop=center'
-      ]
+        "https://cdn.dribbble.com/userupload/16697593/file/original-17ef16d31ea131120e9b71bf64777826.jpg?resize=2048x1536&vertical=center",
+        "https://cdn.dribbble.com/userupload/13732777/file/original-1d5308001465a565476a33677e246818.jpg?resize=1504x1128&vertical=center",
+        "https://cdn.dribbble.com/userupload/43834626/file/original-b4512f5e10c8326f78cf8387c7bffaef.jpg?resize=2048x1547&vertical=center",
+        "https://cdn.dribbble.com/userupload/42738109/file/original-665bd2baa68be85ea6debfea2e9365c6.png?resize=2048x1536&vertical=center",
+        "https://cdn.dribbble.com/userupload/17691755/file/original-178bb549a586d5229ec8bc8a4cd6a3bc.jpg?resize=2048x1536&vertical=center"
+      ],
+      slug: "healthsync-mobile"
     },
     {
       id: 5,
-      title: 'FinanceTracker Pro',
-      subtitle: 'Financial Management System',
-      description: 'Comprehensive financial management platform for businesses with budgeting, expense tracking, and financial reporting capabilities.',
-      category: 'Custom Apps',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center',
-      fallbackImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=center',
-      slug: 'financetracker-pro',
-      technologies: ['Vue.js', 'Python', 'PostgreSQL', 'Plaid'],
-      metrics: ['$50M+ tracked', '95% accuracy', '30% cost reduction'],
-      color: 'indigo',
+      title: "FinanceTracker Pro",
+      category: "Web Application",
+      description: "AI-Powered Personal Finance Management Platform",
+      image: "https://cdn.dribbble.com/userupload/43452774/file/original-158850f42f486a196bbab9a84a75bde1.png?resize=1200x900&vertical=center",
+      fallbackImage: "https://cdn.dribbble.com/userupload/13346009/file/original-753f8ab1568bf3ee8a5a3bf00c256ddd.png?resize=2048x1536&vertical=center",
       gallery: [
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&crop=center'
-      ]
+        "https://cdn.dribbble.com/userupload/42705579/file/original-b90314b2f14d7f45622579974eb8019e.png?resize=2048x1536&vertical=center",
+        "https://cdn.dribbble.com/userupload/18432047/file/original-08781d3dbea876231b70f9db3a3e3ea3.png?resize=2048x1536&vertical=center",
+        "https://cdn.dribbble.com/userupload/9331151/file/original-001c441a25ad64d7f1e4e82cd68b923d.png?resize=2048x1536&vertical=center"
+      ],
+      slug: "financetracker-pro"
     },
     {
       id: 6,
-      title: 'EventMaster App',
-      subtitle: 'Event Management Solution',
-      description: 'Complete event management platform for organizers with ticketing, attendee management, and event analytics.',
-      category: 'Custom Apps',
-      image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=300&fit=crop&crop=center',
-      fallbackImage: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=300&fit=crop&crop=center',
-      slug: 'eventmaster-app',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      metrics: ['1,000+ events', '50,000+ attendees', '98% satisfaction'],
-      color: 'amber',
+      title: "EventMaster App",
+      category: "Mobile Application",
+      description: "Comprehensive Event Management Solution",
+      image: "https://cdn.dribbble.com/userupload/43131711/file/original-126d815217ad8e19e53b3b75ebf6dff3.png?resize=2048x1558&vertical=center",
+      fallbackImage: "https://cdn.dribbble.com/userupload/43131874/file/original-56597ce808ee84c3c689bfafd4c603bb.png?resize=2048x1558&vertical=center",
       gallery: [
-        'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center'
-      ]
+        "https://cdn.dribbble.com/userupload/43131992/file/original-bba8dde6708791b1cba4242993b72135.png?resize=2048x1558&vertical=center",
+        "https://cdn.dribbble.com/userupload/43419701/file/original-af23bd57805a15e6ad7427b2ee4dd822.png?resize=2048x1510&vertical=center",
+        "https://cdn.dribbble.com/userupload/42699826/file/original-d86be81df3fc817543642b76b3c16877.png?resize=2048x1558&vertical=center"
+      ],
+      slug: "eventmaster-app"
     }
   ];
 

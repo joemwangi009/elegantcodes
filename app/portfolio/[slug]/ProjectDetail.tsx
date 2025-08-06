@@ -13,124 +13,248 @@ import RelatedProjects from './RelatedProjects';
 import Breadcrumbs from './Breadcrumbs';
 
 export const projectsData = {
-  "ecommerce-platform": {
-    title: "E-commerce Platform",
+  "techflow-crm": {
+    title: "TechFlow CRM",
     category: "Web Development",
-    client: "Fashion Retailer",
-    duration: "3 months",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    heroImage: "https://images.unsplash.com/photo-1548524238-a971a4a3b523?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8RSUyMGNvbW1lcmNlJTIwd2Vic2l0ZSUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
-    description: "A modern e-commerce platform with advanced features including real-time inventory management, secure payment processing, and comprehensive analytics dashboard.",
+    client: "TechFlow Solutions",
+    duration: "6 months",
+    technologies: ["React", "Node.js", "PostgreSQL", "AWS"],
+    heroImage: "https://media.istockphoto.com/id/1799735862/photo/businessman-using-tablet-analytics-data-kpi-dashboard-tech-with-charts-metrics-and-kpi-to.jpg?s=612x612&w=0&k=20&c=fm7w_DFktn35NXGeu5LrhgDLkcSRRJLMvelQJVbuC1k=",
+    description: "Revolutionizing Customer Relationship Management for Tech Companies",
     gallery: [
       {
-        image: "https://images.unsplash.com/photo-1541506618330-7c369fc759b5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzh8fEUlMjBjb21tZXJjZSUyMHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D",
-        caption: "Homepage Design"
+        image: "https://media.istockphoto.com/id/2198624193/photo/ai-artificial-intelligence-technology-for-data-analysis-research-planning-and-work-generate.jpg?s=612x612&w=0&k=20&c=G_SraVFWSTZ1JZ39lyDJ9_vRbBMUliZyYeQYs01Zs2M=",
+        caption: "AI Analytics Dashboard"
       },
       {
-        image: "https://images.unsplash.com/photo-1554196278-f6a49cff326c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fEUlMjBjb21tZXJjZSUyMHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D",
-        caption: "Product Catalog"
+        image: "https://media.istockphoto.com/id/2218186768/photo/crm-system-concept-with-interconnected-digital-icons-representing-data-marketing-ai-and.jpg?s=612x612&w=0&k=20&c=loxh90NaMxF5cgzOVxOrwx-Mt1KfoCUScfdal9LrHW0=",
+        caption: "CRM System Interface"
       },
       {
-        image: "https://images.unsplash.com/photo-1581225218177-9a18341ec628?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fEUlMjBjb21tZXJjZSUyMHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D",
-        caption: "Shopping Cart"
+        image: "https://media.istockphoto.com/id/1317797235/photo/young-office-worker-using-crm-system-on-her-desktop-computer.jpg?s=612x612&w=0&k=20&c=o4K3xWulOW-e28iYEKL3WGDXFQJ2PfivM-XVtjxqowQ=",
+        caption: "User Interface"
       },
       {
-        image: "https://plus.unsplash.com/premium_photo-1661551269670-b13b4944907a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8RSUyMGNvbW1lcmNlJTIwd2Vic2l0ZSUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
-        caption: "Admin Dashboard"
+        image: "https://media.istockphoto.com/id/1455455924/vector/dashboard-ui-design-template-vector.jpg?s=612x612&w=0&k=20&c=ZlivDYAXpnKw1RZxLZ4i-4akSCZMA5NU0VnH7gaAfZM=",
+        caption: "Dashboard Design"
       }
     ],
     features: [
-      "Responsive design for all devices",
-      "Secure payment gateway integration",
-      "Real-time inventory management",
-      "Advanced search and filtering",
-      "Customer review system",
-      "Order tracking and notifications"
-    ],
-    results: [
-      "300% increase in online sales",
-      "50% reduction in cart abandonment",
-      "Improved customer satisfaction scores"
-    ]
-  },
-  "mobile-banking-app": {
-    title: "Mobile Banking App",
-    category: "Mobile Development",
-    client: "Digital Bank",
-    duration: "4 months",
-    technologies: ["React Native", "Firebase", "Node.js", "AWS"],
-    heroImage: "https://images.unsplash.com/photo-1609851451108-e937620f1210?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TW9iaWxlJTIwQXBwcyUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
-    description: "A secure and user-friendly mobile banking application with biometric authentication, real-time transactions, and comprehensive financial management tools.",
-    gallery: [
-      {
-        image: "https://images.unsplash.com/photo-1633250391894-397930e3f5f2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fE1vYmlsZSUyMEFwcHMlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D",
-        caption: "Login Screen"
-      },
-      {
-        image: "https://images.unsplash.com/photo-1551650992-ee4fd47df41f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fE1vYmlsZSUyMEFwcHMlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D",
-        caption: "Dashboard"
-      },
-      {
-        image: "https://plus.unsplash.com/premium_photo-1661593486413-d279b1a02e28?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TW9iaWxlJTIwQXBwcyUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
-        caption: "Transaction History"
-      },
-      {
-        image: "https://images.unsplash.com/photo-1609921141835-710b7fa6e438?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fE1vYmlsZSUyMEFwcHMlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D",
-        caption: "Settings"
-      }
-    ],
-    features: [
-      "Biometric authentication",
-      "Real-time transaction monitoring",
-      "Bill payment and transfers",
-      "Investment portfolio tracking",
-      "Budget planning tools",
-      "Secure messaging system"
-    ],
-    results: [
-      "200% increase in mobile transactions",
-      "95% user satisfaction rating",
-      "Enhanced security compliance"
-    ]
-  },
-  "corporate-dashboard": {
-    title: "Corporate Dashboard",
-    category: "Web Development",
-    client: "Fortune 500 Company",
-    duration: "2 months",
-    technologies: ["Vue.js", "D3.js", "Python", "PostgreSQL"],
-    heroImage: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8V2ViJTIwRGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
-    description: "A comprehensive business intelligence dashboard providing real-time analytics, KPI tracking, and data visualization for executive decision-making.",
-    gallery: [
-      {
-        image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fFdlYiUyMERldmVsb3BtZW50fGVufDB8fDB8fHww",
-        caption: "Analytics Overview"
-      },
-      {
-        image: "https://images.unsplash.com/photo-1659114538192-0f8caaaaa698?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fHdlYiUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
-        caption: "KPI Dashboard"
-      },
-      {
-        image: "https://images.unsplash.com/photo-1576595580361-90a855b84b20?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fHdlYiUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
-        caption: "Reports Section"
-      },
-      {
-        image: "https://images.unsplash.com/photo-1542744173-b3cd6377db95?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHdlYiUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
-        caption: "User Management"
-      }
-    ],
-    features: [
-      "Real-time data visualization",
-      "Customizable KPI widgets",
-      "Interactive charts and graphs",
-      "Export and reporting tools",
+      "Real-time data synchronization",
+      "Advanced analytics and reporting",
       "Role-based access control",
-      "Mobile-responsive design"
+      "API integrations",
+      "Mobile-responsive design",
+      "Automated workflows"
     ],
     results: [
-      "40% faster decision-making process",
-      "Improved data accuracy and visibility",
-      "Enhanced executive reporting capabilities"
+      "300% increase in lead conversion rates",
+      "50% reduction in customer response time",
+      "200% improvement in sales team productivity"
+    ]
+  },
+  "retailpro-pos": {
+    title: "RetailPro POS",
+    category: "POS System",
+    client: "RetailPro Chain",
+    duration: "8 months",
+    technologies: ["Vue.js", "Python", "MongoDB", "Docker"],
+    heroImage: "https://media.istockphoto.com/id/1474786660/photo/manager-looking-at-products-delivery-details-on-computer.jpg?s=612x612&w=0&k=20&c=gh7f0YwStNrVj22Mg34C6NTEa1CFjqc2TrZZKSKNHcg=",
+    description: "Next-Generation Point of Sale System for Modern Retail",
+    gallery: [
+      {
+        image: "https://media.istockphoto.com/id/1060524232/vector/infographic-dashboard-template-with-flat-design-graphs-and-charts-information-graphics.jpg?s=612x612&w=0&k=20&c=Qzf8TVgUVjVkqGvHMSJaDMf_SGQPX0VPzDc3_sw5HU0=",
+        caption: "Analytics Dashboard"
+      },
+      {
+        image: "https://media.istockphoto.com/id/1399531670/video/weekly-business-planner-diagram-with-graphs-and-financial-analytics-white-interface-with.avif?s=640x640&k=20&c=Gjv-lTsDx1gewOFJ13kYEwyr3-2_BjloYDXfhm4Bm6c=",
+        caption: "Business Planning"
+      },
+      {
+        image: "https://media.istockphoto.com/id/1355687798/photo/analytics-data-kpi-dashboard.jpg?s=612x612&w=0&k=20&c=O1iFSWCTsyEDz3nTkFikJdc6pHYKyxb_ZZPQ4vgRTKM=",
+        caption: "KPI Dashboard"
+      }
+    ],
+    features: [
+      "Touch-friendly interface",
+      "Real-time inventory tracking",
+      "Multi-location support",
+      "Payment processing",
+      "Customer loyalty program",
+      "Offline functionality"
+    ],
+    results: [
+      "40% faster checkout process",
+      "99.9% system uptime",
+      "60% reduction in inventory discrepancies"
+    ]
+  },
+  "ecoshop-marketplace": {
+    title: "EcoShop Marketplace",
+    category: "E-commerce Platform",
+    client: "EcoShop Inc.",
+    duration: "10 months",
+    technologies: ["Next.js", "Stripe", "Prisma", "Vercel"],
+    heroImage: "https://media.istockphoto.com/id/1385048587/photo/person-holding-tablet-and-buying-wine.jpg?s=612x612&w=0&k=20&c=bBFd8gBkPF6FcUOevsawGTkc_B_06YSMHBPXdpsIjpg=",
+    description: "Sustainable E-commerce Platform for Conscious Consumers",
+    gallery: [
+      {
+        image: "https://media.istockphoto.com/id/518113858/photo/online-shopping-e-business-digital-technology-concept.jpg?s=612x612&w=0&k=20&c=IA4YP6nACUjrQ1xFlesvkXQnJce6Oyn0N8BdEMG-2iI=",
+        caption: "Online Shopping Interface"
+      },
+      {
+        image: "https://media.istockphoto.com/id/1001327622/photo/hand-holding-smart-phone-with-black-friday-sale-on-screen-device-over-blur-store-background.jpg?s=612x612&w=0&k=20&c=DJPKxkVnEv45m0BcZaP_gNSt69cPtPpOu45CAD4mFsU=",
+        caption: "Mobile Shopping"
+      },
+      {
+        image: "https://media.istockphoto.com/id/1371885257/photo/smart-inventory-warehouse-management-system-concept.jpg?s=612x612&w=0&k=20&c=VpMcgpqREZ_c3jBa_qpvjDUPSR1o9JQLnxoCesikluQ=",
+        caption: "Inventory Management"
+      },
+      {
+        image: "https://media.istockphoto.com/id/1281959259/photo/warehouse-management-software-application-in-computer-for-real-time-monitoring.jpg?s=612x612&w=0&k=20&c=pqWOmuiDiQp4N1tMZz4As6ynYooAi9Oqy_gZuU7Xasc=",
+        caption: "Warehouse Management"
+      }
+    ],
+    features: [
+      "Multi-vendor marketplace",
+      "Sustainability verification",
+      "Global shipping optimization",
+      "AI-powered recommendations",
+      "Carbon footprint tracking",
+      "Vendor analytics"
+    ],
+    results: [
+      "500+ sustainable brands onboarded",
+      "250% growth in monthly active users",
+      "45% increase in average order value"
+    ]
+  },
+  "healthsync-mobile": {
+    title: "HealthSync Mobile",
+    category: "Mobile Application",
+    client: "HealthSync Medical",
+    duration: "9 months",
+    technologies: ["React Native", "Firebase", "TypeScript", "GraphQL"],
+    heroImage: "https://cdn.dribbble.com/userupload/7011384/file/original-028df0655370c6d2f0b12adb638cd4a8.png?resize=2048x1536&vertical=center",
+    description: "Connecting Patients and Providers Through Technology",
+    gallery: [
+      {
+        image: "https://cdn.dribbble.com/userupload/44133119/file/original-d3e01ee9d6d6d0f95ff2729fe4fb3ca2.jpg?resize=2048x1536&vertical=center",
+        caption: "Patient Dashboard"
+      },
+      {
+        image: "https://cdn.dribbble.com/userupload/16697593/file/original-17ef16d31ea131120e9b71bf64777826.jpg?resize=2048x1536&vertical=center",
+        caption: "Telemedicine Interface"
+      },
+      {
+        image: "https://cdn.dribbble.com/userupload/13732777/file/original-1d5308001465a565476a33677e246818.jpg?resize=1504x1128&vertical=center",
+        caption: "Medical Records"
+      },
+      {
+        image: "https://cdn.dribbble.com/userupload/43834626/file/original-b4512f5e10c8326f78cf8387c7bffaef.jpg?resize=2048x1547&vertical=center",
+        caption: "Appointment Scheduling"
+      },
+      {
+        image: "https://cdn.dribbble.com/userupload/42738109/file/original-665bd2baa68be85ea6debfea2e9365c6.png?resize=2048x1536&vertical=center",
+        caption: "Health Analytics"
+      },
+      {
+        image: "https://cdn.dribbble.com/userupload/17691755/file/original-178bb549a586d5229ec8bc8a4cd6a3bc.jpg?resize=2048x1536&vertical=center",
+        caption: "Provider Interface"
+      }
+    ],
+    features: [
+      "HIPAA-compliant security",
+      "Real-time video consultations",
+      "Medical records management",
+      "Appointment scheduling",
+      "Offline data access",
+      "Multi-platform support"
+    ],
+    results: [
+      "50,000+ active users within 6 months",
+      "98% patient satisfaction rating",
+      "70% reduction in missed appointments"
+    ]
+  },
+  "financetracker-pro": {
+    title: "FinanceTracker Pro",
+    category: "Web Application",
+    client: "FinanceTracker Solutions",
+    duration: "7 months",
+    technologies: ["Angular", "Spring Boot", "MySQL", "Azure"],
+    heroImage: "https://cdn.dribbble.com/userupload/43452774/file/original-158850f42f486a196bbab9a84a75bde1.png?resize=1200x900&vertical=center",
+    description: "AI-Powered Personal Finance Management Platform",
+    gallery: [
+      {
+        image: "https://cdn.dribbble.com/userupload/13346009/file/original-753f8ab1568bf3ee8a5a3bf00c256ddd.png?resize=2048x1536&vertical=center",
+        caption: "Financial Dashboard"
+      },
+      {
+        image: "https://cdn.dribbble.com/userupload/42705579/file/original-b90314b2f14d7f45622579974eb8019e.png?resize=2048x1536&vertical=center",
+        caption: "Budget Management"
+      },
+      {
+        image: "https://cdn.dribbble.com/userupload/18432047/file/original-08781d3dbea876231b70f9db3a3e3ea3.png?resize=2048x1536&vertical=center",
+        caption: "Investment Tracking"
+      },
+      {
+        image: "https://cdn.dribbble.com/userupload/9331151/file/original-001c441a25ad64d7f1e4e82cd68b923d.png?resize=2048x1536&vertical=center",
+        caption: "AI Insights"
+      }
+    ],
+    features: [
+      "Bank-level security",
+      "Multi-institution integration",
+      "AI-powered categorization",
+      "Predictive analytics",
+      "Mobile-first design",
+      "Real-time synchronization"
+    ],
+    results: [
+      "100,000+ users in first year",
+      "85% improvement in user savings rates",
+      "60% better budget adherence"
+    ]
+  },
+  "eventmaster-app": {
+    title: "EventMaster App",
+    category: "Mobile Application",
+    client: "EventMaster Corp",
+    duration: "11 months",
+    technologies: ["Flutter", "Node.js", "Redis", "Google Cloud"],
+    heroImage: "https://cdn.dribbble.com/userupload/43131711/file/original-126d815217ad8e19e53b3b75ebf6dff3.png?resize=2048x1558&vertical=center",
+    description: "Comprehensive Event Management Solution",
+    gallery: [
+      {
+        image: "https://cdn.dribbble.com/userupload/43131874/file/original-56597ce808ee84c3c689bfafd4c603bb.png?resize=2048x1558&vertical=center",
+        caption: "Event Dashboard"
+      },
+      {
+        image: "https://cdn.dribbble.com/userupload/43131992/file/original-bba8dde6708791b1cba4242993b72135.png?resize=2048x1558&vertical=center",
+        caption: "Ticketing System"
+      },
+      {
+        image: "https://cdn.dribbble.com/userupload/43419701/file/original-af23bd57805a15e6ad7427b2ee4dd822.png?resize=2048x1510&vertical=center",
+        caption: "Networking Features"
+      },
+      {
+        image: "https://cdn.dribbble.com/userupload/42699826/file/original-d86be81df3fc817543642b76b3c16877.png?resize=2048x1558&vertical=center",
+        caption: "Analytics Dashboard"
+      }
+    ],
+    features: [
+      "Real-time synchronization",
+      "Advanced ticketing system",
+      "AI networking recommendations",
+      "Multi-language support",
+      "Scalable architecture",
+      "Comprehensive analytics"
+    ],
+    results: [
+      "1M+ events managed successfully",
+      "5M+ tickets sold through platform",
+      "95% customer satisfaction rating"
     ]
   }
 };
