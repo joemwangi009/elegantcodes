@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
@@ -50,11 +49,11 @@ export default function HeroSection() {
   // Auto-play functionality
   useEffect(() => {
     if (!isAutoPlaying) return;
-    
+
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
     }, 5000);
-    
+
     return () => clearInterval(interval);
   }, [isAutoPlaying, heroSlides.length]);
 
@@ -109,25 +108,25 @@ export default function HeroSection() {
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url('${slide.image}')` }}
             />
-            
+
             {/* Gradient Overlay */}
             <div className={`absolute inset-0 bg-gradient-to-r ${slide.overlay}`} />
-            
+
             {/* Content */}
             <div className="relative z-10 h-full flex items-center justify-center">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div className={`animate-fade-in-up delay-${index * 200}`}>
-                  <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-6 font-poppins leading-tight">
+                  <h1 className="hero-title font-poppins text-white mb-6 animate-fade-in">
                     {slide.title}
                     <span className={`text-transparent bg-gradient-to-r ${slide.accent} bg-clip-text block mt-4`}>
                       {slide.subtitle}
                     </span>
                   </h1>
-                  
-                  <p className="text-xl sm:text-2xl lg:text-3xl text-slate-200 mb-12 max-w-4xl mx-auto leading-relaxed font-inter">
+
+                  <p className="hero-subtitle text-slate-300 mb-8 max-w-4xl mx-auto animate-slide-up">
                     {slide.description}
                   </p>
-                  
+
                   <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                     <button
                       onClick={scrollToQuote}
@@ -136,7 +135,7 @@ export default function HeroSection() {
                       <span className="relative z-10">Get a Quote</span>
                       <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                     </button>
-                    
+
                     <button
                       onClick={scrollToServices}
                       className="group relative border-2 border-white text-white hover:bg-white hover:text-slate-900 px-12 py-5 rounded-full font-bold text-xl transition-all duration-300 transform hover:scale-110 hover:shadow-2xl whitespace-nowrap cursor-pointer overflow-hidden"
@@ -158,7 +157,7 @@ export default function HeroSection() {
         >
           <i className="ri-arrow-left-line text-2xl"></i>
         </button>
-        
+
         <button
           onClick={nextSlide}
           className="absolute right-8 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110 z-20"
@@ -211,33 +210,53 @@ export default function HeroSection() {
             transform: translateY(0);
           }
         }
-        
+
         @keyframes float {
           0%, 100% { transform: translateY(0px); }
           50% { transform: translateY(-20px); }
         }
-        
+
         @keyframes float-delayed {
           0%, 100% { transform: translateY(0px); }
           50% { transform: translateY(-15px); }
         }
-        
+
         .animate-fade-in-up {
           animation: fade-in-up 1s ease-out;
         }
-        
+
         .animate-float {
           animation: float 6s ease-in-out infinite;
         }
-        
+
         .animate-float-delayed {
           animation: float-delayed 8s ease-in-out infinite;
         }
-        
+
         .delay-0 { animation-delay: 0ms; }
         .delay-200 { animation-delay: 200ms; }
         .delay-400 { animation-delay: 400ms; }
         .delay-600 { animation-delay: 600ms; }
+
+        /* Professional font sizing */
+        .hero-title {
+          font-size: clamp(3rem, 7vw, 4.5rem); /* Adjust base and max sizes */
+          line-height: 1.1;
+        }
+
+        .hero-subtitle {
+          font-size: clamp(1.2rem, 3vw, 1.5rem); /* Adjust base and max sizes */
+          line-height: 1.3;
+        }
+
+        .hero-description {
+          font-size: clamp(1rem, 2.5vw, 1.25rem); /* Adjust base and max sizes */
+          line-height: 1.4;
+        }
+
+        .hero-button-text {
+          font-size: clamp(1rem, 2vw, 1.1rem); /* Adjust base and max sizes */
+        }
       `}</style>
     </section>
   );

@@ -12,7 +12,7 @@
   
   body {
     @apply font-inter text-slate-900 bg-white;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.6;
   }
   
@@ -55,11 +55,11 @@
 @layer components {
   /* Button styles */
   .btn-primary {
-    @apply bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-slate-900 px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-opacity-50;
+    @apply bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-slate-900 px-5 py-2.5 text-sm rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-opacity-50;
   }
   
   .btn-secondary {
-    @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-slate-900 px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-opacity-50;
+    @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-slate-900 px-5 py-2.5 text-sm rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-opacity-50;
   }
   
   .btn-ghost {
@@ -92,6 +92,23 @@
   /* Gradient text */
   .gradient-text {
     @apply text-transparent bg-gradient-to-r from-primary-500 to-primary-600 bg-clip-text;
+  }
+  
+  /* Professional typography */
+  .hero-title {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-bold;
+  }
+  
+  .hero-subtitle {
+    @apply text-lg sm:text-xl lg:text-2xl;
+  }
+  
+  .section-title {
+    @apply text-2xl sm:text-3xl lg:text-4xl font-bold;
+  }
+  
+  .section-subtitle {
+    @apply text-base sm:text-lg lg:text-xl;
   }
   
   /* Glass effect */
