@@ -11,7 +11,8 @@ export default function ServicesSection() {
       description: "Custom websites and web applications built with modern technologies.",
       icon: "ri-global-line",
       image: "https://readdy.ai/api/search-image?query=Modern%20web%20development%20workspace%2C%20multiple%20screens%20showing%20code%20and%20websites%2C%20professional%20developer%20environment%2C%20clean%20desk%20setup%2C%20high%20quality%20photography&width=400&height=300&seq=services-web&orientation=landscape",
-      features: ["Responsive Design", "SEO Optimization", "Performance", "Security"]
+      features: ["Responsive Design", "SEO Optimization", "Performance", "Security"],
+      link: "/services/web-development"
     },
     {
       id: 2,
@@ -19,7 +20,8 @@ export default function ServicesSection() {
       description: "Native and cross-platform mobile applications for iOS and Android.",
       icon: "ri-smartphone-line",
       image: "https://readdy.ai/api/search-image?query=Mobile%20app%20development%20workspace%2C%20smartphones%20and%20tablets%20displaying%20apps%2C%20modern%20mobile%20development%20environment%2C%20clean%20desk%20setup%2C%20high%20quality%20photography&width=400&height=300&seq=services-mobile&orientation=landscape",
-      features: ["Native Development", "Cross-platform", "App Store Optimization", "Push Notifications"]
+      features: ["Native Development", "Cross-platform", "App Store Optimization", "Push Notifications"],
+      link: "/services/mobile-development"
     },
     {
       id: 3,
@@ -27,7 +29,8 @@ export default function ServicesSection() {
       description: "Complete online store solutions with payment processing and inventory management.",
       icon: "ri-shopping-cart-line",
       image: "https://readdy.ai/api/search-image?query=E-commerce%20website%20development%2C%20online%20shopping%20interface%2C%20modern%20e-commerce%20platform%2C%20professional%20online%20store%20design%2C%20high%20quality%20photography&width=400&height=300&seq=services-ecommerce&orientation=landscape",
-      features: ["Payment Integration", "Inventory Management", "Order Processing", "Analytics"]
+      features: ["Payment Integration", "Inventory Management", "Order Processing", "Analytics"],
+      link: "/services/ecommerce"
     },
     {
       id: 4,
@@ -35,7 +38,8 @@ export default function ServicesSection() {
       description: "Scalable cloud infrastructure and deployment solutions for your applications.",
       icon: "ri-cloud-line",
       image: "https://readdy.ai/api/search-image?query=Cloud%20computing%20and%20infrastructure%2C%20server%20room%20or%20data%20center%2C%20modern%20cloud%20technology%2C%20professional%20IT%20environment%2C%20high%20quality%20photography&width=400&height=300&seq=services-cloud&orientation=landscape",
-      features: ["AWS/Azure/GCP", "DevOps", "Monitoring", "Backup & Recovery"]
+      features: ["AWS/Azure/GCP", "DevOps", "Monitoring", "Backup & Recovery"],
+      link: "/services/cloud-solutions"
     }
   ];
 
