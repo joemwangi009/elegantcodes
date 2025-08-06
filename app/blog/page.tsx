@@ -33,7 +33,7 @@ export default function BlogPage() {
       date: 'December 15, 2024',
       category: 'Development',
       readTime: '5 min read',
-      image: 'https://readdy.ai/api/search-image?query=Modern%20software%20development%20concepts%20visualization%20with%20elegant%20coding%20interfaces%2C%20futuristic%20programming%20environment%20with%20dark%20navy%20and%20gold%20theme%2C%20sophisticated%20technology%20trends%20illustration%2C%20clean%20tech%20industry%20blog%20header%20design%2C%20professional%20software%20engineering%20concepts&width=800&height=500&seq=blog-1&orientation=landscape',
+      image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop&crop=center',
       slug: 'future-of-custom-software-development',
       featured: true,
       tags: ['AI', 'Cloud Computing', 'Microservices', 'DevOps']
@@ -46,7 +46,7 @@ export default function BlogPage() {
       date: 'December 10, 2024',
       category: 'E-commerce',
       readTime: '7 min read',
-      image: 'https://readdy.ai/api/search-image?query=Professional%20e-commerce%20optimization%20dashboard%20with%20sales%20analytics%2C%20modern%20online%20retail%20performance%20metrics%2C%20dark%20navy%20business%20interface%20with%20gold%20accents%2C%20sophisticated%20digital%20commerce%20visualization%2C%20clean%20business%20growth%20charts%20and%20data&width=800&height=500&seq=blog-2&orientation=landscape',
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop&crop=center',
       slug: 'ecommerce-optimization-strategies-2025',
       featured: true,
       tags: ['Conversion', 'UX Design', 'Analytics', 'Mobile Commerce']
@@ -59,7 +59,7 @@ export default function BlogPage() {
       date: 'December 5, 2024',
       category: 'POS Systems',
       readTime: '6 min read',
-      image: 'https://readdy.ai/api/search-image?query=Modern%20point%20of%20sale%20system%20architecture%20diagram%2C%20professional%20retail%20technology%20infrastructure%2C%20dark%20navy%20and%20gold%20themed%20business%20system%20design%2C%20sophisticated%20POS%20development%20concepts%2C%20clean%20technical%20illustration%20for%20business%20systems&width=800&height=500&seq=blog-3&orientation=landscape',
+      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop&crop=center',
       slug: 'building-scalable-pos-systems',
       tags: ['Retail', 'Payment Processing', 'Inventory Management', 'Cloud POS']
     },
@@ -71,7 +71,7 @@ export default function BlogPage() {
       date: 'November 28, 2024',
       category: 'Security',
       readTime: '8 min read',
-      image: 'https://readdy.ai/api/search-image?query=Professional%20cybersecurity%20concepts%20with%20API%20protection%20visualization%2C%20modern%20security%20infrastructure%20design%2C%20dark%20navy%20and%20gold%20themed%20security%20dashboard%2C%20sophisticated%20data%20protection%20illustration%2C%20clean%20technical%20security%20concepts%20for%20business&width=800&height=500&seq=blog-4&orientation=landscape',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center',
       slug: 'api-security-best-practices',
       tags: ['Cybersecurity', 'API Design', 'Authentication', 'Data Protection']
     },
@@ -83,7 +83,7 @@ export default function BlogPage() {
       date: 'November 20, 2024',
       category: 'Mobile',
       readTime: '4 min read',
-      image: 'https://readdy.ai/api/search-image?query=Mobile%20application%20performance%20monitoring%20dashboard%20with%20elegant%20metrics%20display%2C%20professional%20app%20optimization%20interface%2C%20dark%20navy%20mobile%20development%20theme%20with%20gold%20highlights%2C%20sophisticated%20mobile%20analytics%20visualization%2C%20clean%20app%20performance%20data&width=800&height=500&seq=blog-5&orientation=landscape',
+      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=500&fit=crop&crop=center',
       slug: 'mobile-app-performance-optimization',
       tags: ['Mobile Development', 'Performance', 'User Experience', 'Analytics']
     },
@@ -95,7 +95,7 @@ export default function BlogPage() {
       date: 'November 15, 2024',
       category: 'Cloud',
       readTime: '10 min read',
-      image: 'https://readdy.ai/api/search-image?query=Professional%20cloud%20infrastructure%20migration%20diagram%2C%20modern%20cloud%20computing%20architecture%20visualization%2C%20dark%20navy%20and%20gold%20themed%20enterprise%20cloud%20design%2C%20sophisticated%20cloud%20services%20illustration%2C%20clean%20technical%20cloud%20migration%20concepts&width=800&height=500&seq=blog-6&orientation=landscape',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&crop=center',
       slug: 'cloud-migration-strategies',
       tags: ['Cloud Computing', 'Migration', 'AWS', 'Azure']
     },
@@ -107,7 +107,7 @@ export default function BlogPage() {
       date: 'November 10, 2024',
       category: 'AI & Tech',
       readTime: '9 min read',
-      image: 'https://readdy.ai/api/search-image?query=Professional%20artificial%20intelligence%20business%20integration%20visualization%2C%20modern%20AI%20technology%20dashboard%20with%20neural%20networks%2C%20dark%20navy%20and%20gold%20themed%20AI%20interface%2C%20sophisticated%20machine%20learning%20concepts%2C%20clean%20tech%20innovation%20illustration&width=800&height=500&seq=blog-7&orientation=landscape',
+      image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop&crop=center',
       slug: 'ai-integration-business-applications',
       tags: ['Artificial Intelligence', 'Machine Learning', 'Business Automation', 'Innovation']
     },
@@ -119,7 +119,7 @@ export default function BlogPage() {
       date: 'November 5, 2024',
       category: 'Database',
       readTime: '12 min read',
-      image: 'https://readdy.ai/api/search-image?query=Professional%20database%20architecture%20visualization%20with%20high%20performance%20metrics%2C%20modern%20database%20design%20concepts%2C%20dark%20navy%20and%20gold%20themed%20data%20infrastructure%2C%20sophisticated%20database%20management%20illustration%2C%20clean%20technical%20data%20visualization&width=800&height=500&seq=blog-8&orientation=landscape',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center',
       slug: 'database-design-high-performance',
       tags: ['Database Design', 'Performance', 'Scalability', 'Architecture']
     },
@@ -131,7 +131,7 @@ export default function BlogPage() {
       date: 'October 30, 2024',
       category: 'Architecture',
       readTime: '11 min read',
-      image: 'https://readdy.ai/api/search-image?query=Professional%20microservices%20architecture%20diagram%2C%20modern%20distributed%20system%20design%2C%20dark%20navy%20and%20gold%20themed%20enterprise%20architecture%2C%20sophisticated%20service%20oriented%20design%2C%20clean%20technical%20microservices%20visualization&width=800&height=500&seq=blog-9&orientation=landscape',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&crop=center',
       slug: 'microservices-architecture-best-practices',
       tags: ['Microservices', 'Architecture', 'Scalability', 'Enterprise']
     }

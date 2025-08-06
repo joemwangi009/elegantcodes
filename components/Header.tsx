@@ -39,7 +39,7 @@ export default function Header() {
       description: 'Native and cross-platform mobile development',
       url: '/services',
       category: 'Custom Applications',
-      thumbnail: 'https://readdy.ai/api/search-image?query=mobile%20app%20development%20icon&width=40&height=40&seq=search-mobile&orientation=squarish'
+      thumbnail: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=40&h=40&fit=crop&crop=center'
     },
     {
       type: 'service',
@@ -47,7 +47,7 @@ export default function Header() {
       description: 'Scalable and responsive web solutions',
       url: '/services',
       category: 'Custom Applications',
-      thumbnail: 'https://readdy.ai/api/search-image?query=web%20development%20icon&width=40&height=40&seq=search-web&orientation=squarish'
+      thumbnail: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=40&h=40&fit=crop&crop=center'
     },
     {
       type: 'service',
@@ -55,7 +55,7 @@ export default function Header() {
       description: 'Complete online store platforms',
       url: '/services',
       category: 'E-commerce',
-      thumbnail: 'https://readdy.ai/api/search-image?query=ecommerce%20shopping%20icon&width=40&height=40&seq=search-ecom&orientation=squarish'
+      thumbnail: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=40&h=40&fit=crop&crop=center'
     },
     {
       type: 'service',
@@ -63,7 +63,7 @@ export default function Header() {
       description: 'Advanced point-of-sale solutions',
       url: '/services',
       category: 'POS Systems',
-      thumbnail: 'https://readdy.ai/api/search-image?query=point%20of%20sale%20icon&width=40&height=40&seq=search-pos&orientation=squarish'
+      thumbnail: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=40&h=40&fit=crop&crop=center'
     },
     {
       type: 'portfolio',
@@ -71,7 +71,7 @@ export default function Header() {
       description: 'Custom CRM solution for technology companies',
       url: '/portfolio/techflow-crm',
       category: 'Web Apps',
-      thumbnail: 'https://readdy.ai/api/search-image?query=CRM%20dashboard%20thumbnail&width=40&height=40&seq=search-crm&orientation=squarish'
+      thumbnail: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=40&h=40&fit=crop&crop=center'
     },
     {
       type: 'portfolio',
@@ -79,7 +79,7 @@ export default function Header() {
       description: 'Advanced POS system for retail chains',
       url: '/portfolio/retailpro-pos',
       category: 'POS Systems',
-      thumbnail: 'https://readdy.ai/api/search-image?query=retail%20POS%20thumbnail&width=40&height=40&seq=search-retail&orientation=squarish'
+      thumbnail: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=40&h=40&fit=crop&crop=center'
     },
     {
       type: 'blog',
@@ -87,7 +87,7 @@ export default function Header() {
       description: 'Exploring emerging trends in software development',
       url: '/blog/future-of-custom-software-development',
       category: 'Development',
-      thumbnail: 'https://readdy.ai/api/search-image?query=software%20development%20blog%20icon&width=40&height=40&seq=search-blog1&orientation=squarish'
+      thumbnail: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=40&h=40&fit=crop&crop=center'
     },
     {
       type: 'blog',
@@ -95,7 +95,7 @@ export default function Header() {
       description: 'Essential strategies to maximize conversions',
       url: '/blog/ecommerce-optimization-strategies-2025',
       category: 'E-commerce',
-      thumbnail: 'https://readdy.ai/api/search-image?query=ecommerce%20optimization%20icon&width=40&height=40&seq=search-blog2&orientation=squarish'
+      thumbnail: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=40&h=40&fit=crop&crop=center'
     },
   ];
 
@@ -187,7 +187,6 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-slate-900/95 backdrop-blur-sm z-50 border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top Row - Logo, Navigation, and Actions */}
         <div className="flex items-center justify-between h-16">
           {/* Logo - Far Left */}
           <div className="flex items-center flex-shrink-0">
@@ -212,6 +211,54 @@ export default function Header() {
               </a>
             ))}
           </nav>
+
+          {/* Global Search - Compact and Professional */}
+          <div className="hidden md:flex flex-1 max-w-md mx-8 relative" ref={searchRef}>
+            <div className="relative w-full">
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => handleSearch(e.target.value)}
+                onFocus={() => searchQuery.length > 1 && setShowSearchResults(true)}
+                placeholder="Search services, projects, articles..."
+                className="w-full pl-10 pr-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-400 focus:border-amber-400 focus:outline-none transition-colors duration-200"
+                aria-label="Global search"
+              />
+              <i className="ri-search-line absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400"></i>
+              
+              {/* Search Results Dropdown */}
+              {showSearchResults && searchResults.length > 0 && (
+                <div className="absolute top-full left-0 right-0 mt-2 bg-slate-800 border border-slate-700 rounded-lg shadow-xl max-h-96 overflow-y-auto z-50">
+                  {searchResults.map((result, index) => (
+                    <div
+                      key={`${result.type}-${index}`}
+                      className="flex items-center px-4 py-3 hover:bg-slate-700 transition-colors duration-200 border-b border-slate-700 last:border-b-0 cursor-pointer"
+                      onClick={() => handleSearchResultClick(result.url)}
+                    >
+                      <img
+                        src={result.thumbnail}
+                        alt=""
+                        className="w-8 h-8 rounded object-cover mr-3"
+                        loading="lazy"
+                      />
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-1">
+                          <i className={`${getTypeIcon(result.type)} text-amber-400 text-sm`}></i>
+                          <span className="text-amber-400 text-xs uppercase tracking-wide">{result.type}</span>
+                          {result.category && (
+                            <span className="text-slate-400 text-xs">• {result.category}</span>
+                          )}
+                        </div>
+                        <h4 className="text-white font-medium text-sm">{result.title}</h4>
+                        <p className="text-slate-400 text-xs mt-1 line-clamp-1">{result.description}</p>
+                      </div>
+                      <i className="ri-arrow-right-line text-slate-400"></i>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
 
           {/* Desktop Actions - Far Right */}
           <div className="hidden md:flex items-center space-x-4 flex-shrink-0">
@@ -260,56 +307,6 @@ export default function Header() {
             >
               <i className={`${isMenuOpen ? 'ri-close-line' : 'ri-menu-line'} text-xl`}></i>
             </button>
-          </div>
-        </div>
-
-        {/* Search Bar Row - Below Navigation */}
-        <div className="hidden lg:block py-4 border-t border-slate-800">
-          <div className="max-w-4xl mx-auto relative" ref={searchRef}>
-            <div className="relative">
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => handleSearch(e.target.value)}
-                onFocus={() => searchQuery.length > 1 && setShowSearchResults(true)}
-                placeholder="Search for services, projects, articles, and more..."
-                className="w-full pl-12 pr-4 py-4 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-slate-400 focus:border-amber-400 focus:outline-none transition-colors duration-200 text-lg shadow-lg"
-                aria-label="Global search"
-              />
-              <i className="ri-search-line absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-400 text-xl"></i>
-              
-              {/* Search Results Dropdown */}
-              {showSearchResults && searchResults.length > 0 && (
-                <div className="absolute top-full left-0 right-0 mt-2 bg-slate-800 border border-slate-700 rounded-xl shadow-2xl max-h-96 overflow-y-auto z-50">
-                  {searchResults.map((result, index) => (
-                    <div
-                      key={`${result.type}-${index}`}
-                      className="flex items-center px-6 py-4 hover:bg-slate-700 transition-colors duration-200 border-b border-slate-700 last:border-b-0 cursor-pointer"
-                      onClick={() => handleSearchResultClick(result.url)}
-                    >
-                      <img
-                        src={result.thumbnail}
-                        alt=""
-                        className="w-12 h-12 rounded-lg object-cover mr-4"
-                        loading="lazy"
-                      />
-                      <div className="flex-1">
-                        <div className="flex items-center gap-3 mb-2">
-                          <i className={`${getTypeIcon(result.type)} text-amber-400 text-base`}></i>
-                          <span className="text-amber-400 text-sm uppercase tracking-wide font-semibold">{result.type}</span>
-                          {result.category && (
-                            <span className="text-slate-400 text-sm">• {result.category}</span>
-                          )}
-                        </div>
-                        <h4 className="text-white font-semibold text-base mb-1">{result.title}</h4>
-                        <p className="text-slate-400 text-sm line-clamp-2">{result.description}</p>
-                      </div>
-                      <i className="ri-arrow-right-line text-slate-400 text-lg"></i>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
           </div>
         </div>
 
