@@ -1,6 +1,7 @@
 
 import type { Metadata, Viewport } from 'next';
 import ProjectDetail from './ProjectDetail';
+import { projectsData } from './ProjectDetail';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -76,5 +77,13 @@ export async function generateStaticParams() {
 
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  return <ProjectDetail slug={slug} />;
+  
+  // Get the project data based on the slug
+  const project = projectsData[slug as keyof typeof projectsData];
+  
+  if (!project) {
+    return <div>Project not found</div>;
+  }
+
+  return <ProjectDetail project={project} />;
 }
