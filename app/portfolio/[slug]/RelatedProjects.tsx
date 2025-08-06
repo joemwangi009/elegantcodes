@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 interface RelatedProjectsProps {
-  currentProjectId: number;
+  currentProjectId?: number;
 }
 
 const allProjects = [
@@ -83,112 +83,39 @@ export default function RelatedProjects({ currentProjectId }: RelatedProjectsPro
   };
 
   return (
-    <section className="py-20 bg-slate-800">
+    <section className="py-16 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4 font-poppins">
-            Related Projects
-          </h2>
-          <p className="text-xl text-slate-300 font-inter">
-            Explore more of our innovative solutions
+          <h2 className="text-3xl font-bold text-slate-900 mb-4">Related Projects</h2>
+          <p className="text-slate-600 max-w-2xl mx-auto">
+            Explore other projects that showcase our expertise
           </p>
         </div>
 
-        <div className="relative">
-          <div className="flex justify-between items-center mb-8">
-            <div className="flex space-x-2">
-              {relatedProjects.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-colors duration-200 ${
-                    index >= currentIndex && index < currentIndex + 3
-                      ? 'bg-amber-500'
-                      : 'bg-slate-600'
-                  }`}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              ))}
-            </div>
-
-            <div className="flex space-x-2">
-              <button
-                onClick={prevSlide}
-                disabled={!canGoPrev}
-                className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors duration-200 ${
-                  canGoPrev
-                    ? 'bg-slate-700 hover:bg-slate-600 text-white'
-                    : 'bg-slate-800 text-slate-500 cursor-not-allowed'
-                }`}
-                aria-label="Previous projects"
-              >
-                <i className="ri-arrow-left-line"></i>
-              </button>
-              
-              <button
-                onClick={nextSlide}
-                disabled={!canGoNext}
-                className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors duration-200 ${
-                  canGoNext
-                    ? 'bg-slate-700 hover:bg-slate-600 text-white'
-                    : 'bg-slate-800 text-slate-500 cursor-not-allowed'
-                }`}
-                aria-label="Next projects"
-              >
-                <i className="ri-arrow-right-line"></i>
-              </button>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {visibleProjects.map((project) => (
-              <div
-                key={project.id}
-                className="bg-slate-900 rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300 group"
-              >
-                <div className="relative overflow-hidden aspect-video">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-slate-900/50 group-hover:bg-slate-900/30 transition-colors duration-300"></div>
-                  
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-amber-500 text-slate-900 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">
-                      {project.category}
-                    </span>
-                  </div>
-                </div>
-                
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2 font-poppins">
-                    {project.title}
-                  </h3>
-                  <p className="text-slate-400 mb-4 font-inter line-clamp-2">
-                    {project.description}
-                  </p>
-                  
-                  <Link
-                    href={`/portfolio/${project.slug}`}
-                    className="inline-flex items-center text-amber-400 hover:text-amber-300 font-semibold transition-colors duration-200 cursor-pointer"
-                  >
-                    View Project
-                    <i className="ri-arrow-right-line ml-2"></i>
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
+        <div className="grid md:grid-cols-3 gap-8">
+          {relatedProjects.map((project) => (
             <Link
-              href="/#portfolio"
-              className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 inline-block whitespace-nowrap cursor-pointer"
+              key={project.id}
+              href={`/portfolio/${project.slug}`}
+              className="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              View All Projects
+              <div className="aspect-video bg-slate-200 overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-6">
+                <span className="text-amber-600 text-sm font-medium uppercase tracking-wide">
+                  {project.category}
+                </span>
+                <h3 className="text-xl font-bold text-slate-900 mt-2 group-hover:text-amber-600 transition-colors duration-300">
+                  {project.title}
+                </h3>
+              </div>
             </Link>
-          </div>
+          ))}
         </div>
       </div>
     </section>

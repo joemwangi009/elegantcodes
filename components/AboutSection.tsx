@@ -11,24 +11,26 @@ export default function AboutSection() {
 
   const teamMembers = [
     {
-      name: 'Sarah Johnson',
-      role: 'Lead Software Engineer',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face',
-      bio: 'Expert in full-stack development with 8+ years of experience in React, Node.js, and cloud technologies.'
+      name: "Sarah Johnson",
+      role: "Lead Developer",
+      image: "/images/team/sarah.jpg", // Revert to original authentic photo
+      bio: "Full-stack developer with 8+ years experience in React, Node.js, and cloud architecture."
     },
     {
-      name: 'Michael Chen',
-      role: 'UI/UX Designer',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
-      bio: 'Passionate about creating intuitive user experiences with expertise in modern design systems.'
+      name: "Michael Chen",
+      role: "UI/UX Designer",
+      image: "/images/team/michael.jpg", // Revert to original authentic photo
+      bio: "Creative designer specializing in user experience and modern interface design."
     },
     {
-      name: 'Emily Rodriguez',
-      role: 'Project Manager',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face',
-      bio: 'Experienced in agile methodologies and delivering complex projects on time and within budget.'
+      name: "Emily Rodriguez",
+      role: "Project Manager",
+      image: "/images/team/emily.jpg", // Revert to original authentic photo
+      bio: "Experienced project manager with expertise in agile methodologies and client relations."
     }
   ];
+
+  const teamImage = "/images/team/team-collaboration.jpg"; // Revert to original authentic photo
 
   return (
     <section id="about" className="py-20 bg-white">

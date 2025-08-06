@@ -6,28 +6,36 @@ import Link from 'next/link';
 export default function ServicesSection() {
   const services = [
     {
-      title: 'Custom Applications',
-      description: 'Tailored software solutions designed to meet your specific business needs and requirements.',
-      image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop&crop=center',
-      link: '/services'
+      id: 1,
+      title: "Web Development",
+      description: "Custom websites and web applications built with modern technologies.",
+      icon: "ri-global-line",
+      image: "https://readdy.ai/api/search-image?query=Modern%20web%20development%20workspace%2C%20multiple%20screens%20showing%20code%20and%20websites%2C%20professional%20developer%20environment%2C%20clean%20desk%20setup%2C%20high%20quality%20photography&width=400&height=300&seq=services-web&orientation=landscape",
+      features: ["Responsive Design", "SEO Optimization", "Performance", "Security"]
     },
     {
-      title: 'E-commerce Solutions',
-      description: 'Complete online store platforms that drive sales and enhance customer experience.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center',
-      link: '/services'
+      id: 2,
+      title: "Mobile Apps",
+      description: "Native and cross-platform mobile applications for iOS and Android.",
+      icon: "ri-smartphone-line",
+      image: "https://readdy.ai/api/search-image?query=Mobile%20app%20development%20workspace%2C%20smartphones%20and%20tablets%20displaying%20apps%2C%20modern%20mobile%20development%20environment%2C%20clean%20desk%20setup%2C%20high%20quality%20photography&width=400&height=300&seq=services-mobile&orientation=landscape",
+      features: ["Native Development", "Cross-platform", "App Store Optimization", "Push Notifications"]
     },
     {
-      title: 'POS Systems',
-      description: 'Advanced point-of-sale solutions for retail and restaurant businesses.',
-      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop&crop=center',
-      link: '/services'
+      id: 3,
+      title: "E-commerce",
+      description: "Complete online store solutions with payment processing and inventory management.",
+      icon: "ri-shopping-cart-line",
+      image: "https://readdy.ai/api/search-image?query=E-commerce%20website%20development%2C%20online%20shopping%20interface%2C%20modern%20e-commerce%20platform%2C%20professional%20online%20store%20design%2C%20high%20quality%20photography&width=400&height=300&seq=services-ecommerce&orientation=landscape",
+      features: ["Payment Integration", "Inventory Management", "Order Processing", "Analytics"]
     },
     {
-      title: 'Business Automation',
-      description: 'Streamline operations with intelligent automation and workflow solutions.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=center',
-      link: '/services'
+      id: 4,
+      title: "Cloud Solutions",
+      description: "Scalable cloud infrastructure and deployment solutions for your applications.",
+      icon: "ri-cloud-line",
+      image: "https://readdy.ai/api/search-image?query=Cloud%20computing%20and%20infrastructure%2C%20server%20room%20or%20data%20center%2C%20modern%20cloud%20technology%2C%20professional%20IT%20environment%2C%20high%20quality%20photography&width=400&height=300&seq=services-cloud&orientation=landscape",
+      features: ["AWS/Azure/GCP", "DevOps", "Monitoring", "Backup & Recovery"]
     }
   ];
 
