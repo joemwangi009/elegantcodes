@@ -417,7 +417,7 @@ export default function ProjectDetail({ slug }: { slug: string }) {
   }
 
   return (
-    <div className="min-h-screen bg-slate-900">
+    <div className="bg-white">
       <div className="pt-16">
         <Breadcrumbs projectTitle={project.title} />
         <ProjectHero project={project} />

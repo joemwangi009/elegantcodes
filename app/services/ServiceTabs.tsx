@@ -35,38 +35,18 @@ export default function ServiceTabs({ services, activeService, setActiveService 
     'Business Automation': ['crm-integration', 'workflow-automation', 'erp-solutions', 'ai-automation'] as string[]
   };
 
-  const breadcrumbs = [
-    { label: 'Home', href: '/' },
-    { label: 'Services', href: '/services' },
-    { label: services[activeService].category, href: '#' },
-    { label: services[activeService].title, href: '#' }
-  ];
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If we're not on the homepage, navigate to it and scroll to contact
+      window.location.href = '/#contact';
+    }
+  };
 
   return (
     <div className="sticky top-24">
-      {/* Breadcrumbs */}
-      <nav className="flex mb-8" aria-label="Breadcrumb">
-        <ol className="inline-flex items-center space-x-1 md:space-x-3">
-          {breadcrumbs.map((crumb, index) => (
-            <li key={index} className="inline-flex items-center">
-              {index > 0 && (
-                <i className="ri-arrow-right-s-line text-slate-400 mx-2"></i>
-              )}
-              <a
-                href={crumb.href}
-                className={`text-sm font-medium ${
-                  index === breadcrumbs.length - 1
-                    ? 'text-amber-600'
-                    : 'text-slate-600 hover:text-amber-600'
-                } transition-colors cursor-pointer`}
-              >
-                {crumb.label}
-              </a>
-            </li>
-          ))}
-        </ol>
-      </nav>
-
       {/* Service Navigation */}
       <div className="bg-white rounded-2xl shadow-lg p-6">
         <h3 className="text-lg font-bold text-slate-900 mb-4 font-poppins">Our Services</h3>
@@ -112,12 +92,12 @@ export default function ServiceTabs({ services, activeService, setActiveService 
           <p className="text-slate-400 text-sm mb-4">
             Our experts can help you find the perfect solution for your business.
           </p>
-          <a 
-            href="#contact" 
+          <button 
+            onClick={scrollToContact}
             className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-200 whitespace-nowrap cursor-pointer inline-block text-center"
           >
             Get Consultation
-          </a>
+          </button>
         </div>
       </div>
     </div>

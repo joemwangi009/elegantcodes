@@ -187,6 +187,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-slate-900/95 backdrop-blur-sm z-50 border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Top Row - Logo, Navigation, and Actions */}
         <div className="flex items-center justify-between h-16">
           {/* Logo - Far Left */}
           <div className="flex items-center flex-shrink-0">
@@ -198,8 +199,8 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Desktop Navigation - Center Left with Better Spacing */}
-          <nav className="hidden lg:flex items-center space-x-8 flex-shrink-0 ml-8">
+          {/* Desktop Navigation - Center */}
+          <nav className="hidden lg:flex items-center space-x-8 flex-shrink-0">
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -211,54 +212,6 @@ export default function Header() {
               </a>
             ))}
           </nav>
-
-          {/* Global Search - Center with More Space */}
-          <div className="hidden md:flex flex-1 max-w-lg mx-8 relative" ref={searchRef}>
-            <div className="relative w-full">
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => handleSearch(e.target.value)}
-                onFocus={() => searchQuery.length > 1 && setShowSearchResults(true)}
-                placeholder="Search services, projects, articles..."
-                className="w-full pl-10 pr-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-400 focus:border-amber-400 focus:outline-none transition-colors duration-200"
-                aria-label="Global search"
-              />
-              <i className="ri-search-line absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400"></i>
-              
-              {/* Search Results Dropdown */}
-              {showSearchResults && searchResults.length > 0 && (
-                <div className="absolute top-full left-0 right-0 mt-2 bg-slate-800 border border-slate-700 rounded-lg shadow-xl max-h-96 overflow-y-auto z-50">
-                  {searchResults.map((result, index) => (
-                    <div
-                      key={`${result.type}-${index}`}
-                      className="flex items-center px-4 py-3 hover:bg-slate-700 transition-colors duration-200 border-b border-slate-700 last:border-b-0 cursor-pointer"
-                      onClick={() => handleSearchResultClick(result.url)}
-                    >
-                      <img
-                        src={result.thumbnail}
-                        alt=""
-                        className="w-8 h-8 rounded object-cover mr-3"
-                        loading="lazy"
-                      />
-                      <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-1">
-                          <i className={`${getTypeIcon(result.type)} text-amber-400 text-sm`}></i>
-                          <span className="text-amber-400 text-xs uppercase tracking-wide">{result.type}</span>
-                          {result.category && (
-                            <span className="text-slate-400 text-xs">• {result.category}</span>
-                          )}
-                        </div>
-                        <h4 className="text-white font-medium text-sm">{result.title}</h4>
-                        <p className="text-slate-400 text-xs mt-1 line-clamp-1">{result.description}</p>
-                      </div>
-                      <i className="ri-arrow-right-line text-slate-400"></i>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          </div>
 
           {/* Desktop Actions - Far Right */}
           <div className="hidden md:flex items-center space-x-4 flex-shrink-0">
@@ -310,6 +263,56 @@ export default function Header() {
           </div>
         </div>
 
+        {/* Search Bar Row - Below Navigation */}
+        <div className="hidden lg:block py-4 border-t border-slate-800">
+          <div className="max-w-4xl mx-auto relative" ref={searchRef}>
+            <div className="relative">
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => handleSearch(e.target.value)}
+                onFocus={() => searchQuery.length > 1 && setShowSearchResults(true)}
+                placeholder="Search for services, projects, articles, and more..."
+                className="w-full pl-12 pr-4 py-4 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-slate-400 focus:border-amber-400 focus:outline-none transition-colors duration-200 text-lg shadow-lg"
+                aria-label="Global search"
+              />
+              <i className="ri-search-line absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-400 text-xl"></i>
+              
+              {/* Search Results Dropdown */}
+              {showSearchResults && searchResults.length > 0 && (
+                <div className="absolute top-full left-0 right-0 mt-2 bg-slate-800 border border-slate-700 rounded-xl shadow-2xl max-h-96 overflow-y-auto z-50">
+                  {searchResults.map((result, index) => (
+                    <div
+                      key={`${result.type}-${index}`}
+                      className="flex items-center px-6 py-4 hover:bg-slate-700 transition-colors duration-200 border-b border-slate-700 last:border-b-0 cursor-pointer"
+                      onClick={() => handleSearchResultClick(result.url)}
+                    >
+                      <img
+                        src={result.thumbnail}
+                        alt=""
+                        className="w-12 h-12 rounded-lg object-cover mr-4"
+                        loading="lazy"
+                      />
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-2">
+                          <i className={`${getTypeIcon(result.type)} text-amber-400 text-base`}></i>
+                          <span className="text-amber-400 text-sm uppercase tracking-wide font-semibold">{result.type}</span>
+                          {result.category && (
+                            <span className="text-slate-400 text-sm">• {result.category}</span>
+                          )}
+                        </div>
+                        <h4 className="text-white font-semibold text-base mb-1">{result.title}</h4>
+                        <p className="text-slate-400 text-sm line-clamp-2">{result.description}</p>
+                      </div>
+                      <i className="ri-arrow-right-line text-slate-400 text-lg"></i>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-slate-800 border-t border-slate-700">
@@ -317,14 +320,14 @@ export default function Header() {
               {/* Mobile Search */}
               <div className="px-3 py-2" ref={searchRef}>
                 <div className="relative">
-                  <input
-                    type="text"
-                    value={searchQuery}
-                    onChange={(e) => handleSearch(e.target.value)}
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => handleSearch(e.target.value)}
                     onFocus={() => searchQuery.length > 1 && setShowSearchResults(true)}
                     placeholder="Search services, projects, articles..."
                     className="w-full pl-10 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-amber-400 focus:outline-none transition-colors duration-200"
-                  />
+                />
                   <i className="ri-search-line absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400"></i>
                   
                   {/* Mobile Search Results */}
@@ -394,13 +397,13 @@ export default function Header() {
                 >
                   Contact
                 </a>
-                <a
-                  href="#quote"
-                  className="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-md font-semibold py-2 text-center cursor-pointer"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Get Quote
-                </a>
+              <a
+                href="#quote"
+                className="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-md font-semibold py-2 text-center cursor-pointer"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Get Quote
+              </a>
               </div>
             </div>
           </div>

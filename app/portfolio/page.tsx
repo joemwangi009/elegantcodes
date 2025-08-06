@@ -36,16 +36,17 @@ export default function PortfolioPage() {
       subtitle: 'Customer Relationship Management System',
       description: 'A comprehensive CRM solution designed to streamline customer management, sales tracking, and business operations for modern enterprises.',
       category: 'Custom Apps',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=center',
-      fallbackImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center',
+      image: 'https://readdy.ai/api/search-image?query=Professional%20CRM%20dashboard%20with%20customer%20analytics%2C%20modern%20business%20management%20interface%2C%20dark%20navy%20theme%20with%20gold%20accents%2C%20sophisticated%20sales%20pipeline%20visualization%2C%20clean%20corporate%20software%20design&width=400&height=300&seq=portfolio-crm-1&orientation=landscape',
+      fallbackImage: 'https://readdy.ai/api/search-image?query=CRM%20system%20interface%20with%20customer%20profiles%2C%20professional%20business%20dashboard%2C%20modern%20enterprise%20software&width=400&height=300&seq=portfolio-crm-2&orientation=landscape',
       slug: 'techflow-crm',
       technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
       metrics: ['50,000+ users', '99.9% uptime', '40% efficiency gain'],
       color: 'blue',
       gallery: [
-        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center'
+        'https://readdy.ai/api/search-image?query=CRM%20dashboard%20with%20detailed%20customer%20analytics%2C%20professional%20interface%20with%20charts%20and%20graphs%2C%20dark%20navy%20theme%20with%20gold%20highlights%2C%20modern%20business%20software%20design%2C%20clean%20data%20visualization&width=800&height=500&seq=gallery-crm-1&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Customer%20profile%20management%20interface%2C%20detailed%20contact%20information%20display%2C%20professional%20CRM%20design%20with%20dark%20navy%20background%2C%20sophisticated%20user%20management%20system&width=800&height=500&seq=gallery-crm-2&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Sales%20pipeline%20visualization%20with%20drag%20and%20drop%20functionality%2C%20modern%20CRM%20interface%2C%20dark%20navy%20corporate%20design%2C%20professional%20sales%20management%20system&width=800&height=500&seq=gallery-crm-3&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Advanced%20analytics%20and%20reporting%20dashboard%2C%20professional%20data%20visualization%2C%20dark%20navy%20theme%20with%20gold%20accents%2C%20sophisticated%20business%20intelligence%20interface&width=800&height=500&seq=gallery-crm-4&orientation=landscape'
       ]
     },
     {
@@ -54,16 +55,17 @@ export default function PortfolioPage() {
       subtitle: 'Advanced Point of Sale System',
       description: 'Modern point-of-sale solution with inventory management, customer tracking, and comprehensive reporting for retail businesses.',
       category: 'POS',
-      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop&crop=center',
-      fallbackImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center',
+      image: 'https://readdy.ai/api/search-image?query=Modern%20retail%20point%20of%20sale%20interface%2C%20professional%20POS%20system%20dashboard%2C%20dark%20navy%20theme%20with%20gold%20highlights%2C%20elegant%20touch%20screen%20interface%2C%20sophisticated%20retail%20technology%20solution%2C%20sleek%20payment%20processing%20system&width=400&height=300&seq=portfolio-pos-1&orientation=landscape',
+      fallbackImage: 'https://readdy.ai/api/search-image?query=POS%20system%20with%20inventory%20management%2C%20professional%20retail%20technology%2C%20modern%20checkout%20interface&width=400&height=300&seq=portfolio-pos-2&orientation=landscape',
       slug: 'retailpro-pos',
       technologies: ['React Native', 'Node.js', 'MongoDB', 'Stripe'],
       metrics: ['100+ stores', '60% faster checkout', '99.5% accuracy'],
       color: 'emerald',
       gallery: [
-        'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop&crop=center'
+        'https://readdy.ai/api/search-image?query=Retail%20POS%20interface%20with%20product%20catalog%2C%20professional%20point%20of%20sale%20system%2C%20modern%20checkout%20process%2C%20dark%20navy%20theme%20with%20gold%20accents%2C%20sophisticated%20retail%20technology&width=800&height=500&seq=gallery-pos-1&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Inventory%20management%20dashboard%20for%20retail%2C%20professional%20stock%20control%20interface%2C%20modern%20retail%20management%20system%2C%20dark%20navy%20corporate%20design&width=800&height=500&seq=gallery-pos-2&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Customer%20loyalty%20program%20interface%2C%20professional%20retail%20POS%20system%2C%20modern%20customer%20management%2C%20dark%20navy%20theme%20with%20gold%20highlights&width=800&height=500&seq=gallery-pos-3&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Retail%20analytics%20and%20reporting%20dashboard%2C%20professional%20business%20intelligence%20interface%2C%20modern%20retail%20analytics%2C%20dark%20navy%20corporate%20design&width=800&height=500&seq=gallery-pos-4&orientation=landscape'
       ]
     },
     {
@@ -72,16 +74,17 @@ export default function PortfolioPage() {
       subtitle: 'Multi-Vendor E-commerce Platform',
       description: 'A sophisticated marketplace platform connecting vendors and customers with advanced features and seamless user experience.',
       category: 'E-commerce',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center',
-      fallbackImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center',
+      image: 'https://readdy.ai/api/search-image?query=Multi-vendor%20marketplace%20platform%20interface%2C%20professional%20e-commerce%20dashboard%2C%20modern%20online%20marketplace%20design%2C%20dark%20navy%20theme%20with%20gold%20accents%2C%20sophisticated%20vendor%20management%20system&width=400&height=300&seq=portfolio-marketplace-1&orientation=landscape',
+      fallbackImage: 'https://readdy.ai/api/search-image?query=E-commerce%20marketplace%20with%20vendor%20profiles%2C%20professional%20online%20shopping%20platform%2C%20modern%20marketplace%20interface&width=400&height=300&seq=portfolio-marketplace-2&orientation=landscape',
       slug: 'ecoshop-marketplace',
       technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Stripe'],
       metrics: ['500+ vendors', '25,000+ products', '200% growth'],
       color: 'purple',
       gallery: [
-        'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center'
+        'https://readdy.ai/api/search-image?query=Vendor%20dashboard%20for%20marketplace%2C%20professional%20e-commerce%20management%20interface%2C%20modern%20vendor%20portal%2C%20dark%20navy%20theme%20with%20gold%20accents%2C%20sophisticated%20product%20management%20system&width=800&height=500&seq=gallery-marketplace-1&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Product%20catalog%20with%20advanced%20filtering%2C%20professional%20marketplace%20interface%2C%20modern%20e-commerce%20design%2C%20dark%20navy%20corporate%20theme%2C%20sophisticated%20shopping%20experience&width=800&height=500&seq=gallery-marketplace-2&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Order%20management%20system%20for%20marketplace%2C%20professional%20e-commerce%20dashboard%2C%20modern%20order%20tracking%20interface%2C%20dark%20navy%20theme%20with%20gold%20highlights&width=800&height=500&seq=gallery-marketplace-3&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Marketplace%20analytics%20and%20revenue%20dashboard%2C%20professional%20business%20intelligence%20interface%2C%20modern%20e-commerce%20analytics%2C%20dark%20navy%20corporate%20design&width=800&height=500&seq=gallery-marketplace-4&orientation=landscape'
       ]
     },
     {
@@ -90,16 +93,17 @@ export default function PortfolioPage() {
       subtitle: 'Healthcare Management App',
       description: 'Mobile application for healthcare providers and patients with appointment scheduling, medical records, and telemedicine capabilities.',
       category: 'Custom Apps',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop&crop=center',
-      fallbackImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center',
+      image: 'https://readdy.ai/api/search-image?query=Healthcare%20mobile%20app%20interface%2C%20professional%20medical%20management%20system%2C%20modern%20healthcare%20technology%2C%20dark%20navy%20theme%20with%20gold%20accents%2C%20sophisticated%20patient%20portal%20design&width=400&height=300&seq=portfolio-health-1&orientation=landscape',
+      fallbackImage: 'https://readdy.ai/api/search-image?query=Medical%20app%20with%20appointment%20scheduling%2C%20professional%20healthcare%20interface%2C%20modern%20medical%20technology&width=400&height=300&seq=portfolio-health-2&orientation=landscape',
       slug: 'healthsync-mobile',
       technologies: ['React Native', 'Firebase', 'Twilio', 'AWS'],
       metrics: ['10,000+ patients', '4.8/5 rating', 'HIPAA compliant'],
       color: 'rose',
       gallery: [
-        'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=500&fit=crop&crop=center'
+        'https://readdy.ai/api/search-image?query=Patient%20portal%20with%20medical%20records%2C%20professional%20healthcare%20interface%2C%20modern%20medical%20app%20design%2C%20dark%20navy%20theme%20with%20gold%20accents%2C%20sophisticated%20healthcare%20technology&width=800&height=500&seq=gallery-health-1&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Appointment%20scheduling%20interface%20for%20healthcare%2C%20professional%20medical%20app%20design%2C%20modern%20healthcare%20management%2C%20dark%20navy%20corporate%20theme&width=800&height=500&seq=gallery-health-2&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Telemedicine%20video%20consultation%20interface%2C%20professional%20healthcare%20app%2C%20modern%20telemedicine%20technology%2C%20dark%20navy%20theme%20with%20gold%20accents&width=800&height=500&seq=gallery-health-3&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Medical%20analytics%20and%20health%20dashboard%2C%20professional%20healthcare%20analytics%20interface%2C%20modern%20medical%20data%20visualization%2C%20dark%20navy%20corporate%20design&width=800&height=500&seq=gallery-health-4&orientation=landscape'
       ]
     },
     {
@@ -107,35 +111,37 @@ export default function PortfolioPage() {
       title: 'FinanceTracker Pro',
       subtitle: 'Financial Management System',
       description: 'Comprehensive financial management platform for businesses with budgeting, expense tracking, and financial reporting capabilities.',
-      category: 'Automation',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center',
-      fallbackImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=center',
+      category: 'Custom Apps',
+      image: 'https://readdy.ai/api/search-image?query=Financial%20management%20dashboard%20interface%2C%20professional%20finance%20tracking%20system%2C%20modern%20budgeting%20and%20expense%20management%2C%20dark%20navy%20theme%20with%20gold%20accents%2C%20sophisticated%20financial%20analytics&width=400&height=300&seq=portfolio-finance-1&orientation=landscape',
+      fallbackImage: 'https://readdy.ai/api/search-image?query=Finance%20tracking%20app%20with%20budgeting%20tools%2C%20professional%20financial%20management%20interface%2C%20modern%20finance%20technology&width=400&height=300&seq=portfolio-finance-2&orientation=landscape',
       slug: 'financetracker-pro',
-      technologies: ['Vue.js', 'Python', 'PostgreSQL', 'AWS'],
-      metrics: ['$2M+ managed', '80% time savings', 'Real-time reporting'],
-      color: 'amber',
+      technologies: ['Vue.js', 'Python', 'PostgreSQL', 'Plaid'],
+      metrics: ['$50M+ tracked', '95% accuracy', '30% cost reduction'],
+      color: 'indigo',
       gallery: [
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&crop=center'
+        'https://readdy.ai/api/search-image?query=Budget%20planning%20and%20expense%20tracking%20interface%2C%20professional%20financial%20management%20system%2C%20modern%20budgeting%20dashboard%2C%20dark%20navy%20theme%20with%20gold%20accents%2C%20sophisticated%20finance%20technology&width=800&height=500&seq=gallery-finance-1&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Financial%20analytics%20and%20reporting%20dashboard%2C%20professional%20finance%20analytics%20interface%2C%20modern%20financial%20data%20visualization%2C%20dark%20navy%20corporate%20design&width=800&height=500&seq=gallery-finance-2&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Investment%20portfolio%20management%20interface%2C%20professional%20financial%20tracking%20system%2C%20modern%20investment%20analytics%2C%20dark%20navy%20theme%20with%20gold%20highlights&width=800&height=500&seq=gallery-finance-3&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Tax%20planning%20and%20compliance%20dashboard%2C%20professional%20financial%20management%20interface%2C%20modern%20tax%20preparation%20system%2C%20dark%20navy%20corporate%20design&width=800&height=500&seq=gallery-finance-4&orientation=landscape'
       ]
     },
     {
       id: 6,
       title: 'EventMaster App',
-      subtitle: 'Event Management Platform',
-      description: 'Comprehensive event management solution for organizers with ticketing, registration, and attendee management features.',
+      subtitle: 'Event Management Solution',
+      description: 'Complete event management platform for organizers with ticketing, attendee management, and event analytics.',
       category: 'Custom Apps',
-      image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=300&fit=crop&crop=center',
-      fallbackImage: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=300&fit=crop&crop=center',
+      image: 'https://readdy.ai/api/search-image?query=Event%20management%20platform%20interface%2C%20professional%20event%20planning%20system%2C%20modern%20event%20management%20technology%2C%20dark%20navy%20theme%20with%20gold%20accents%2C%20sophisticated%20event%20planning%20dashboard&width=400&height=300&seq=portfolio-event-1&orientation=landscape',
+      fallbackImage: 'https://readdy.ai/api/search-image?query=Event%20planning%20app%20with%20ticketing%20system%2C%20professional%20event%20management%20interface%2C%20modern%20event%20technology&width=400&height=300&seq=portfolio-event-2&orientation=landscape',
       slug: 'eventmaster-app',
-      technologies: ['Flutter', 'Node.js', 'Redis', 'Google Cloud'],
-      metrics: ['500+ events', '50,000+ attendees', '95% satisfaction'],
-      color: 'indigo',
+      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      metrics: ['1,000+ events', '50,000+ attendees', '98% satisfaction'],
+      color: 'amber',
       gallery: [
-        'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&crop=center'
+        'https://readdy.ai/api/search-image?query=Event%20creation%20and%20planning%20interface%2C%20professional%20event%20management%20system%2C%20modern%20event%20planning%20dashboard%2C%20dark%20navy%20theme%20with%20gold%20accents%2C%20sophisticated%20event%20technology&width=800&height=500&seq=gallery-event-1&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Ticketing%20and%20registration%20system%2C%20professional%20event%20management%20interface%2C%20modern%20ticketing%20platform%2C%20dark%20navy%20corporate%20design&width=800&height=500&seq=gallery-event-2&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Attendee%20management%20and%20check-in%20interface%2C%20professional%20event%20management%20system%2C%20modern%20attendee%20tracking%2C%20dark%20navy%20theme%20with%20gold%20highlights&width=800&height=500&seq=gallery-event-3&orientation=landscape',
+        'https://readdy.ai/api/search-image?query=Event%20analytics%20and%20reporting%20dashboard%2C%20professional%20event%20management%20analytics%2C%20modern%20event%20data%20visualization%2C%20dark%20navy%20corporate%20design&width=800&height=500&seq=gallery-event-4&orientation=landscape'
       ]
     }
   ];
