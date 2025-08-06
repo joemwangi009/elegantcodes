@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -110,7 +111,7 @@ export default function HeroSection() {
             />
 
             {/* Gradient Overlay */}
-            <div className={`absolute inset-0 bg-gradient-to-r ${slide.overlay}`} />
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 via-slate-800/40 to-slate-900/60" />
 
             {/* Content */}
             <div className="relative z-10 h-full flex items-center justify-center">
@@ -118,7 +119,7 @@ export default function HeroSection() {
                 <div className={`animate-fade-in-up delay-${index * 200}`}>
                   <h1 className="hero-title font-poppins text-white mb-6 animate-fade-in">
                     {slide.title}
-                    <span className={`text-transparent bg-gradient-to-r ${slide.accent} bg-clip-text block mt-4`}>
+                    <span className="text-transparent bg-gradient-to-r from-amber-400 to-amber-500 bg-clip-text block mt-4">
                       {slide.subtitle}
                     </span>
                   </h1>
@@ -128,13 +129,13 @@ export default function HeroSection() {
                   </p>
 
                   <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                    <button
-                      onClick={scrollToQuote}
-                      className="group relative bg-gradient-to-r from-white to-slate-100 hover:from-slate-100 hover:to-white text-slate-900 px-12 py-5 rounded-full font-bold text-xl transition-all duration-300 transform hover:scale-110 hover:shadow-2xl whitespace-nowrap cursor-pointer overflow-hidden"
+                    <Link
+                      href={slide.ctaLink}
+                      className="group relative bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white px-12 py-5 rounded-full font-bold text-xl transition-all duration-300 transform hover:scale-110 hover:shadow-2xl whitespace-nowrap cursor-pointer overflow-hidden"
                     >
-                      <span className="relative z-10">Get a Quote</span>
+                      <span className="relative z-10">{slide.ctaText}</span>
                       <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                    </button>
+                    </Link>
 
                     <button
                       onClick={scrollToServices}
