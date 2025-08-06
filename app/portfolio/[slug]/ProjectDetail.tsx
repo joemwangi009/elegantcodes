@@ -12,6 +12,129 @@ import ProjectSidebar from './ProjectSidebar';
 import RelatedProjects from './RelatedProjects';
 import Breadcrumbs from './Breadcrumbs';
 
+export const projectsData = {
+  "ecommerce-platform": {
+    title: "E-commerce Platform",
+    category: "Web Development",
+    client: "Fashion Retailer",
+    duration: "3 months",
+    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+    heroImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=600&fit=crop&crop=center",
+    description: "A modern e-commerce platform with advanced features including real-time inventory management, secure payment processing, and comprehensive analytics dashboard.",
+    gallery: [
+      {
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center",
+        caption: "Homepage Design"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center",
+        caption: "Product Catalog"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center",
+        caption: "Shopping Cart"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center",
+        caption: "Admin Dashboard"
+      }
+    ],
+    features: [
+      "Responsive design for all devices",
+      "Secure payment gateway integration",
+      "Real-time inventory management",
+      "Advanced search and filtering",
+      "Customer review system",
+      "Order tracking and notifications"
+    ],
+    results: [
+      "300% increase in online sales",
+      "50% reduction in cart abandonment",
+      "Improved customer satisfaction scores"
+    ]
+  },
+  "mobile-banking-app": {
+    title: "Mobile Banking App",
+    category: "Mobile Development",
+    client: "Digital Bank",
+    duration: "4 months",
+    technologies: ["React Native", "Firebase", "Node.js", "AWS"],
+    heroImage: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&h=600&fit=crop&crop=center",
+    description: "A secure and user-friendly mobile banking application with biometric authentication, real-time transactions, and comprehensive financial management tools.",
+    gallery: [
+      {
+        image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&crop=center",
+        caption: "Login Screen"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&crop=center",
+        caption: "Dashboard"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&crop=center",
+        caption: "Transaction History"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&crop=center",
+        caption: "Settings"
+      }
+    ],
+    features: [
+      "Biometric authentication",
+      "Real-time transaction monitoring",
+      "Bill payment and transfers",
+      "Investment portfolio tracking",
+      "Budget planning tools",
+      "Secure messaging system"
+    ],
+    results: [
+      "200% increase in mobile transactions",
+      "95% user satisfaction rating",
+      "Enhanced security compliance"
+    ]
+  },
+  "corporate-dashboard": {
+    title: "Corporate Dashboard",
+    category: "Web Development",
+    client: "Fortune 500 Company",
+    duration: "2 months",
+    technologies: ["Vue.js", "D3.js", "Python", "PostgreSQL"],
+    heroImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop&crop=center",
+    description: "A comprehensive business intelligence dashboard providing real-time analytics, KPI tracking, and data visualization for executive decision-making.",
+    gallery: [
+      {
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
+        caption: "Analytics Overview"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
+        caption: "KPI Dashboard"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
+        caption: "Reports Section"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
+        caption: "User Management"
+      }
+    ],
+    features: [
+      "Real-time data visualization",
+      "Customizable KPI widgets",
+      "Interactive charts and graphs",
+      "Export and reporting tools",
+      "Role-based access control",
+      "Mobile-responsive design"
+    ],
+    results: [
+      "40% faster decision-making process",
+      "Improved data accuracy and visibility",
+      "Enhanced executive reporting capabilities"
+    ]
+  }
+};
+
 export default function ProjectDetail({ project }: { project: any }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
