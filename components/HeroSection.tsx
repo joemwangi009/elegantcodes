@@ -10,39 +10,39 @@ export default function HeroSection() {
   const heroSlides = [
     {
       id: 1,
-      title: "Transform Your Business",
-      subtitle: "with Elegant IT Solutions",
-      description: "Custom Apps, E-commerce, POS, and More Tailored to Your Needs",
-      image: "https://readdy.ai/api/search-image?query=Professional%20software%20development%20team%20working%20in%20modern%20office%20with%20multiple%20screens%20showing%20code%20and%20designs%2C%20elegant%20workspace%20with%20dark%20navy%20and%20gold%20theme%2C%20sophisticated%20tech%20company%20environment%2C%20clean%20minimalist%20office%20design%2C%20high-tech%20development%20studio%2C%20professional%20team%20collaboration&width=1920&height=1080&seq=hero-1&orientation=landscape",
-      overlay: "from-blue-900/40 via-blue-800/30 to-blue-900/40",
-      accent: "from-blue-500 to-blue-600"
+      title: "Custom Software Development",
+      subtitle: "Transform your business with tailored solutions",
+      description: "We create powerful, scalable applications that drive growth and efficiency for your business.",
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=600&fit=crop&crop=center",
+      ctaText: "Get Started",
+      ctaLink: "/#contact"
     },
     {
       id: 2,
-      title: "Innovative Solutions",
-      subtitle: "for Modern Enterprises",
-      description: "Cutting-edge technology solutions that drive growth and efficiency",
-      image: "https://readdy.ai/api/search-image?query=Modern%20dashboard%20interface%20with%20data%20visualization%20and%20analytics%2C%20professional%20business%20intelligence%20platform%2C%20elegant%20dark%20navy%20and%20gold%20theme%2C%20sophisticated%20enterprise%20software%2C%20clean%20corporate%20design%2C%20high-tech%20business%20solution&width=1920&height=1080&seq=hero-2&orientation=landscape",
-      overlay: "from-emerald-900/40 via-emerald-800/30 to-emerald-900/40",
-      accent: "from-emerald-500 to-emerald-600"
+      title: "Business Intelligence & Analytics",
+      subtitle: "Turn data into actionable insights",
+      description: "Leverage the power of your data with advanced analytics and reporting solutions.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop&crop=center",
+      ctaText: "Learn More",
+      ctaLink: "/services"
     },
     {
       id: 3,
-      title: "World-Class Development",
-      subtitle: "Delivered with Excellence",
-      description: "Premium software solutions crafted with precision and innovation",
-      image: "https://readdy.ai/api/search-image?query=Professional%20mobile%20app%20development%20with%20multiple%20devices%20showing%20beautiful%20interfaces%2C%20elegant%20app%20design%20with%20dark%20navy%20and%20gold%20theme%2C%20sophisticated%20mobile%20technology%2C%20clean%20app%20development%20studio%2C%20high-tech%20mobile%20solutions&width=1920&height=1080&seq=hero-3&orientation=landscape",
-      overlay: "from-purple-900/40 via-purple-800/30 to-purple-900/40",
-      accent: "from-purple-500 to-purple-600"
+      title: "Mobile App Development",
+      subtitle: "Native iOS & Android Solutions",
+      description: "Create engaging mobile experiences that connect with your customers on every device.",
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&h=600&fit=crop&crop=center",
+      ctaText: "View Portfolio",
+      ctaLink: "/portfolio"
     },
     {
       id: 4,
-      title: "Digital Transformation",
-      subtitle: "Redefined for Success",
-      description: "Empowering businesses with next-generation digital solutions",
-      image: "https://readdy.ai/api/search-image?query=Professional%20e-commerce%20platform%20with%20shopping%20cart%20and%20product%20displays%2C%20elegant%20online%20store%20interface%2C%20dark%20navy%20and%20gold%20theme%2C%20sophisticated%20retail%20technology%2C%20clean%20e-commerce%20design%2C%20high-tech%20shopping%20solution&width=1920&height=1080&seq=hero-4&orientation=landscape",
-      overlay: "from-amber-900/40 via-amber-800/30 to-amber-900/40",
-      accent: "from-amber-500 to-amber-600"
+      title: "E-commerce Solutions",
+      subtitle: "Complete Online Store Platforms",
+      description: "Build powerful e-commerce platforms that drive sales and enhance customer experience.",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=600&fit=crop&crop=center",
+      ctaText: "Explore Services",
+      ctaLink: "/services"
     }
   ];
 

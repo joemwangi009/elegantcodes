@@ -3,6 +3,8 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import ProjectHero from './ProjectHero';
 import ProjectContent from './ProjectContent';
 import ProjectGallery from './ProjectGallery';
@@ -19,7 +21,7 @@ const projectsData = {
     client: 'TechFlow Solutions',
     duration: '6 months',
     team: '8 developers',
-    heroImage: 'https://readdy.ai/api/search-image?query=Professional%20CRM%20dashboard%20interface%20with%20elegant%20data%20visualization%2C%20modern%20customer%20relationship%20management%20system%2C%20dark%20navy%20corporate%20design%20with%20gold%20accents%2C%20sophisticated%20business%20analytics%20platform%2C%20sleek%20workflow%20management%20interface%2C%20clean%20professional%20software%20design%20with%20detailed%20charts%20and%20metrics&width=1200&height=600&seq=project-hero-1&orientation=landscape',
+    heroImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop&crop=center',
     overview: 'TechFlow CRM was developed to address the complex customer management needs of rapidly growing technology companies. Our client required a comprehensive solution that could handle lead tracking, customer communications, sales pipeline management, and detailed analytics in one unified platform.',
     challenges: [
       'Integration with existing tech stack and third-party APIs',
@@ -51,19 +53,19 @@ const projectsData = {
     ],
     gallery: [
       {
-        image: 'https://readdy.ai/api/search-image?query=CRM%20dashboard%20with%20detailed%20customer%20analytics%2C%20professional%20interface%20with%20charts%20and%20graphs%2C%20dark%20navy%20theme%20with%20gold%20highlights%2C%20modern%20business%20software%20design%2C%20clean%20data%20visualization&width=800&height=600&seq=gallery-1-1&orientation=landscape',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center',
         title: 'Main Dashboard'
       },
       {
-        image: 'https://readdy.ai/api/search-image?query=Customer%20profile%20management%20interface%2C%20detailed%20contact%20information%20display%2C%20professional%20CRM%20design%20with%20dark%20navy%20background%2C%20sophisticated%20user%20management%20system&width=800&height=600&seq=gallery-1-2&orientation=landscape',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center',
         title: 'Customer Profiles'
       },
       {
-        image: 'https://readdy.ai/api/search-image?query=Sales%20pipeline%20visualization%20with%20drag%20and%20drop%20functionality%2C%20modern%20CRM%20interface%2C%20dark%20navy%20corporate%20design%2C%20professional%20sales%20management%20system&width=800&height=600&seq=gallery-1-3&orientation=landscape',
+        image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop&crop=center',
         title: 'Sales Pipeline'
       },
       {
-        image: 'https://readdy.ai/api/search-image?query=Advanced%20analytics%20and%20reporting%20dashboard%2C%20professional%20data%20visualization%2C%20dark%20navy%20theme%20with%20gold%20accents%2C%20sophisticated%20business%20intelligence%20interface&width=800&height=600&seq=gallery-1-4&orientation=landscape',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center',
         title: 'Analytics Dashboard'
       }
     ]
@@ -76,7 +78,7 @@ const projectsData = {
     client: 'RetailPro Chain',
     duration: '8 months',
     team: '10 developers',
-    heroImage: 'https://readdy.ai/api/search-image?query=Modern%20retail%20point%20of%20sale%20interface%20with%20clean%20design%2C%20professional%20POS%20system%20dashboard%2C%20dark%20navy%20theme%20with%20gold%20highlights%2C%20elegant%20touch%20screen%20interface%2C%20sophisticated%20retail%20technology%20solution%2C%20sleek%20payment%20processing%20system%20with%20product%20displays&width=1200&height=600&seq=project-hero-2&orientation=landscape',
+    heroImage: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&h=600&fit=crop&crop=center',
     overview: 'RetailPro POS was designed to modernize retail operations for a growing chain of specialty stores. The system needed to handle complex inventory management, multiple payment methods, customer loyalty programs, and real-time reporting across multiple locations.',
     challenges: [
       'Legacy system integration and data migration',
@@ -98,258 +100,258 @@ const projectsData = {
       { name: 'MongoDB', icon: 'ri-database-line' },
       { name: 'Docker', icon: 'ri-container-line' },
       { name: 'Stripe', icon: 'ri-bank-card-line' },
-      { name: 'PWA', icon: 'ri-smartphone-line' }
+      { name: 'Redis', icon: 'ri-stack-line' }
     ],
     results: [
-      '40% faster checkout process',
-      '99.9% system uptime',
-      '60% reduction in inventory discrepancies',
-      '35% increase in customer satisfaction'
+      '60% faster checkout process',
+      '99.5% transaction accuracy',
+      'Real-time inventory across 100+ stores',
+      '98% staff satisfaction rating'
     ],
     gallery: [
       {
-        image: 'https://readdy.ai/api/search-image?query=POS%20checkout%20interface%20with%20product%20scanning%2C%20modern%20retail%20system%20design%2C%20dark%20navy%20theme%20with%20clean%20layout%2C%20professional%20point%20of%20sale%20display&width=800&height=600&seq=gallery-2-1&orientation=landscape',
-        title: 'Checkout Interface'
+        image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&crop=center',
+        title: 'POS Interface'
       },
       {
-        image: 'https://readdy.ai/api/search-image?query=Inventory%20management%20dashboard%20with%20stock%20levels%20and%20alerts%2C%20professional%20retail%20software%20interface%2C%20dark%20navy%20design%20with%20data%20visualization&width=800&height=600&seq=gallery-2-2&orientation=landscape',
+        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center',
         title: 'Inventory Management'
       },
       {
-        image: 'https://readdy.ai/api/search-image?query=Sales%20reporting%20dashboard%20with%20charts%20and%20analytics%2C%20modern%20POS%20system%20interface%2C%20professional%20retail%20analytics%20display&width=800&height=600&seq=gallery-2-3&orientation=landscape',
-        title: 'Sales Reports'
+        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center',
+        title: 'Customer Loyalty'
       },
       {
-        image: 'https://readdy.ai/api/search-image?query=Customer%20loyalty%20program%20interface%2C%20modern%20retail%20CRM%20design%2C%20professional%20customer%20management%20system%20with%20dark%20navy%20theme&width=800&height=600&seq=gallery-2-4&orientation=landscape',
-        title: 'Loyalty Program'
+        image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&crop=center',
+        title: 'Analytics Dashboard'
       }
     ]
   },
   'ecoshop-marketplace': {
     id: 3,
     title: 'EcoShop Marketplace',
-    tagline: 'Sustainable E-commerce Platform for Conscious Consumers',
+    tagline: 'Multi-Vendor E-commerce Platform for Sustainable Products',
     category: 'E-commerce Platform',
     client: 'EcoShop Inc.',
     duration: '10 months',
     team: '12 developers',
-    heroImage: 'https://readdy.ai/api/search-image?query=Elegant%20e-commerce%20marketplace%20interface%20with%20sustainable%20product%20displays%2C%20modern%20online%20shopping%20platform%2C%20dark%20navy%20design%20with%20gold%20accents%2C%20sophisticated%20retail%20website%20layout%2C%20clean%20product%20catalog%20design%2C%20professional%20marketplace%20visualization%20with%20eco-friendly%20branding&width=1200&height=600&seq=project-hero-3&orientation=landscape',
-    overview: 'EcoShop Marketplace connects environmentally conscious consumers with sustainable brands worldwide. The platform features advanced product filtering, sustainability ratings, carbon footprint tracking, and a comprehensive vendor management system.',
+    heroImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=600&fit=crop&crop=center',
+    overview: 'EcoShop Marketplace was built to connect eco-conscious consumers with sustainable product vendors. The platform needed to handle multiple vendors, complex product categorization, secure payment processing, and comprehensive analytics for both vendors and platform administrators.',
     challenges: [
-      'Complex multi-vendor marketplace architecture',
-      'Sustainability verification and rating system',
-      'Global shipping and logistics coordination',
-      'Payment processing for multiple currencies',
-      'Advanced search and filtering capabilities'
+      'Multi-vendor architecture with individual storefronts',
+      'Complex product categorization and search functionality',
+      'Secure payment processing for multiple currencies',
+      'Real-time inventory management across vendors',
+      'Advanced analytics and reporting for all stakeholders'
     ],
     solutions: [
-      'Built scalable marketplace architecture with vendor dashboards',
-      'Implemented blockchain-based sustainability verification',
-      'Created intelligent shipping optimization system',
-      'Developed advanced AI-powered product recommendation engine',
-      'Integrated comprehensive analytics for vendors and administrators'
+      'Built scalable microservices architecture with Next.js',
+      'Implemented advanced search with Elasticsearch integration',
+      'Created secure multi-currency payment system with Stripe',
+      'Developed real-time inventory synchronization system',
+      'Built comprehensive analytics dashboard for insights'
     ],
     technologies: [
-      { name: 'Next.js', icon: 'ri-nextjs-line' },
+      { name: 'Next.js', icon: 'ri-reactjs-line' },
+      { name: 'TypeScript', icon: 'ri-code-line' },
+      { name: 'PostgreSQL', icon: 'ri-database-2-line' },
       { name: 'Stripe', icon: 'ri-bank-card-line' },
-      { name: 'Prisma', icon: 'ri-database-2-line' },
-      { name: 'Vercel', icon: 'ri-cloud-line' },
-      { name: 'Redis', icon: 'ri-stack-line' },
-      { name: 'AI/ML', icon: 'ri-brain-line' }
+      { name: 'Elasticsearch', icon: 'ri-search-line' },
+      { name: 'AWS', icon: 'ri-cloud-line' }
     ],
     results: [
-      '500+ sustainable brands onboarded',
-      '250% growth in monthly active users',
-      '45% increase in average order value',
-      '92% customer retention rate'
+      '500+ active vendors on platform',
+      '25,000+ products listed',
+      '200% growth in first year',
+      '4.8/5 average vendor rating'
     ],
     gallery: [
       {
-        image: 'https://readdy.ai/api/search-image?query=E-commerce%20product%20catalog%20with%20sustainable%20products%2C%20modern%20marketplace%20design%2C%20clean%20product%20grid%20layout%20with%20sustainability%20badges&width=800&height=600&seq=gallery-3-1&orientation=landscape',
-        title: 'Product Catalog'
+        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center',
+        title: 'Marketplace Homepage'
       },
       {
-        image: 'https://readdy.ai/api/search-image?query=Vendor%20dashboard%20with%20sales%20analytics%20and%20product%20management%2C%20professional%20e-commerce%20interface%2C%20dark%20navy%20design%20with%20business%20metrics&width=800&height=600&seq=gallery-3-2&orientation=landscape',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center',
         title: 'Vendor Dashboard'
       },
       {
-        image: 'https://readdy.ai/api/search-image?query=Shopping%20cart%20and%20checkout%20process%2C%20modern%20e-commerce%20interface%2C%20clean%20payment%20flow%20design%20with%20sustainability%20information&width=800&height=600&seq=gallery-3-3&orientation=landscape',
-        title: 'Checkout Process'
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center',
+        title: 'Product Catalog'
       },
       {
-        image: 'https://readdy.ai/api/search-image?query=Sustainability%20tracking%20dashboard%20with%20carbon%20footprint%20analytics%2C%20eco-friendly%20interface%20design%2C%20environmental%20impact%20visualization&width=800&height=600&seq=gallery-3-4&orientation=landscape',
-        title: 'Sustainability Tracking'
+        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center',
+        title: 'Analytics Dashboard'
       }
     ]
   },
   'healthsync-mobile': {
     id: 4,
     title: 'HealthSync Mobile',
-    tagline: 'Connecting Patients and Providers Through Technology',
+    tagline: 'Healthcare Management App for Providers and Patients',
     category: 'Mobile Application',
     client: 'HealthSync Medical',
-    duration: '9 months',
-    team: '14 developers',
-    heroImage: 'https://readdy.ai/api/search-image?query=Professional%20healthcare%20mobile%20application%20interface%20with%20clean%20medical%20design%2C%20modern%20health%20management%20app%20screens%2C%20dark%20navy%20theme%20with%20gold%20highlights%2C%20sophisticated%20medical%20technology%20solution%2C%20sleek%20patient%20care%20interface%2C%20clean%20mobile%20app%20design%20with%20medical%20charts&width=1200&height=600&seq=project-hero-4&orientation=landscape',
-    overview: 'HealthSync Mobile revolutionizes healthcare delivery by providing a comprehensive platform that connects patients with healthcare providers, enables telemedicine consultations, manages medical records, and facilitates appointment scheduling.',
+    duration: '7 months',
+    team: '9 developers',
+    heroImage: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&h=600&fit=crop&crop=center',
+    overview: 'HealthSync Mobile was developed to streamline healthcare operations for medical practices and improve patient engagement. The app needed to handle appointment scheduling, medical records, telemedicine capabilities, and secure HIPAA-compliant communication.',
     challenges: [
       'HIPAA compliance and data security requirements',
-      'Real-time video consultation functionality',
-      'Integration with existing hospital management systems',
-      'Offline access to critical patient information',
-      'Multi-platform development for iOS and Android'
+      'Real-time appointment scheduling across multiple providers',
+      'Secure medical records management and sharing',
+      'Telemedicine video consultation integration',
+      'Cross-platform compatibility for iOS and Android'
     ],
     solutions: [
-      'Implemented end-to-end encryption for all patient data',
-      'Developed high-quality video consultation system',
-      'Created seamless API integration with major EMR systems',
-      'Built offline-first architecture with data synchronization',
-      'Designed intuitive interface following medical UX best practices'
+      'Built HIPAA-compliant architecture with end-to-end encryption',
+      'Implemented real-time scheduling with conflict resolution',
+      'Created secure medical records system with role-based access',
+      'Integrated Twilio video for telemedicine consultations',
+      'Developed cross-platform app using React Native'
     ],
     technologies: [
-      { name: 'React Native', icon: 'ri-smartphone-line' },
+      { name: 'React Native', icon: 'ri-reactjs-line' },
       { name: 'Firebase', icon: 'ri-firebase-line' },
-      { name: 'TypeScript', icon: 'ri-code-line' },
-      { name: 'GraphQL', icon: 'ri-links-line' },
-      { name: 'WebRTC', icon: 'ri-video-line' },
-      { name: 'AWS', icon: 'ri-cloud-line' }
+      { name: 'Twilio', icon: 'ri-phone-line' },
+      { name: 'AWS', icon: 'ri-cloud-line' },
+      { name: 'Node.js', icon: 'ri-nodejs-line' },
+      { name: 'MongoDB', icon: 'ri-database-line' }
     ],
     results: [
-      '50,000+ active users within 6 months',
-      '98% patient satisfaction rating',
-      '70% reduction in missed appointments',
-      '45% improvement in treatment adherence'
+      '10,000+ patients using the app',
+      '4.8/5 average app store rating',
+      'HIPAA compliant and secure',
+      '95% patient satisfaction rate'
     ],
     gallery: [
       {
-        image: 'https://readdy.ai/api/search-image?query=Healthcare%20mobile%20app%20dashboard%20with%20patient%20information%2C%20medical%20interface%20design%2C%20clean%20health%20management%20system%2C%20professional%20medical%20app%20screens&width=800&height=600&seq=gallery-4-1&orientation=landscape',
-        title: 'Patient Dashboard'
+        image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop&crop=center',
+        title: 'Patient Portal'
       },
       {
-        image: 'https://readdy.ai/api/search-image?query=Telemedicine%20video%20consultation%20interface%2C%20modern%20healthcare%20app%20design%2C%20professional%20medical%20video%20call%20system%2C%20clean%20mobile%20interface&width=800&height=600&seq=gallery-4-2&orientation=landscape',
-        title: 'Video Consultations'
-      },
-      {
-        image: 'https://readdy.ai/api/search-image?query=Medical%20records%20management%20interface%2C%20healthcare%20app%20design%2C%20professional%20patient%20data%20display%2C%20clean%20medical%20information%20system&width=800&height=600&seq=gallery-4-3&orientation=landscape',
-        title: 'Medical Records'
-      },
-      {
-        image: 'https://readdy.ai/api/search-image?query=Appointment%20scheduling%20interface%2C%20modern%20healthcare%20app%20design%2C%20professional%20medical%20booking%20system%2C%20clean%20scheduling%20interface&width=800&height=600&seq=gallery-4-4&orientation=landscape',
+        image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop&crop=center',
         title: 'Appointment Scheduling'
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop&crop=center',
+        title: 'Telemedicine Interface'
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop&crop=center',
+        title: 'Medical Records'
       }
     ]
   },
   'financetracker-pro': {
     id: 5,
     title: 'FinanceTracker Pro',
-    tagline: 'AI-Powered Personal Finance Management Platform',
-    category: 'Web Application',
-    client: 'FinanceTracker Solutions',
-    duration: '7 months',
-    team: '9 developers',
-    heroImage: 'https://readdy.ai/api/search-image?query=Professional%20financial%20dashboard%20with%20elegant%20data%20visualization%2C%20modern%20finance%20management%20interface%2C%20dark%20navy%20corporate%20design%20with%20gold%20accents%2C%20sophisticated%20banking%20application%2C%20sleek%20budget%20tracking%20system%2C%20clean%20financial%20analytics%20platform%20with%20charts%20and%20graphs&width=1200&height=600&seq=project-hero-5&orientation=landscape',
-    overview: 'FinanceTracker Pro empowers individuals to take control of their financial future through intelligent budgeting, expense tracking, investment monitoring, and AI-powered financial insights and recommendations.',
+    tagline: 'Comprehensive Financial Management System for Businesses',
+    category: 'Financial Software',
+    client: 'FinanceTracker Corp',
+    duration: '9 months',
+    team: '11 developers',
+    heroImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop&crop=center',
+    overview: 'FinanceTracker Pro was designed to provide comprehensive financial management capabilities for businesses of all sizes. The system needed to handle budgeting, expense tracking, financial reporting, investment portfolio management, and tax planning.',
     challenges: [
-      'Bank-level security and encryption requirements',
-      'Integration with multiple financial institutions',
-      'Real-time transaction processing and categorization',
-      'Advanced AI algorithms for financial predictions',
-      'Responsive design for all device types'
+      'Complex financial calculations and reporting',
+      'Integration with multiple banking and investment APIs',
+      'Real-time data synchronization and updates',
+      'Comprehensive audit trail and compliance',
+      'Multi-currency support and exchange rates'
     ],
     solutions: [
-      'Implemented military-grade encryption and security protocols',
-      'Developed universal API connector for 12,000+ financial institutions',
-      'Created machine learning models for transaction categorization',
-      'Built predictive analytics for spending patterns and budgeting',
-      'Designed mobile-first responsive interface with progressive enhancement'
+      'Built robust financial calculation engine with Python',
+      'Integrated with Plaid API for banking connections',
+      'Implemented real-time data synchronization',
+      'Created comprehensive audit and compliance system',
+      'Developed multi-currency support with live exchange rates'
     ],
     technologies: [
-      { name: 'Angular', icon: 'ri-angularjs-line' },
-      { name: 'Spring Boot', icon: 'ri-java-line' },
-      { name: 'MySQL', icon: 'ri-database-line' },
-      { name: 'Azure', icon: 'ri-cloud-line' },
-      { name: 'Machine Learning', icon: 'ri-brain-line' },
-      { name: 'Plaid API', icon: 'ri-links-line' }
+      { name: 'Vue.js', icon: 'ri-vuejs-line' },
+      { name: 'Python', icon: 'ri-code-line' },
+      { name: 'PostgreSQL', icon: 'ri-database-2-line' },
+      { name: 'Plaid', icon: 'ri-bank-card-line' },
+      { name: 'Redis', icon: 'ri-stack-line' },
+      { name: 'Docker', icon: 'ri-container-line' }
     ],
     results: [
-      '100,000+ users in first year',
-      '85% improvement in user savings rates',
-      '60% better budget adherence',
-      '4.8/5 average app store rating'
+      '$50M+ in financial assets tracked',
+      '95% accuracy in financial calculations',
+      '30% reduction in financial management costs',
+      'Real-time financial insights and reporting'
     ],
     gallery: [
       {
-        image: 'https://readdy.ai/api/search-image?query=Personal%20finance%20dashboard%20with%20spending%20analytics%2C%20modern%20financial%20interface%2C%20professional%20budget%20tracking%20system%20with%20charts%20and%20financial%20data&width=800&height=600&seq=gallery-5-1&orientation=landscape',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center',
         title: 'Financial Dashboard'
       },
       {
-        image: 'https://readdy.ai/api/search-image?query=Budget%20management%20interface%20with%20category%20breakdown%2C%20professional%20finance%20app%20design%2C%20clean%20budgeting%20system%20with%20spending%20limits&width=800&height=600&seq=gallery-5-2&orientation=landscape',
-        title: 'Budget Management'
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center',
+        title: 'Budget Planning'
       },
       {
-        image: 'https://readdy.ai/api/search-image?query=Investment%20portfolio%20tracking%20interface%2C%20modern%20finance%20app%20design%2C%20professional%20investment%20management%20system%20with%20performance%20charts&width=800&height=600&seq=gallery-5-3&orientation=landscape',
-        title: 'Investment Tracking'
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center',
+        title: 'Investment Portfolio'
       },
       {
-        image: 'https://readdy.ai/api/search-image?query=AI%20financial%20insights%20and%20recommendations%20interface%2C%20modern%20fintech%20design%2C%20professional%20financial%20advisory%20system%20with%20smart%20suggestions&width=800&height=600&seq=gallery-5-4&orientation=landscape',
-        title: 'AI Insights'
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center',
+        title: 'Tax Planning'
       }
     ]
   },
   'eventmaster-app': {
     id: 6,
     title: 'EventMaster App',
-    tagline: 'Comprehensive Event Management Solution',
-    category: 'Mobile Application',
-    client: 'EventMaster Corp',
-    duration: '11 months',
-    team: '16 developers',
-    heroImage: 'https://readdy.ai/api/search-image?query=Modern%20event%20management%20mobile%20app%20interface%20with%20elegant%20event%20displays%2C%20professional%20event%20planning%20application%2C%20dark%20navy%20design%20with%20gold%20highlights%2C%20sophisticated%20event%20coordination%20system%2C%20sleek%20mobile%20interface%20design%2C%20clean%20event%20booking%20platform%20with%20calendar%20integration&width=1200&height=600&seq=project-hero-6&orientation=landscape',
-    overview: 'EventMaster App transforms event management by providing organizers and attendees with powerful tools for event creation, ticket sales, networking, real-time updates, and comprehensive analytics.',
+    tagline: 'Complete Event Management Solution for Organizers',
+    category: 'Event Management',
+    client: 'EventMaster Events',
+    duration: '6 months',
+    team: '8 developers',
+    heroImage: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200&h=600&fit=crop&crop=center',
+    overview: 'EventMaster App was developed to provide comprehensive event management capabilities for event organizers. The platform needed to handle event creation, ticketing, attendee management, check-in processes, and detailed analytics.',
     challenges: [
-      'Real-time synchronization for thousands of concurrent users',
-      'Complex ticketing and payment processing system',
-      'Advanced networking features for attendees',
-      'Multi-language and timezone support',
-      'Scalable architecture for events of all sizes'
+      'Scalable ticketing system for large events',
+      'Real-time attendee management and check-in',
+      'Multi-event coordination and management',
+      'Complex pricing and discount structures',
+      'Comprehensive analytics and reporting'
     ],
     solutions: [
-      'Built microservices architecture with auto-scaling capabilities',
-      'Developed comprehensive ticketing system with fraud prevention',
-      'Created AI-powered networking recommendations',
-      'Implemented advanced localization and timezone management',
-      'Designed intuitive event management dashboard with real-time analytics'
+      'Built scalable ticketing system with real-time inventory',
+      'Implemented QR code-based check-in system',
+      'Created multi-event management dashboard',
+      'Developed flexible pricing and discount engine',
+      'Built comprehensive analytics and reporting system'
     ],
     technologies: [
-      { name: 'Flutter', icon: 'ri-flutter-line' },
+      { name: 'React', icon: 'ri-reactjs-line' },
       { name: 'Node.js', icon: 'ri-nodejs-line' },
+      { name: 'MongoDB', icon: 'ri-database-line' },
+      { name: 'Stripe', icon: 'ri-bank-card-line' },
       { name: 'Redis', icon: 'ri-stack-line' },
-      { name: 'Google Cloud', icon: 'ri-cloud-line' },
-      { name: 'Socket.io', icon: 'ri-broadcast-line' },
-      { name: 'Stripe', icon: 'ri-bank-card-line' }
+      { name: 'AWS', icon: 'ri-cloud-line' }
     ],
     results: [
-      '1M+ events managed successfully',
-      '5M+ tickets sold through platform',
-      '95% customer satisfaction rating',
-      '40% increase in event attendance rates'
+      '1,000+ events managed successfully',
+      '50,000+ attendees processed',
+      '98% attendee satisfaction rating',
+      'Real-time event analytics and insights'
     ],
     gallery: [
       {
-        image: 'https://readdy.ai/api/search-image?query=Event%20management%20dashboard%20with%20calendar%20and%20planning%20tools%2C%20professional%20event%20app%20interface%2C%20modern%20event%20coordination%20system&width=800&height=600&seq=gallery-6-1&orientation=landscape',
-        title: 'Event Dashboard'
+        image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop&crop=center',
+        title: 'Event Creation'
       },
       {
-        image: 'https://readdy.ai/api/search-image?query=Event%20ticketing%20and%20registration%20interface%2C%20modern%20event%20app%20design%2C%20professional%20ticket%20booking%20system%20with%20payment%20processing&width=800&height=600&seq=gallery-6-2&orientation=landscape',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center',
         title: 'Ticketing System'
       },
       {
-        image: 'https://readdy.ai/api/search-image?query=Attendee%20networking%20interface%2C%20modern%20event%20app%20design%2C%20professional%20networking%20system%20for%20conferences%20and%20events&width=800&height=600&seq=gallery-6-3&orientation=landscape',
-        title: 'Networking Features'
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center',
+        title: 'Attendee Management'
       },
       {
-        image: 'https://readdy.ai/api/search-image?query=Event%20analytics%20and%20reporting%20dashboard%2C%20professional%20event%20management%20interface%2C%20comprehensive%20event%20statistics%20and%20insights&width=800&height=600&seq=gallery-6-4&orientation=landscape',
-        title: 'Analytics Dashboard'
+        image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop&crop=center',
+        title: 'Event Analytics'
       }
     ]
   }
@@ -418,7 +420,9 @@ export default function ProjectDetail({ slug }: { slug: string }) {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="pt-16">
+      <Header />
+      
+      <main className="pt-16">
         <Breadcrumbs projectTitle={project.title} />
         <ProjectHero project={project} />
         
@@ -505,7 +509,9 @@ export default function ProjectDetail({ slug }: { slug: string }) {
             </div>
           </div>
         )}
-      </div>
+      </main>
+      
+      <Footer />
     </div>
   );
 }

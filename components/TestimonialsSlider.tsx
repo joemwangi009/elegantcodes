@@ -8,55 +8,67 @@ export default function TestimonialsSlider() {
 
   const testimonials = [
     {
-      quote: "ElegantCodes transformed our business operations with their custom POS system. Sales increased by 40% within the first quarter. Outstanding work!",
-      author: "Sarah Johnson",
-      position: "CEO, TechRetail Solutions",
-      avatar: "https://readdy.ai/api/search-image?query=Professional%20business%20woman%20CEO%20portrait%2C%20confident%20executive%20headshot%2C%20corporate%20professional%20photo%2C%20elegant%20business%20attire%2C%20modern%20office%20background%2C%20sophisticated%20leadership%20portrait&width=100&height=100&seq=testimonial-1&orientation=squarish"
+      id: 1,
+      name: "Jennifer Martinez",
+      position: "CEO, TechFlow Solutions",
+      company: "TechFlow",
+      quote: "ElegantCodes transformed our business operations with a custom CRM system that increased our efficiency by 300%. Their attention to detail and professional approach exceeded our expectations.",
+      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face",
+      rating: 5
     },
     {
-      quote: "The e-commerce platform they built for us is simply phenomenal. User experience is seamless, and our online revenue doubled in 6 months.",
-      author: "Michael Chen",
-      position: "Founder, GreenTech Marketplace",
-      avatar: "https://readdy.ai/api/search-image?query=Professional%20business%20man%20founder%20portrait%2C%20confident%20entrepreneur%20headshot%2C%20corporate%20executive%20photo%2C%20modern%20business%20suit%2C%20office%20environment%2C%20professional%20leadership%20image&width=100&height=100&seq=testimonial-2&orientation=squarish"
+      id: 2,
+      name: "David Thompson",
+      position: "Founder, RetailPro Chain",
+      company: "RetailPro",
+      quote: "The POS system they developed for our retail chain has revolutionized our operations. The real-time inventory tracking and reporting features have saved us countless hours.",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+      rating: 5
     },
     {
-      quote: "Their custom CRM solution streamlined our entire workflow. We now manage 500+ clients effortlessly. Best investment we've made!",
-      author: "Emily Rodriguez",
-      position: "Operations Director, ServicePro",
-      avatar: "https://readdy.ai/api/search-image?query=Professional%20business%20woman%20director%20portrait%2C%20confident%20female%20executive%20headshot%2C%20corporate%20professional%20photo%2C%20elegant%20business%20attire%2C%20modern%20office%20setting%2C%20sophisticated%20management%20portrait&width=100&height=100&seq=testimonial-3&orientation=squarish"
+      id: 3,
+      name: "Sarah Williams",
+      position: "Director, EcoShop Inc.",
+      company: "EcoShop",
+      quote: "Our e-commerce platform built by ElegantCodes has been instrumental in our growth. The user experience is exceptional and our conversion rates have improved significantly.",
+      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
+      rating: 5
     },
     {
-      quote: "ElegantCodes delivered beyond expectations. Their mobile app increased our customer engagement by 300%. Highly recommended!",
-      author: "David Thompson",
-      position: "Marketing Head, FinanceFlow",
-      avatar: "https://readdy.ai/api/search-image?query=Professional%20business%20man%20marketing%20head%20portrait%2C%20confident%20male%20executive%20headshot%2C%20corporate%20professional%20photo%2C%20modern%20business%20attire%2C%20office%20background%2C%20professional%20leadership%20image&width=100&height=100&seq=testimonial-4&orientation=squarish"
+      id: 4,
+      name: "Michael Rodriguez",
+      position: "Marketing Head, DataSync",
+      company: "DataSync",
+      quote: "The analytics dashboard they created provides insights we never had before. It's become an essential tool for our decision-making process.",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
+      rating: 5
     }
   ];
 
-  const clientLogos = [
+  const companies = [
     {
-      name: "TechCorp",
-      logo: "https://readdy.ai/api/search-image?query=Modern%20technology%20company%20logo%20design%2C%20minimalist%20corporate%20brand%2C%20professional%20tech%20business%20logo%2C%20clean%20geometric%20design%2C%20dark%20navy%20and%20gold%20color%20scheme%2C%20elegant%20business%20identity&width=150&height=80&seq=client-logo-1&orientation=landscape"
+      name: "TechFlow",
+      logo: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=150&h=60&fit=crop&crop=center"
     },
     {
-      name: "InnovateNow",
-      logo: "https://readdy.ai/api/search-image?query=Innovation%20company%20logo%20design%2C%20modern%20startup%20brand%2C%20professional%20business%20logo%2C%20sleek%20corporate%20identity%2C%20contemporary%20design%20elements%2C%20elegant%20brand%20mark&width=150&height=80&seq=client-logo-2&orientation=landscape"
+      name: "RetailPro",
+      logo: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=150&h=60&fit=crop&crop=center"
     },
     {
-      name: "DataFlow",
-      logo: "https://readdy.ai/api/search-image?query=Data%20analytics%20company%20logo%2C%20modern%20business%20intelligence%20brand%2C%20professional%20corporate%20logo%2C%20tech%20company%20identity%2C%20clean%20minimal%20design%2C%20sophisticated%20brand%20mark&width=150&height=80&seq=client-logo-3&orientation=landscape"
+      name: "EcoShop",
+      logo: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=150&h=60&fit=crop&crop=center"
+    },
+    {
+      name: "DataSync",
+      logo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=150&h=60&fit=crop&crop=center"
     },
     {
       name: "CloudTech",
-      logo: "https://readdy.ai/api/search-image?query=Cloud%20technology%20company%20logo%2C%20modern%20tech%20business%20brand%2C%20professional%20corporate%20identity%2C%20contemporary%20logo%20design%2C%20elegant%20business%20mark%2C%20sophisticated%20brand%20identity&width=150&height=80&seq=client-logo-4&orientation=landscape"
+      logo: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=150&h=60&fit=crop&crop=center"
     },
     {
-      name: "DigitalEdge",
-      logo: "https://readdy.ai/api/search-image?query=Digital%20agency%20company%20logo%2C%20modern%20business%20brand%2C%20professional%20corporate%20logo%2C%20tech%20company%20identity%2C%20sleek%20design%20elements%2C%20elegant%20brand%20mark&width=150&height=80&seq=client-logo-5&orientation=landscape"
-    },
-    {
-      name: "SmartSolutions",
-      logo: "https://readdy.ai/api/search-image?query=Smart%20solutions%20company%20logo%2C%20modern%20business%20intelligence%20brand%2C%20professional%20corporate%20identity%2C%20tech%20company%20logo%20design%2C%20clean%20elegant%20mark%2C%20sophisticated%20business%20brand&width=150&height=80&seq=client-logo-6&orientation=landscape"
+      name: "DigitalAgency",
+      logo: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=150&h=60&fit=crop&crop=center"
     }
   ];
 
@@ -95,7 +107,7 @@ export default function TestimonialsSlider() {
           
           <div className="flex transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${currentTestimonial * 100}%)` }}>
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="min-w-full text-center">
+              <div key={testimonial.id} className="min-w-full text-center">
                 <div className="mb-8">
                   <i className="ri-double-quotes-l text-6xl text-amber-400 mb-6 block"></i>
                   <blockquote className="text-2xl lg:text-3xl text-slate-700 font-inter leading-relaxed mb-8 max-w-4xl mx-auto">
@@ -106,11 +118,11 @@ export default function TestimonialsSlider() {
                 <div className="flex items-center justify-center space-x-4">
                   <img
                     src={testimonial.avatar}
-                    alt={testimonial.author}
+                    alt={testimonial.name}
                     className="w-16 h-16 rounded-full object-cover object-top shadow-lg"
                   />
                   <div className="text-left">
-                    <div className="text-xl font-bold text-slate-900 font-poppins">{testimonial.author}</div>
+                    <div className="text-xl font-bold text-slate-900 font-poppins">{testimonial.name}</div>
                     <div className="text-amber-600 font-inter">{testimonial.position}</div>
                   </div>
                 </div>
@@ -142,11 +154,11 @@ export default function TestimonialsSlider() {
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center opacity-60 hover:opacity-100 transition-opacity duration-300">
-          {clientLogos.map((client, index) => (
+          {companies.map((company, index) => (
             <div key={index} className="flex items-center justify-center p-4 hover:scale-110 transition-transform duration-200">
               <img
-                src={client.logo}
-                alt={client.name}
+                src={company.logo}
+                alt={company.name}
                 className="h-12 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>

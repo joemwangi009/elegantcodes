@@ -15,7 +15,7 @@ const allProjects = [
     slug: 'techflow-crm',
     category: 'Web Application',
     description: 'Custom CRM solution for technology companies with advanced analytics.',
-    image: 'https://readdy.ai/api/search-image?query=Professional%20CRM%20dashboard%20interface%20with%20elegant%20data%20visualization%2C%20modern%20customer%20relationship%20management%20system%2C%20dark%20navy%20corporate%20design%20with%20gold%20accents%2C%20sophisticated%20business%20analytics%20platform&width=400&height=250&seq=related-1&orientation=landscape',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=center',
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const allProjects = [
     slug: 'retailpro-pos',
     category: 'POS System',
     description: 'Advanced point-of-sale system for retail chains with real-time inventory.',
-    image: 'https://readdy.ai/api/search-image?query=Modern%20retail%20point%20of%20sale%20interface%20with%20clean%20design%2C%20professional%20POS%20system%20dashboard%2C%20dark%20navy%20theme%20with%20gold%20highlights%2C%20elegant%20touch%20screen%20interface&width=400&height=250&seq=related-2&orientation=landscape',
+    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop&crop=center',
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const allProjects = [
     slug: 'ecoshop-marketplace',
     category: 'E-commerce Platform',
     description: 'Sustainable e-commerce platform connecting eco-friendly brands.',
-    image: 'https://readdy.ai/api/search-image?query=Elegant%20e-commerce%20marketplace%20interface%20with%20sustainable%20product%20displays%2C%20modern%20online%20shopping%20platform%2C%20dark%20navy%20design%20with%20gold%20accents&width=400&height=250&seq=related-3&orientation=landscape',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center',
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const allProjects = [
     slug: 'healthsync-mobile',
     category: 'Mobile Application',
     description: 'Healthcare management app connecting patients with providers.',
-    image: 'https://readdy.ai/api/search-image?query=Professional%20healthcare%20mobile%20application%20interface%20with%20clean%20medical%20design%2C%20modern%20health%20management%20app%20screens%2C%20dark%20navy%20theme%20with%20gold%20highlights&width=400&height=250&seq=related-4&orientation=landscape',
+    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop&crop=center',
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const allProjects = [
     slug: 'financetracker-pro',
     category: 'Web Application',
     description: 'Personal finance management platform with AI-powered insights.',
-    image: 'https://readdy.ai/api/search-image?query=Professional%20financial%20dashboard%20with%20elegant%20data%20visualization%2C%20modern%20finance%20management%20interface%2C%20dark%20navy%20corporate%20design%20with%20gold%20accents&width=400&height=250&seq=related-5&orientation=landscape',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center',
   },
   {
     id: 6,
@@ -55,7 +55,7 @@ const allProjects = [
     slug: 'eventmaster-app',
     category: 'Mobile Application',
     description: 'Comprehensive event management mobile application.',
-    image: 'https://readdy.ai/api/search-image?query=Modern%20event%20management%20mobile%20app%20interface%20with%20elegant%20event%20displays%2C%20professional%20event%20planning%20application%2C%20dark%20navy%20design%20with%20gold%20highlights&width=400&height=250&seq=related-6&orientation=landscape',
+    image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=300&fit=crop&crop=center',
   },
 ];
 
