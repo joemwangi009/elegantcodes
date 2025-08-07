@@ -1,6 +1,7 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Only initialize Resend if API key is available
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 export interface ContactFormData {
   name: string;
@@ -28,6 +29,10 @@ export interface QuoteRequestData {
 
 // Email to company when client submits contact form
 export async function sendContactEmailToCompany(data: ContactFormData) {
+  if (!resend) {
+    throw new Error('Resend API key not configured');
+  }
+
   try {
     const { data: result, error } = await resend.emails.send({
       from: 'ElegantCodes <noreply@elegantcodes.com>',
@@ -116,6 +121,10 @@ export async function sendContactEmailToCompany(data: ContactFormData) {
 
 // Auto-reply to client when they submit contact form
 export async function sendContactAutoReplyToClient(data: ContactFormData) {
+  if (!resend) {
+    throw new Error('Resend API key not configured');
+  }
+
   try {
     const { data: result, error } = await resend.emails.send({
       from: 'ElegantCodes <info@elegantcodes.com>',
@@ -180,6 +189,10 @@ export async function sendContactAutoReplyToClient(data: ContactFormData) {
 
 // Email to company when client requests quote
 export async function sendQuoteRequestToCompany(data: QuoteRequestData) {
+  if (!resend) {
+    throw new Error('Resend API key not configured');
+  }
+
   try {
     const { data: result, error } = await resend.emails.send({
       from: 'ElegantCodes <noreply@elegantcodes.com>',
@@ -276,6 +289,10 @@ export async function sendQuoteRequestToCompany(data: QuoteRequestData) {
 
 // Auto-reply to client when they request quote
 export async function sendQuoteAutoReplyToClient(data: QuoteRequestData) {
+  if (!resend) {
+    throw new Error('Resend API key not configured');
+  }
+
   try {
     const { data: result, error } = await resend.emails.send({
       from: 'ElegantCodes <info@elegantcodes.com>',
