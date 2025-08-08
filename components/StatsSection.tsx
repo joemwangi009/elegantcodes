@@ -5,12 +5,12 @@ import { useState, useEffect, useRef } from 'react';
 export default function StatsSection() {
   const [isVisible, setIsVisible] = useState(false);
   const [counters, setCounters] = useState({
-    projects: 0,
-    industries: 0,
-    clients: 0,
-    satisfaction: 0,
-    countries: 0,
-    awards: 0
+    projects: 1200,
+    industries: 25,
+    clients: 450,
+    satisfaction: 99,
+    countries: 35,
+    awards: 15
   });
   
   const sectionRef = useRef<HTMLElement>(null);
@@ -97,20 +97,16 @@ export default function StatsSection() {
   }, [isVisible]);
 
   const animateCounters = () => {
+    // Numbers are already at maximum, just trigger a subtle pulse animation
     stats.forEach((stat, index) => {
-      let start = 0;
-      const duration = 2500;
-      const increment = stat.target / (duration / 16);
-      
-      const timer = setInterval(() => {
-        start += increment;
-        if (start >= stat.target) {
-          setCounters(prev => ({ ...prev, [stat.key]: stat.target }));
-          clearInterval(timer);
-        } else {
-          setCounters(prev => ({ ...prev, [stat.key]: Math.floor(start) }));
-        }
-      }, 16);
+      // Add a subtle scale animation to show the numbers are "live"
+      const element = document.querySelector(`[data-stat="${stat.key}"]`);
+      if (element) {
+        element.classList.add('animate-pulse');
+        setTimeout(() => {
+          element.classList.remove('animate-pulse');
+        }, 1000);
+      }
     });
   };
 
@@ -154,7 +150,10 @@ export default function StatsSection() {
               </div>
               
               <div className="mb-6">
-                <div className="text-5xl lg:text-6xl font-bold text-slate-900 mb-4 font-poppins group-hover:text-amber-500 transition-colors duration-300">
+                <div 
+                  data-stat={stat.key}
+                  className="text-5xl lg:text-6xl font-bold text-slate-900 mb-4 font-poppins group-hover:text-amber-500 transition-colors duration-300"
+                >
                   {counters[stat.key as keyof typeof counters].toLocaleString()}{stat.suffix}
                 </div>
                 <div className="text-lg text-slate-600 font-inter font-medium group-hover:text-slate-900 transition-colors duration-300">
