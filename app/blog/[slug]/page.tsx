@@ -98,9 +98,6 @@ export async function generateStaticParams() {
     { slug: 'ai-integration-business-applications' },
     { slug: 'database-design-high-performance' },
     { slug: 'microservices-architecture-best-practices' },
-    { slug: 'devops-automation-modern-teams' },
-    { slug: 'blockchain-integration-business-solutions' },
-    { slug: 'ux-design-enterprise-applications' },
   ];
 }
 
@@ -117,9 +114,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     'ai-integration-business-applications',
     'database-design-high-performance',
     'microservices-architecture-best-practices',
-    'devops-automation-modern-teams',
-    'blockchain-integration-business-solutions',
-    'ux-design-enterprise-applications',
   ];
 
   if (!validSlugs.includes(slug)) {

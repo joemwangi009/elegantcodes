@@ -63,7 +63,7 @@ export default function AboutSection() {
           
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1517486826000-000000000000?w=600&h=500&fit=crop&crop=landscape"
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=500&fit=crop&crop=landscape"
               alt="ElegantCodes Team"
               className="w-full h-auto rounded-2xl shadow-2xl object-cover object-top"
             />

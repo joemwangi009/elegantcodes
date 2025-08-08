@@ -13,7 +13,7 @@ export default function TestimonialsSlider() {
       position: "CEO, TechFlow Solutions",
       company: "TechFlow",
       quote: "ElegantCodes transformed our business operations with a custom CRM system that increased our efficiency by 300%. Their attention to detail and professional approach exceeded our expectations.",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       verified: true
     },
@@ -33,7 +33,7 @@ export default function TestimonialsSlider() {
       position: "Director of Technology, EcoShop Inc.",
       company: "EcoShop",
       quote: "Our e-commerce platform built by ElegantCodes has been instrumental in our growth. The user experience is exceptional and our conversion rates have improved by 65% since launch.",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       verified: true
     },
@@ -63,7 +63,7 @@ export default function TestimonialsSlider() {
       position: "VP of Operations, FinanceTracker Pro",
       company: "FinanceTracker",
       quote: "Their AI-powered financial management platform has revolutionized how we handle personal finance. User savings rates improved by 85% and budget adherence by 60%.",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
+      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       verified: true
     },
@@ -73,7 +73,7 @@ export default function TestimonialsSlider() {
       position: "Event Director, EventMaster Corp",
       company: "EventMaster",
       quote: "The event management platform they built handles everything from ticketing to networking. We've managed over 1M events successfully with 95% customer satisfaction.",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face",
+      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       verified: true
     },
