@@ -117,7 +117,7 @@ export default function StatsSection() {
   return (
     <section 
       ref={sectionRef}
-      className="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden"
+      className="py-24 bg-gradient-to-br from-slate-50 to-blue-50 relative overflow-hidden"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
@@ -129,10 +129,10 @@ export default function StatsSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-5xl lg:text-6xl font-bold text-white mb-8 font-poppins">
+          <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-8 font-poppins">
             Our <span className="text-transparent bg-gradient-to-r from-amber-400 to-amber-500 bg-clip-text">Impact</span> in Numbers
           </h2>
-          <p className="text-xl lg:text-2xl text-slate-300 max-w-4xl mx-auto font-inter leading-relaxed">
+          <p className="text-xl lg:text-2xl text-slate-600 max-w-4xl mx-auto font-inter leading-relaxed">
             Delivering excellence through measurable results and lasting partnerships across the globe.
           </p>
         </div>
@@ -141,7 +141,7 @@ export default function StatsSection() {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className={`text-center group bg-white/10 backdrop-blur-sm rounded-3xl p-8 shadow-2xl hover:shadow-amber-500/20 transition-all duration-500 border border-white/20 hover:border-amber-500/50`}
+              className={`text-center group bg-white rounded-3xl p-8 shadow-2xl hover:shadow-amber-500/20 transition-all duration-500 border border-slate-200 hover:border-amber-500/50`}
               style={{
                 animation: isVisible ? `fadeInUp 0.8s ease-out ${index * 0.15}s both` : 'none'
               }}
@@ -154,10 +154,10 @@ export default function StatsSection() {
               </div>
               
               <div className="mb-6">
-                <div className="text-5xl lg:text-6xl font-bold text-white mb-4 font-poppins group-hover:text-amber-400 transition-colors duration-300">
+                <div className="text-5xl lg:text-6xl font-bold text-slate-900 mb-4 font-poppins group-hover:text-amber-500 transition-colors duration-300">
                   {counters[stat.key as keyof typeof counters].toLocaleString()}{stat.suffix}
                 </div>
-                <div className="text-lg text-slate-300 font-inter font-medium group-hover:text-white transition-colors duration-300">
+                <div className="text-lg text-slate-600 font-inter font-medium group-hover:text-slate-900 transition-colors duration-300">
                   {stat.label}
                 </div>
               </div>
@@ -170,21 +170,21 @@ export default function StatsSection() {
         {/* Additional Impact Metrics */}
         <div className="mt-20 text-center">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-              <div className="text-3xl font-bold text-amber-400 mb-2">24/7</div>
-              <div className="text-slate-300">Support Available</div>
+            <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-lg">
+              <div className="text-3xl font-bold text-amber-500 mb-2">24/7</div>
+              <div className="text-slate-600">Support Available</div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-              <div className="text-3xl font-bold text-amber-400 mb-2">5+</div>
-              <div className="text-slate-300">Years Experience</div>
+            <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-lg">
+              <div className="text-3xl font-bold text-amber-500 mb-2">5+</div>
+              <div className="text-slate-600">Years Experience</div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-              <div className="text-3xl font-bold text-amber-400 mb-2">100%</div>
-              <div className="text-slate-300">Project Success Rate</div>
+            <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-lg">
+              <div className="text-3xl font-bold text-amber-500 mb-2">100%</div>
+              <div className="text-slate-600">Project Success Rate</div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-              <div className="text-3xl font-bold text-amber-400 mb-2">50+</div>
-              <div className="text-slate-300">Team Members</div>
+            <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-lg">
+              <div className="text-3xl font-bold text-amber-500 mb-2">50+</div>
+              <div className="text-slate-600">Team Members</div>
             </div>
           </div>
         </div>

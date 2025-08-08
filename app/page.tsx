@@ -20,9 +20,9 @@ export default function Home() {
         <HeroSection />
         <ServicesSection />
         <PortfolioSection />
-        <StatsSection />
         <TestimonialsSlider />
         <AboutSection />
+        <StatsSection />
         <BlogSection />
         <QuoteSection />
         <ContactSection />
