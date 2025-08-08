@@ -13,35 +13,79 @@ export default function TestimonialsSlider() {
       position: "CEO, TechFlow Solutions",
       company: "TechFlow",
       quote: "ElegantCodes transformed our business operations with a custom CRM system that increased our efficiency by 300%. Their attention to detail and professional approach exceeded our expectations.",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face",
-      rating: 5
+      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+      rating: 5,
+      verified: true
     },
     {
       id: 2,
       name: "David Thompson",
-      position: "Founder, RetailPro Chain",
+      position: "Founder & CEO, RetailPro Chain",
       company: "RetailPro",
-      quote: "The POS system they developed for our retail chain has revolutionized our operations. The real-time inventory tracking and reporting features have saved us countless hours.",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
-      rating: 5
+      quote: "The POS system they developed for our retail chain has revolutionized our operations. The real-time inventory tracking and reporting features have saved us countless hours and improved our bottom line by 40%.",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      rating: 5,
+      verified: true
     },
     {
       id: 3,
       name: "Sarah Williams",
-      position: "Director, EcoShop Inc.",
+      position: "Director of Technology, EcoShop Inc.",
       company: "EcoShop",
-      quote: "Our e-commerce platform built by ElegantCodes has been instrumental in our growth. The user experience is exceptional and our conversion rates have improved significantly.",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
-      rating: 5
+      quote: "Our e-commerce platform built by ElegantCodes has been instrumental in our growth. The user experience is exceptional and our conversion rates have improved by 65% since launch.",
+      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      rating: 5,
+      verified: true
     },
     {
       id: 4,
       name: "Michael Rodriguez",
-      position: "Marketing Head, DataSync",
+      position: "Marketing Director, DataSync Analytics",
       company: "DataSync",
-      quote: "The analytics dashboard they created provides insights we never had before. It's become an essential tool for our decision-making process.",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-      rating: 5
+      quote: "The analytics dashboard they created provides insights we never had before. It's become an essential tool for our decision-making process and has helped us increase ROI by 200%.",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      rating: 5,
+      verified: true
+    },
+    {
+      id: 5,
+      name: "Emily Chen",
+      position: "CTO, HealthSync Medical",
+      company: "HealthSync",
+      quote: "The mobile app they developed for our healthcare platform is HIPAA-compliant and user-friendly. Patient engagement has increased by 80% and appointment no-shows decreased by 70%.",
+      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
+      rating: 5,
+      verified: true
+    },
+    {
+      id: 6,
+      name: "Robert Johnson",
+      position: "VP of Operations, FinanceTracker Pro",
+      company: "FinanceTracker",
+      quote: "Their AI-powered financial management platform has revolutionized how we handle personal finance. User savings rates improved by 85% and budget adherence by 60%.",
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
+      rating: 5,
+      verified: true
+    },
+    {
+      id: 7,
+      name: "Lisa Anderson",
+      position: "Event Director, EventMaster Corp",
+      company: "EventMaster",
+      quote: "The event management platform they built handles everything from ticketing to networking. We've managed over 1M events successfully with 95% customer satisfaction.",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face",
+      rating: 5,
+      verified: true
+    },
+    {
+      id: 8,
+      name: "James Wilson",
+      position: "Product Manager, CloudTech Solutions",
+      company: "CloudTech",
+      quote: "ElegantCodes delivered our cloud infrastructure project on time and under budget. Their expertise in scalable architecture has been crucial for our rapid growth.",
+      avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face",
+      rating: 5,
+      verified: true
     }
   ];
 
@@ -63,11 +107,11 @@ export default function TestimonialsSlider() {
       logo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=150&h=60&fit=crop&crop=center"
     },
     {
-      name: "CloudTech",
+      name: "HealthSync",
       logo: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=150&h=60&fit=crop&crop=center"
     },
     {
-      name: "DigitalAgency",
+      name: "FinanceTracker",
       logo: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=150&h=60&fit=crop&crop=center"
     }
   ];
@@ -76,13 +120,22 @@ export default function TestimonialsSlider() {
     if (!isPaused) {
       const interval = setInterval(() => {
         setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-      }, 4000);
+      }, 5000);
       return () => clearInterval(interval);
     }
   }, [isPaused, testimonials.length]);
 
   const goToTestimonial = (index: number) => {
     setCurrentTestimonial(index);
+  };
+
+  const renderStars = (rating: number) => {
+    return Array.from({ length: 5 }, (_, i) => (
+      <i
+        key={i}
+        className={`ri-star-${i < rating ? 'fill' : 'line'} text-amber-400 text-lg`}
+      />
+    ));
   };
 
   return (
@@ -115,7 +168,7 @@ export default function TestimonialsSlider() {
                   </blockquote>
                 </div>
                 
-                <div className="flex items-center justify-center space-x-4">
+                <div className="flex items-center justify-center space-x-4 mb-4">
                   <img
                     src={testimonial.avatar}
                     alt={testimonial.name}
@@ -124,8 +177,22 @@ export default function TestimonialsSlider() {
                   <div className="text-left">
                     <div className="text-xl font-bold text-slate-900 font-poppins">{testimonial.name}</div>
                     <div className="text-amber-600 font-inter">{testimonial.position}</div>
+                    <div className="text-sm text-slate-500">{testimonial.company}</div>
                   </div>
                 </div>
+
+                {/* Rating Stars */}
+                <div className="flex justify-center items-center space-x-1 mb-2">
+                  {renderStars(testimonial.rating)}
+                </div>
+
+                {/* Verified Badge */}
+                {testimonial.verified && (
+                  <div className="flex justify-center items-center space-x-2">
+                    <i className="ri-checkbox-circle-fill text-green-500 text-sm"></i>
+                    <span className="text-sm text-green-600 font-medium">Verified Client</span>
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -167,4 +234,5 @@ export default function TestimonialsSlider() {
       </div>
     </section>
   );
+}
 }
