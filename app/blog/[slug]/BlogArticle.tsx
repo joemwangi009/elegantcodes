@@ -242,7 +242,8 @@ const blogData = {
       </ul>
       
       <p className="text-base text-slate-700 mb-6 leading-relaxed">Building scalable POS systems requires careful planning, robust architecture, and continuous optimization. By following these best practices, you can create systems that grow with your business while maintaining performance and reliability.</p>
-    `,
+    `
+  },
   'api-security-best-practices': {
     title: 'API Security Best Practices',
     author: 'Sarah Johnson',
