@@ -551,7 +551,7 @@ const blogData = {
       
       <p className="text-base text-slate-700 mb-6 leading-relaxed">Microservices architecture provides the foundation for scalable, maintainable applications. By following these best practices, you can build robust systems that adapt to changing business requirements.</p>
     `
-  }
+  },
 };
 
 interface BlogArticleProps {
