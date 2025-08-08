@@ -47,18 +47,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: 'Microservices Architecture Best Practices',
       description: 'Complete guide to designing and implementing microservices for scalable enterprise applications.',
     },
-    'blockchain-integration-business-solutions': {
-      title: 'Blockchain Integration for Business Solutions',
-      description: 'Exploring practical applications of blockchain technology in modern business environments.',
-    },
-    'devops-automation-modern-teams': {
-      title: 'DevOps Automation for Modern Teams',
-      description: 'Streamline your development workflow with automated testing, deployment, and monitoring solutions.',
-    },
-    'ux-design-enterprise-applications': {
-      title: 'User Experience Design for Enterprise Applications',
-      description: 'Creating intuitive and efficient user interfaces for complex business software solutions.',
-    },
   };
 
   const post = blogData[slug as keyof typeof blogData];
