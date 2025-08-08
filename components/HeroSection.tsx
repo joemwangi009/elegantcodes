@@ -119,9 +119,6 @@ export default function HeroSection() {
                 <div className={`animate-fade-in-up delay-${index * 200}`}>
                   <h1 className="hero-title font-poppins text-white mb-6 animate-fade-in">
                     {slide.title}
-                    <span className="text-transparent bg-gradient-to-r from-amber-400 to-amber-500 bg-clip-text block mt-4">
-                      {slide.subtitle}
-                    </span>
                   </h1>
 
                   <p className="hero-subtitle text-slate-300 mb-8 max-w-4xl mx-auto animate-slide-up">

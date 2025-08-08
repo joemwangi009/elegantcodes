@@ -91,28 +91,44 @@ export default function TestimonialsSlider() {
 
   const companies = [
     {
-      name: "TechFlow",
+      name: "TechFlow Solutions",
       logo: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=150&h=60&fit=crop&crop=center"
     },
     {
-      name: "RetailPro",
+      name: "RetailPro Chain",
       logo: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=150&h=60&fit=crop&crop=center"
     },
     {
-      name: "EcoShop",
+      name: "EcoShop Inc.",
       logo: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=150&h=60&fit=crop&crop=center"
     },
     {
-      name: "DataSync",
+      name: "DataSync Analytics",
       logo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=150&h=60&fit=crop&crop=center"
     },
     {
-      name: "HealthSync",
+      name: "HealthSync Medical",
+      logo: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=150&h=60&fit=crop&crop=center"
+    },
+    {
+      name: "FinanceTracker Pro",
       logo: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=150&h=60&fit=crop&crop=center"
     },
     {
-      name: "FinanceTracker",
+      name: "EventMaster Corp",
       logo: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=150&h=60&fit=crop&crop=center"
+    },
+    {
+      name: "CloudTech Solutions",
+      logo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=150&h=60&fit=crop&crop=center"
+    },
+    {
+      name: "InnovateLab",
+      logo: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=150&h=60&fit=crop&crop=center"
+    },
+    {
+      name: "GlobalTech Systems",
+      logo: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=150&h=60&fit=crop&crop=center"
     }
   ];
 
@@ -152,7 +168,7 @@ export default function TestimonialsSlider() {
         </div>
 
         <div 
-          className="relative bg-white rounded-3xl shadow-2xl p-12 mb-20 overflow-hidden"
+          className="relative bg-white rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-12 mb-20 overflow-hidden"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -160,24 +176,24 @@ export default function TestimonialsSlider() {
           
           <div className="flex transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${currentTestimonial * 100}%)` }}>
             {testimonials.map((testimonial, index) => (
-              <div key={testimonial.id} className="min-w-full text-center">
-                <div className="mb-8">
-                  <i className="ri-double-quotes-l text-6xl text-amber-400 mb-6 block"></i>
-                  <blockquote className="text-2xl lg:text-3xl text-slate-700 font-inter leading-relaxed mb-8 max-w-4xl mx-auto">
+              <div key={testimonial.id} className="min-w-full text-center px-4 sm:px-8">
+                <div className="mb-6 sm:mb-8">
+                  <i className="ri-double-quotes-l text-4xl sm:text-5xl lg:text-6xl text-amber-400 mb-4 sm:mb-6 block"></i>
+                  <blockquote className="text-lg sm:text-xl lg:text-2xl xl:text-3xl text-slate-700 font-inter leading-relaxed mb-6 sm:mb-8 max-w-4xl mx-auto px-2">
                     "{testimonial.quote}"
                   </blockquote>
                 </div>
                 
-                <div className="flex items-center justify-center space-x-4 mb-4">
+                <div className="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-4 mb-4">
                   <img
                     src={testimonial.avatar}
                     alt={testimonial.name}
-                    className="w-16 h-16 rounded-full object-cover object-top shadow-lg"
+                    className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover object-top shadow-lg"
                   />
-                  <div className="text-left">
-                    <div className="text-xl font-bold text-slate-900 font-poppins">{testimonial.name}</div>
-                    <div className="text-amber-600 font-inter">{testimonial.position}</div>
-                    <div className="text-sm text-slate-500">{testimonial.company}</div>
+                  <div className="text-center sm:text-left">
+                    <div className="text-lg sm:text-xl font-bold text-slate-900 font-poppins">{testimonial.name}</div>
+                    <div className="text-amber-600 font-inter text-sm sm:text-base">{testimonial.position}</div>
+                    <div className="text-xs sm:text-sm text-slate-500">{testimonial.company}</div>
                   </div>
                 </div>
 
@@ -189,8 +205,8 @@ export default function TestimonialsSlider() {
                 {/* Verified Badge */}
                 {testimonial.verified && (
                   <div className="flex justify-center items-center space-x-2">
-                    <i className="ri-checkbox-circle-fill text-green-500 text-sm"></i>
-                    <span className="text-sm text-green-600 font-medium">Verified Client</span>
+                    <i className="ri-checkbox-circle-fill text-green-500 text-xs sm:text-sm"></i>
+                    <span className="text-xs sm:text-sm text-green-600 font-medium">Verified Client</span>
                   </div>
                 )}
               </div>
@@ -198,14 +214,14 @@ export default function TestimonialsSlider() {
           </div>
 
           {/* Testimonial Dots */}
-          <div className="flex justify-center space-x-3 mt-8">
+          <div className="flex justify-center space-x-2 sm:space-x-3 mt-6 sm:mt-8">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToTestimonial(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-200 cursor-pointer ${
+                className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-200 cursor-pointer ${
                   index === currentTestimonial
-                    ? 'bg-amber-400 w-8'
+                    ? 'bg-amber-400 w-6 sm:w-8'
                     : 'bg-slate-300 hover:bg-slate-400'
                 }`}
               />
@@ -215,19 +231,25 @@ export default function TestimonialsSlider() {
 
         {/* Client Logos Section */}
         <div className="text-center mb-12">
-          <h3 className="text-2xl font-bold text-slate-900 mb-8 font-poppins">
+          <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-6 sm:mb-8 font-poppins">
             Trusted by Leading Companies
           </h3>
+          <p className="text-slate-600 max-w-2xl mx-auto mb-8">
+            Partnering with industry leaders across diverse sectors
+          </p>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center opacity-60 hover:opacity-100 transition-opacity duration-300">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 items-center opacity-60 hover:opacity-100 transition-opacity duration-300">
           {companies.map((company, index) => (
-            <div key={index} className="flex items-center justify-center p-4 hover:scale-110 transition-transform duration-200">
+            <div key={index} className="flex flex-col items-center justify-center p-3 sm:p-4 hover:scale-110 transition-transform duration-200 group">
               <img
                 src={company.logo}
                 alt={company.name}
-                className="h-12 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                className="h-8 sm:h-10 lg:h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 mb-2"
               />
+              <span className="text-xs sm:text-sm text-slate-600 text-center font-medium group-hover:text-slate-900 transition-colors duration-300">
+                {company.name}
+              </span>
             </div>
           ))}
         </div>
