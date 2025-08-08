@@ -13,7 +13,7 @@ export default function AboutSection() {
     {
       name: "Sarah Johnson",
       role: "Lead Developer",
-      image: "https://media.istockphoto.com/id/1214925714/photo/happy-successful-businesswoman-posing-in-office-hall.webp?s=1024x1024&w=is&k=20&c=L8hAK9WxEHWnWtXP_AmANgFYhMwsVJNJN9SKxGCFDx4=",
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&crop=face",
       bio: "Full-stack developer with 8+ years experience in React, Node.js, and cloud architecture."
     },
     {

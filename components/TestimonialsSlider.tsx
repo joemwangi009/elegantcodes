@@ -23,7 +23,7 @@ export default function TestimonialsSlider() {
       position: "Founder & CEO, RetailPro Chain",
       company: "RetailPro",
       quote: "The POS system they developed for our retail chain has revolutionized our operations. The real-time inventory tracking and reporting features have saved us countless hours and improved our bottom line by 40%.",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       verified: true
     },
@@ -63,7 +63,7 @@ export default function TestimonialsSlider() {
       position: "VP of Operations, FinanceTracker Pro",
       company: "FinanceTracker",
       quote: "Their AI-powered financial management platform has revolutionized how we handle personal finance. User savings rates improved by 85% and budget adherence by 60%.",
-      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       verified: true
     },
@@ -73,7 +73,7 @@ export default function TestimonialsSlider() {
       position: "Event Director, EventMaster Corp",
       company: "EventMaster",
       quote: "The event management platform they built handles everything from ticketing to networking. We've managed over 1M events successfully with 95% customer satisfaction.",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       verified: true
     },
