@@ -52,7 +52,7 @@ const blogData = {
       </ul>
       
       <div className="my-8">
-        <img src="https://readdy.ai/api/search-image?query=AI%20powered%20code%20development%20interface%20with%20intelligent%20suggestions%2C%20modern%20IDE%20with%20AI%20assistance%20features%2C%20dark%20navy%20coding%20environment%20with%20gold%20highlights%2C%20sophisticated%20development%20tools%20visualization%2C%20clean%20programming%20interface%20design&width=700&height=400&seq=ai-dev-tools&orientation=landscape" alt="AI-Powered Development Tools" className="w-full rounded-lg shadow-lg" />
+        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=700&h=400&fit=crop&crop=center" alt="AI-Powered Development Tools" className="w-full rounded-lg shadow-lg" />
         <p className="text-sm text-slate-500 mt-2 text-center">AI development tools are transforming how developers write and optimize code</p>
       </div>
       
@@ -251,7 +251,7 @@ const blogData = {
     category: 'Security',
     readTime: '8 min read',
     metaDescription: 'Comprehensive guide to securing your APIs and protecting sensitive business data from threats.',
-    image: 'https://readdy.ai/api/search-image?query=API%20security%20concepts%20with%20authentication%20and%20authorization%20visualization%2C%20cybersecurity%20best%20practices%20illustration%2C%20dark%20navy%20and%20gold%20theme%2C%20professional%20security%20blog%20header%20design%2C%20modern%20cybersecurity%20concepts&width=800&height=400&seq=api-security&orientation=landscape',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop&crop=center',
     content: `
       <p className="text-lg text-slate-700 mb-6 leading-relaxed">API security is critical in today's interconnected digital landscape. With APIs serving as the backbone of modern applications, implementing robust security measures is essential to protect sensitive data and maintain system integrity.</p>
       
@@ -310,7 +310,7 @@ const blogData = {
     category: 'Mobile',
     readTime: '4 min read',
     metaDescription: 'Techniques to ensure your mobile applications deliver exceptional speed and user experience.',
-    image: 'https://readdy.ai/api/search-image?query=Mobile%20app%20performance%20optimization%20concepts%2C%20smartphone%20with%20fast%20loading%20app%20interface%2C%20dark%20navy%20and%20gold%20theme%2C%20modern%20mobile%20development%20visualization%2C%20professional%20mobile%20tech%20blog%20header&width=800&height=400&seq=mobile-performance&orientation=landscape',
+    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=400&fit=crop&crop=center',
     content: `
       <p className="text-lg text-slate-700 mb-6 leading-relaxed">Mobile app performance directly impacts user experience and retention. In today's competitive market, users expect fast, responsive applications that work seamlessly across all devices and network conditions.</p>
       
@@ -360,7 +360,7 @@ const blogData = {
     category: 'Cloud',
     readTime: '10 min read',
     metaDescription: 'Step-by-step approach to successfully migrating your business applications to the cloud.',
-    image: 'https://readdy.ai/api/search-image?query=Cloud%20migration%20strategy%20visualization%2C%20business%20applications%20moving%20to%20cloud%20infrastructure%2C%20dark%20navy%20and%20gold%20theme%2C%20modern%20cloud%20computing%20concepts%2C%20professional%20cloud%20tech%20blog%20header&width=800&height=400&seq=cloud-migration&orientation=landscape',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=center',
     content: `
       <p className="text-lg text-slate-700 mb-6 leading-relaxed">Cloud migration is a strategic decision that can transform your business operations, reduce costs, and improve scalability. However, successful migration requires careful planning and execution.</p>
       
@@ -410,7 +410,7 @@ const blogData = {
     category: 'AI & Tech',
     readTime: '9 min read',
     metaDescription: 'How artificial intelligence is revolutionizing business processes and creating new opportunities.',
-    image: 'https://readdy.ai/api/search-image?query=AI%20integration%20in%20business%20applications%2C%20artificial%20intelligence%20powering%20business%20processes%2C%20dark%20navy%20and%20gold%20theme%2C%20modern%20AI%20technology%20visualization%2C%20professional%20AI%20tech%20blog%20header&width=800&height=400&seq=ai-integration&orientation=landscape',
+    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=400&fit=crop&crop=center',
     content: `
       <p className="text-lg text-slate-700 mb-6 leading-relaxed">Artificial Intelligence is transforming how businesses operate, making processes more efficient and creating new opportunities for innovation. From customer service to data analysis, AI integration is becoming essential for competitive advantage.</p>
       
@@ -460,7 +460,7 @@ const blogData = {
     category: 'Database',
     readTime: '12 min read',
     metaDescription: 'Essential principles for designing databases that can handle massive scale and deliver fast performance.',
-    image: 'https://readdy.ai/api/search-image?query=Database%20design%20for%20high%20performance%20applications%2C%20optimized%20database%20architecture%20visualization%2C%20dark%20navy%20and%20gold%20theme%2C%20modern%20database%20technology%20concepts%2C%20professional%20database%20tech%20blog%20header&width=800&height=400&seq=database-design&orientation=landscape',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop&crop=center',
     content: `
       <p className="text-lg text-slate-700 mb-6 leading-relaxed">Database design is the foundation of high-performance applications. The right design decisions can make the difference between a system that scales gracefully and one that struggles under load.</p>
       
@@ -510,7 +510,7 @@ const blogData = {
     category: 'Architecture',
     readTime: '11 min read',
     metaDescription: 'Complete guide to designing and implementing microservices for scalable enterprise applications.',
-    image: 'https://readdy.ai/api/search-image?query=Microservices%20architecture%20best%20practices%2C%20distributed%20system%20design%20visualization%2C%20dark%20navy%20and%20gold%20theme%2C%20modern%20microservices%20technology%20concepts%2C%20professional%20architecture%20tech%20blog%20header&width=800&height=400&seq=microservices&orientation=landscape',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop&crop=center',
     content: `
       <p className="text-lg text-slate-700 mb-6 leading-relaxed">Microservices architecture offers unparalleled scalability and flexibility for modern applications. However, successful implementation requires careful design and adherence to best practices.</p>
       
@@ -726,7 +726,7 @@ export default function BlogArticle({ slug }: BlogArticleProps) {
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <div className="flex items-center space-x-6">
                 <img
-                  src={`https://readdy.ai/api/search-image?query=Professional%20headshot%20portrait%20of%20${article.author}%20software%20engineer%2C%20clean%20corporate%20profile%20photo%20with%20professional%20business%20attire%2C%20modern%20LinkedIn%20style%20portrait%20with%20neutral%20background&width=80&height=80&seq=author-${slug}&orientation=squarish`}
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face"
                   alt={article.author}
                   className="w-20 h-20 rounded-full object-cover"
                 />
