@@ -5,7 +5,6 @@ import ServicesSection from '@/components/ServicesSection';
 import PortfolioSection from '@/components/PortfolioSection';
 import StatsSection from '@/components/StatsSection';
 import TestimonialsSlider from '@/components/TestimonialsSlider';
-import TestimonialsGrid from '@/components/TestimonialsGrid';
 import AboutSection from '@/components/AboutSection';
 import BlogSection from '@/components/BlogSection';
 import QuoteSection from '@/components/QuoteSection';
@@ -23,7 +22,6 @@ export default function Home() {
         <PortfolioSection />
         <StatsSection />
         <TestimonialsSlider />
-        <TestimonialsGrid maxItems={6} showFilter={false} />
         <AboutSection />
         <BlogSection />
         <QuoteSection />
