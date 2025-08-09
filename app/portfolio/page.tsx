@@ -350,7 +350,14 @@ export default function PortfolioPage() {
                     
                     {/* Hover Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-[#1A2A44]/90 via-[#1A2A44]/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end">
-                      <div className="p-6 w-full">
+                      <div className="p-6 w-full space-y-3">
+                        <Link
+                          href={`/portfolio/${item.slug}`}
+                          className="inline-flex items-center text-white font-semibold hover:text-[#D4A017] transition-colors duration-200"
+                        >
+                          View Project
+                          <i className="ri-external-link-line ml-2 group-hover:translate-x-1 transition-transform duration-200"></i>
+                        </Link>
                         <button
                           onClick={() => openModal(item)}
                           className="inline-flex items-center text-white font-semibold hover:text-[#D4A017] transition-colors duration-200"
@@ -404,14 +411,23 @@ export default function PortfolioPage() {
                       </div>
                     </div>
                     
-                    {/* CTA Button */}
-                    <button
-                      onClick={() => openModal(item)}
-                      className={`inline-flex items-center justify-center w-full bg-gradient-to-r ${getColorClasses(item.color)} text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg group-hover:shadow-xl`}
-                    >
-                      View Details
-                      <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-200"></i>
-                    </button>
+                    {/* CTA Buttons */}
+                    <div className="space-y-3">
+                      <Link
+                        href={`/portfolio/${item.slug}`}
+                        className={`inline-flex items-center justify-center w-full bg-gradient-to-r ${getColorClasses(item.color)} text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg group-hover:shadow-xl`}
+                      >
+                        View Project
+                        <i className="ri-external-link-line ml-2 group-hover:translate-x-1 transition-transform duration-200"></i>
+                      </Link>
+                      <button
+                        onClick={() => openModal(item)}
+                        className="inline-flex items-center justify-center w-full bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:bg-white/20 group-hover:shadow-xl border border-white/20"
+                      >
+                        View Details
+                        <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-200"></i>
+                      </button>
+                    </div>
                   </div>
                 </article>
               ))}
