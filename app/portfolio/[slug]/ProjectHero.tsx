@@ -4,9 +4,11 @@
 interface ProjectHeroProps {
   project: {
     title: string;
-    tagline: string;
+    description: string;
     category: string;
     heroImage: string;
+    client: string;
+    duration: string;
   };
 }
 
@@ -33,9 +35,20 @@ export default function ProjectHero({ project }: ProjectHeroProps) {
               {project.title}
             </h1>
             
-            <p className="text-xl lg:text-2xl text-slate-200 font-inter leading-relaxed">
-              {project.tagline}
+            <p className="text-xl lg:text-2xl text-slate-200 font-inter leading-relaxed mb-6">
+              {project.description}
             </p>
+            
+            <div className="flex flex-wrap gap-6 text-slate-300">
+              <div className="flex items-center">
+                <i className="ri-building-line mr-2"></i>
+                <span className="font-medium">Client: {project.client}</span>
+              </div>
+              <div className="flex items-center">
+                <i className="ri-time-line mr-2"></i>
+                <span className="font-medium">Duration: {project.duration}</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

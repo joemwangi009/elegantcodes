@@ -352,8 +352,58 @@ export default function ProjectDetail({ project }: { project: any }) {
           </div>
         </section>
 
+        {/* Project Overview */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-4xl font-bold text-slate-900 mb-6 font-poppins">Project Overview</h2>
+                <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                  {project.description}
+                </p>
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="bg-slate-50 p-4 rounded-lg">
+                    <h3 className="font-semibold text-slate-900 mb-2">Client</h3>
+                    <p className="text-slate-600">{project.client}</p>
+                  </div>
+                  <div className="bg-slate-50 p-4 rounded-lg">
+                    <h3 className="font-semibold text-slate-900 mb-2">Duration</h3>
+                    <p className="text-slate-600">{project.duration}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <img
+                  src={project.heroImage}
+                  alt={project.title}
+                  className="w-full h-auto rounded-2xl shadow-2xl"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Technologies Used */}
+        <section className="py-16 bg-slate-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-slate-900 mb-4">Technologies Used</h2>
+              <p className="text-slate-600 max-w-2xl mx-auto">
+                Cutting-edge technologies and frameworks powering this solution
+              </p>
+            </div>
+            <div className="flex flex-wrap justify-center gap-4">
+              {project.technologies.map((tech: string, index: number) => (
+                <div key={index} className="bg-white px-6 py-3 rounded-full shadow-md border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+                  <span className="text-slate-700 font-medium">{tech}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Project Features */}
-        <section className="py-16">
+        <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-slate-900 mb-4">Key Features</h2>
@@ -365,11 +415,11 @@ export default function ProjectDetail({ project }: { project: any }) {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {project.features.map((feature: string, index: number) => (
                 <div key={index} className="bg-white p-6 rounded-lg shadow-lg border border-slate-200 hover:shadow-xl transition-shadow duration-300">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center mr-4">
+                  <div className="flex items-start mb-4">
+                    <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center mr-4 mt-1">
                       <i className="ri-check-line text-amber-600 text-xl"></i>
                     </div>
-                    <h3 className="text-lg font-semibold text-slate-900">{feature}</h3>
+                    <h3 className="text-lg font-semibold text-slate-900 leading-tight">{feature}</h3>
                   </div>
                 </div>
               ))}
