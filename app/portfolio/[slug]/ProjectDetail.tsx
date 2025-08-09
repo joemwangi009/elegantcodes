@@ -14,6 +14,7 @@ import Breadcrumbs from './Breadcrumbs';
 
 export const projectsData = {
   "techflow-crm": {
+    id: 1,
     title: "TechFlow CRM",
     category: "Web Development",
     client: "TechFlow Solutions",
@@ -54,6 +55,7 @@ export const projectsData = {
     ]
   },
   "retailpro-pos": {
+    id: 2,
     title: "RetailPro POS",
     category: "POS System",
     client: "RetailPro Chain",
@@ -90,6 +92,7 @@ export const projectsData = {
     ]
   },
   "ecoshop-marketplace": {
+    id: 3,
     title: "EcoShop Marketplace",
     category: "E-commerce Platform",
     client: "EcoShop Inc.",
@@ -130,6 +133,7 @@ export const projectsData = {
     ]
   },
   "healthsync-mobile": {
+    id: 4,
     title: "HealthSync Mobile",
     category: "Mobile Application",
     client: "HealthSync Medical",
@@ -178,6 +182,7 @@ export const projectsData = {
     ]
   },
   "financetracker-pro": {
+    id: 5,
     title: "FinanceTracker Pro",
     category: "Web Application",
     client: "FinanceTracker Solutions",
@@ -218,6 +223,7 @@ export const projectsData = {
     ]
   },
   "eventmaster-app": {
+    id: 6,
     title: "EventMaster App",
     category: "Mobile Application",
     client: "EventMaster Corp",
