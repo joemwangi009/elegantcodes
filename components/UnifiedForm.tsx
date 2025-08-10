@@ -93,7 +93,12 @@ export default function UnifiedForm({
       const response = await fetch('/api/email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...data, formType }),
+        body: JSON.stringify({ 
+          name: data.name,
+          email: data.email,
+          message: data.message || data.description || 'Form submission',
+          subject: `New ${formType} form submission from ${data.name}`
+        }),
       });
 
       const result = await response.json();
