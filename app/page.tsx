@@ -8,8 +8,7 @@ import StatsSection from '@/components/StatsSection';
 import TestimonialsSlider from '@/components/TestimonialsSlider';
 import AboutSection from '@/components/AboutSection';
 import BlogSection from '@/components/BlogSection';
-import QuoteSection from '@/components/QuoteSection';
-import ContactSection from '@/components/ContactSection';
+import ContactQuoteSection from '@/components/ContactQuoteSection';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -26,8 +25,7 @@ export default function Home() {
         <AboutSection />
         <StatsSection />
         <BlogSection />
-        <QuoteSection />
-        <ContactSection />
+        <ContactQuoteSection />
       </main>
       
       <Footer />
