@@ -1,7 +1,7 @@
 
 import type { Metadata, Viewport } from 'next';
 import ProjectDetail from './ProjectDetail';
-import { projectsData } from './ProjectDetail';
+import { projectsData } from './data';
 
 export const viewport: Viewport = {
   width: 'device-width',
