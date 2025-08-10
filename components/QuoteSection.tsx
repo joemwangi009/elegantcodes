@@ -155,8 +155,8 @@ export default function QuoteSection() {
                     <div className="flex items-start space-x-6">
                       <div className={`w-16 h-16 bg-gradient-to-r ${feature.color} rounded-2xl flex items-center justify-center flex-shrink-0 shadow-xl`}>
                         <i className={`${feature.icon} text-white text-2xl`}></i>
-                      </div>
-                      <div>
+                    </div>
+                    <div>
                         <h4 className="font-bold text-slate-900 mb-3 text-xl">{feature.title}</h4>
                         <p className="text-slate-600 text-lg leading-relaxed">{feature.description}</p>
                       </div>
