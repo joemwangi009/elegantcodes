@@ -2,6 +2,7 @@
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import ServicesSection from '@/components/ServicesSection';
+import ServiceStepsSection from '@/components/ServiceStepsSection';
 import PortfolioSection from '@/components/PortfolioSection';
 import StatsSection from '@/components/StatsSection';
 import TestimonialsSlider from '@/components/TestimonialsSlider';
@@ -16,9 +17,10 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Header />
       
-      <main>
+      <main id="main-content">
         <HeroSection />
         <ServicesSection />
+        <ServiceStepsSection />
         <PortfolioSection />
         <TestimonialsSlider />
         <AboutSection />
