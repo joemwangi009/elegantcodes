@@ -3,7 +3,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import EmailForm from './EmailForm';
+import UnifiedForm, { FormField } from './UnifiedForm';
 import SuccessModal from './SuccessModal';
 
 export default function QuoteSection() {
@@ -253,19 +253,99 @@ export default function QuoteSection() {
                 </p>
               </div>
 
-              <EmailForm
-                formType="quote"
-                title="Project Details"
-                subtitle="Provide your project requirements for an accurate quote"
-                submitText="Get Free Quote"
-                showCompany={true}
-                showProjectType={true}
-                showPhone={true}
-                showBudget={true}
-                showTimeline={true}
-                onSuccess={handleSuccess}
-                onError={handleError}
-              />
+                                  <UnifiedForm
+                      formType="quote"
+                      title="Project Details"
+                      subtitle="Provide your project requirements for an accurate quote"
+                      submitText="Get Free Quote"
+                      fields={[
+                        {
+                          name: 'name',
+                          label: 'Full Name',
+                          type: 'text',
+                          required: true,
+                          placeholder: 'Enter your full name'
+                        },
+                        {
+                          name: 'email',
+                          label: 'Email Address',
+                          type: 'email',
+                          required: true,
+                          placeholder: 'Enter your email address'
+                        },
+                        {
+                          name: 'company',
+                          label: 'Company',
+                          type: 'text',
+                          required: false,
+                          placeholder: 'Enter your company name'
+                        },
+                        {
+                          name: 'phone',
+                          label: 'Phone Number',
+                          type: 'tel',
+                          required: false,
+                          placeholder: 'Enter your phone number'
+                        },
+                        {
+                          name: 'projectType',
+                          label: 'Project Type',
+                          type: 'select',
+                          required: true,
+                          options: [
+                            { value: 'web-app', label: 'Web Application' },
+                            { value: 'mobile-app', label: 'Mobile App' },
+                            { value: 'ecommerce', label: 'E-commerce Platform' },
+                            { value: 'pos-system', label: 'POS System' },
+                            { value: 'crm', label: 'CRM System' },
+                            { value: 'other', label: 'Other' }
+                          ]
+                        },
+                        {
+                          name: 'description',
+                          label: 'Project Description',
+                          type: 'textarea',
+                          required: true,
+                          placeholder: 'Describe your project requirements in detail...',
+                          validation: { minLength: 20 }
+                        },
+                        {
+                          name: 'budget',
+                          label: 'Budget Range',
+                          type: 'select',
+                          required: true,
+                          options: [
+                            { value: '5k-15k', label: '$5,000 - $15,000' },
+                            { value: '15k-50k', label: '$15,000 - $50,000' },
+                            { value: '50k-100k', label: '$50,000 - $100,000' },
+                            { value: '100k+', label: '$100,000+' },
+                            { value: 'discuss', label: "Let's discuss" }
+                          ]
+                        },
+                        {
+                          name: 'timeline',
+                          label: 'Timeline',
+                          type: 'select',
+                          required: true,
+                          options: [
+                            { value: '1-3months', label: '1-3 months' },
+                            { value: '3-6months', label: '3-6 months' },
+                            { value: '6-12months', label: '6-12 months' },
+                            { value: '12+months', label: '12+ months' },
+                            { value: 'flexible', label: 'Flexible' }
+                          ]
+                        },
+                        {
+                          name: 'features',
+                          label: 'Key Features',
+                          type: 'textarea',
+                          required: false,
+                          placeholder: 'List any specific features or requirements...'
+                        }
+                      ]}
+                      onSuccess={handleSuccess}
+                      onError={handleError}
+                    />
 
               {/* Form Footer */}
               <div className="text-center pt-8 mt-8 border-t border-slate-200">

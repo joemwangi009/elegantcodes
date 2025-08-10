@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import EmailForm from '@/components/EmailForm';
+import UnifiedForm, { FormField } from '@/components/UnifiedForm';
 
 interface PortfolioItem {
   id: number;
@@ -560,16 +560,89 @@ export default function PortfolioPage() {
                           </button>
                         </div>
                       ) : (
-                        <EmailForm
+                        <UnifiedForm
                           formType="portfolio"
                           title={`Request Similar to ${selectedProject.title}`}
                           subtitle={`Tell us about your project requirements and we'll create a custom solution inspired by ${selectedProject.title}.`}
                           submitText="Send Request"
-                          showCompany={true}
-                          showProjectType={true}
-                          showPhone={true}
-                          showBudget={true}
-                          showTimeline={true}
+                          fields={[
+                            {
+                              name: 'name',
+                              label: 'Full Name',
+                              type: 'text',
+                              required: true,
+                              placeholder: 'Enter your full name'
+                            },
+                            {
+                              name: 'email',
+                              label: 'Email Address',
+                              type: 'email',
+                              required: true,
+                              placeholder: 'Enter your email address'
+                            },
+                            {
+                              name: 'company',
+                              label: 'Company',
+                              type: 'text',
+                              required: false,
+                              placeholder: 'Enter your company name'
+                            },
+                            {
+                              name: 'phone',
+                              label: 'Phone Number',
+                              type: 'tel',
+                              required: false,
+                              placeholder: 'Enter your phone number'
+                            },
+                            {
+                              name: 'projectType',
+                              label: 'Project Type',
+                              type: 'select',
+                              required: true,
+                              options: [
+                                { value: 'web-app', label: 'Web Application' },
+                                { value: 'mobile-app', label: 'Mobile App' },
+                                { value: 'ecommerce', label: 'E-commerce Platform' },
+                                { value: 'pos-system', label: 'POS System' },
+                                { value: 'crm', label: 'CRM System' },
+                                { value: 'other', label: 'Other' }
+                              ]
+                            },
+                            {
+                              name: 'description',
+                              label: 'Project Description',
+                              type: 'textarea',
+                              required: true,
+                              placeholder: 'Describe your project requirements in detail...',
+                              validation: { minLength: 20 }
+                            },
+                            {
+                              name: 'budget',
+                              label: 'Budget Range',
+                              type: 'select',
+                              required: true,
+                              options: [
+                                { value: '5k-15k', label: '$5,000 - $15,000' },
+                                { value: '15k-50k', label: '$15,000 - $50,000' },
+                                { value: '50k-100k', label: '$50,000 - $100,000' },
+                                { value: '100k+', label: '$100,000+' },
+                                { value: 'discuss', label: "Let's discuss" }
+                              ]
+                            },
+                            {
+                              name: 'timeline',
+                              label: 'Timeline',
+                              type: 'select',
+                              required: true,
+                              options: [
+                                { value: '1-3months', label: '1-3 months' },
+                                { value: '3-6months', label: '3-6 months' },
+                                { value: '6-12months', label: '6-12 months' },
+                                { value: '12+months', label: '12+ months' },
+                                { value: 'flexible', label: 'Flexible' }
+                              ]
+                            }
+                          ]}
                           onSuccess={handleRequestSuccess}
                           onError={handleRequestError}
                         />
