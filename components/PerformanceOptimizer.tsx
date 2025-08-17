@@ -120,7 +120,12 @@ export function PerformanceMonitor() {
     lcp: number;
     fid: number;
     cls: number;
-  } | null>(null);
+  }>({
+    fcp: 0,
+    lcp: 0,
+    fid: 0,
+    cls: 0
+  });
 
   useEffect(() => {
     if (typeof window !== 'undefined' && 'PerformanceObserver' in window) {
@@ -176,7 +181,7 @@ export function PerformanceMonitor() {
   }, []);
 
   // Only show in development
-  if (process.env.NODE_ENV !== 'development' || !metrics) {
+  if (process.env.NODE_ENV !== 'development') {
     return null;
   }
 
