@@ -11,7 +11,6 @@ import AboutSection from '@/components/AboutSection';
 import BlogSection from '@/components/BlogSection';
 import ContactQuoteSection from '@/components/ContactQuoteSection';
 import Footer from '@/components/Footer';
-import { generateServiceSchema, generatePortfolioSchema, generateBreadcrumbSchema } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Custom Software Development Solutions | ElegantCodes',
@@ -54,64 +53,22 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
-      {/* Structured Data for Homepage */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "ElegantCodes - Custom Software Development Solutions",
-            "description": "Transform your business with custom IT solutions. We specialize in mobile apps, web applications, e-commerce platforms, POS systems, and business automation.",
-            "url": "https://elegantcodes.com",
-            "mainEntity": [
-              generateServiceSchema({
-                name: "Custom Software Development",
-                description: "Tailored software solutions for businesses",
-                category: "Software Development",
-                url: "https://elegantcodes.com/services",
-                image: "https://elegantcodes.com/services-software.jpg"
-              }),
-              generateServiceSchema({
-                name: "Mobile App Development",
-                description: "iOS and Android mobile applications",
-                category: "Mobile Development",
-                url: "https://elegantcodes.com/services/mobile-development",
-                image: "https://elegantcodes.com/services-mobile.jpg"
-              }),
-              generateServiceSchema({
-                name: "E-commerce Solutions",
-                description: "Complete online store platforms",
-                category: "E-commerce",
-                url: "https://elegantcodes.com/services/ecommerce",
-                image: "https://elegantcodes.com/services-ecommerce.jpg"
-              })
-            ],
-            "breadcrumb": generateBreadcrumbSchema([
-              { name: "Home", url: "https://elegantcodes.com" }
-            ])
-          })
-        }}
-      />
+    <div className="min-h-screen bg-white">
+      <Header />
       
-      <div className="min-h-screen bg-white">
-        <Header />
-        
-        <main id="main-content">
-          <HeroSection />
-          <ServicesSection />
-          <ServiceStepsSection />
-          <PortfolioSection />
-          <TestimonialsSlider />
-          <AboutSection />
-          <StatsSection />
-          <BlogSection />
-          <ContactQuoteSection />
-        </main>
-        
-        <Footer />
-      </div>
-    </>
+      <main id="main-content">
+        <HeroSection />
+        <ServicesSection />
+        <ServiceStepsSection />
+        <PortfolioSection />
+        <TestimonialsSlider />
+        <AboutSection />
+        <StatsSection />
+        <BlogSection />
+        <ContactQuoteSection />
+      </main>
+      
+      <Footer />
+    </div>
   );
 }
