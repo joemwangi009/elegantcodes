@@ -149,12 +149,17 @@ export function PerformanceMonitor() {
       });
       lcpObserver.observe({ entryTypes: ['largest-contentful-paint'] });
 
-      // First Input Delay (FID)
+      // First Input Delay (FID) - using proper typing
       const fidObserver = new PerformanceObserver((list) => {
         const entries = list.getEntries();
-        const fid = entries[entries.length - 1];
-        if (fid) {
-          setMetrics(prev => ({ ...prev, fid: fid.processingStart - fid.startTime }));
+        for (const entry of entries) {
+          if (entry.entryType === 'first-input') {
+            const firstInputEntry = entry as PerformanceEventTiming;
+            if (firstInputEntry.processingStart && firstInputEntry.startTime) {
+              const fid = firstInputEntry.processingStart - firstInputEntry.startTime;
+              setMetrics(prev => ({ ...prev, fid }));
+            }
+          }
         }
       });
       fidObserver.observe({ entryTypes: ['first-input'] });
@@ -163,8 +168,11 @@ export function PerformanceMonitor() {
       let clsValue = 0;
       const clsObserver = new PerformanceObserver((list) => {
         for (const entry of list.getEntries()) {
-          if (!entry.hadRecentInput) {
-            clsValue += (entry as any).value;
+          if (entry.entryType === 'layout-shift') {
+            const layoutShiftEntry = entry as LayoutShift;
+            if (!layoutShiftEntry.hadRecentInput) {
+              clsValue += layoutShiftEntry.value;
+            }
           }
         }
         setMetrics(prev => ({ ...prev, cls: clsValue }));
@@ -194,4 +202,17 @@ export function PerformanceMonitor() {
       <div>CLS: {metrics.cls?.toFixed(3)}</div>
     </div>
   );
+}
+
+// Type definitions for Performance API
+interface PerformanceEventTiming extends PerformanceEntry {
+  processingStart: number;
+  processingEnd: number;
+  target?: EventTarget;
+}
+
+interface LayoutShift extends PerformanceEntry {
+  value: number;
+  hadRecentInput: boolean;
+  lastInputTime: number;
 } 
