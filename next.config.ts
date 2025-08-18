@@ -16,11 +16,9 @@ const nextConfig: NextConfig = {
     // ignoreBuildErrors: true,
   },
   
-  // Experimental features
+  // Experimental features (simplified to avoid build issues)
   experimental: {
     optimizePackageImports: ['lucide-react', 'framer-motion'],
-    optimizeCss: true,
-    scrollRestoration: true,
   },
   
   // Compiler optimizations
