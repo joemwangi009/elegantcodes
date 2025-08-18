@@ -2,7 +2,7 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter, Poppins } from 'next/font/google';
 import './globals.css';
-import { generateOrganizationSchema, generateWebsiteSchema, siteConfig } from '@/lib/seo';
+import { generateOrganizationSchema, generateLocalBusinessSchema } from '@/lib/seo';
 import { PerformanceMonitor } from '@/components/PerformanceOptimizer';
 
 const inter = Inter({ 
@@ -21,23 +21,106 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.url),
+  metadataBase: new URL('https://www.elegantcodes.com'),
   title: {
-    default: 'ElegantCodes - Custom Software Development Solutions',
-    template: '%s | ElegantCodes'
+    default: 'ElegantCodes - Global IT Solutions Provider | Software Development, Cloud Services & Cybersecurity',
+    template: '%s | ElegantCodes - Global IT Solutions'
   },
-  description: 'Transform your business with custom IT solutions. We specialize in mobile apps, web applications, e-commerce platforms, POS systems, and business automation.',
+  description: 'Leading global IT solutions provider offering comprehensive software development, cloud services, cybersecurity, AI development, and DevOps consulting across Kenya, Europe, USA, Australia, Canada, Germany, France, and UK.',
   keywords: [
+    // IT Consulting and Solutions
+    'IT consulting services',
+    'IT solutions company',
+    'global IT services',
+    'IT outsourcing company',
+    'end-to-end IT services',
+    'technology consulting Europe',
+    'best IT company worldwide',
+    'trusted IT solutions provider',
+    'scalable IT services',
+    'next-gen IT solutions',
+    'enterprise IT solutions',
+    'tech companies in Nairobi',
+    
+    // Software Development
     'custom software development',
-    'mobile app development',
-    'web application development',
-    'e-commerce solutions',
-    'POS systems',
-    'business automation',
-    'IT consulting',
-    'software consulting',
-    'enterprise software',
-    'cloud solutions'
+    'offshore software development',
+    'enterprise software company',
+    'leading software development firm',
+    'progressive web apps',
+    
+    // App Development
+    'mobile app development company',
+    'Android app development',
+    'iOS app development',
+    'cross-platform app development',
+    'Flutter app development',
+    'React development services',
+    'Node.js developers',
+    
+    // Web Development
+    'web development company',
+    'ecommerce website development',
+    'web3 development services',
+    
+    // Cloud Services
+    'cloud application development',
+    'cloud migration services',
+    'cloud infrastructure management',
+    'AWS cloud consulting',
+    'Azure cloud services',
+    'Google Cloud partner',
+    'cloud security provider',
+    
+    // Cybersecurity
+    'cybersecurity company',
+    'IT security solutions',
+    'penetration testing services',
+    'ethical hacking company',
+    'data protection solutions',
+    'managed security services',
+    'SOC as a service',
+    'cyber threat management',
+    'network security services',
+    
+    // AI and Machine Learning
+    'AI development company',
+    'machine learning services',
+    'natural language processing solutions',
+    'AI chatbot development',
+    'computer vision services',
+    
+    // Emerging Technologies
+    'blockchain development company',
+    'IoT solutions provider',
+    'metaverse development company',
+    
+    // DevOps and Containerization
+    'DevOps consulting services',
+    'Docker container services',
+    'Kubernetes consulting',
+    
+    // Industry-Specific Solutions
+    'fintech software development',
+    'healthcare IT solutions',
+    'retail IT consulting',
+    'logistics IT solutions',
+    'education technology development',
+    'manufacturing IT systems',
+    'government IT services',
+    'real estate software solutions',
+    'travel app development',
+    
+    // Regional Keywords
+    'Kenya IT solutions company',
+    'Africa IT solutions provider',
+    'Europe IT solutions',
+    'Germany web development company',
+    'UK IT security solutions',
+    'USA trusted IT solutions provider',
+    'Australia custom IT development',
+    'Canada IT solutions provider',
+    'France top IT services company'
   ],
   authors: [{ name: 'ElegantCodes Team' }],
   creator: 'ElegantCodes Team',
@@ -50,26 +133,26 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: siteConfig.url,
-    siteName: siteConfig.name,
-    title: 'ElegantCodes - Custom Software Development Solutions',
-    description: 'Transform your business with custom IT solutions. We specialize in mobile apps, web applications, e-commerce platforms, POS systems, and business automation.',
+    url: 'https://www.elegantcodes.com',
+    siteName: 'ElegantCodes - Global IT Solutions',
+    title: 'ElegantCodes - Global IT Solutions Provider | Software Development, Cloud Services & Cybersecurity',
+    description: 'Leading global IT solutions provider offering comprehensive software development, cloud services, cybersecurity, AI development, and DevOps consulting across Kenya, Europe, USA, Australia, Canada, Germany, France, and UK.',
     images: [
       {
-        url: siteConfig.ogImage,
+        url: 'https://www.elegantcodes.com/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'ElegantCodes - Custom Software Development Solutions',
+        alt: 'ElegantCodes - Global IT Solutions Provider',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    site: siteConfig.twitterHandle,
-    creator: siteConfig.twitterHandle,
-    title: 'ElegantCodes - Custom Software Development Solutions',
-    description: 'Transform your business with custom IT solutions.',
-    images: [siteConfig.ogImage],
+    site: '@elegantcodes',
+    creator: '@elegantcodes',
+    title: 'ElegantCodes - Global IT Solutions Provider',
+    description: 'Leading global IT solutions provider offering comprehensive software development, cloud services, cybersecurity, AI development, and DevOps consulting.',
+    images: ['https://www.elegantcodes.com/og-image.jpg'],
   },
   robots: {
     index: true,
@@ -88,9 +171,20 @@ export const metadata: Metadata = {
     yahoo: 'your-yahoo-verification-code',
   },
   alternates: {
-    canonical: siteConfig.url,
+    canonical: 'https://www.elegantcodes.com',
+    languages: {
+      'en': 'https://www.elegantcodes.com',
+      'en-ke': 'https://www.elegantcodes.com/kenya',
+      'en-eu': 'https://www.elegantcodes.com/europe',
+      'en-us': 'https://www.elegantcodes.com/usa',
+      'en-au': 'https://www.elegantcodes.com/australia',
+      'en-ca': 'https://www.elegantcodes.com/canada',
+      'en-de': 'https://www.elegantcodes.com/germany',
+      'en-fr': 'https://www.elegantcodes.com/france',
+      'en-gb': 'https://www.elegantcodes.com/uk',
+    },
   },
-  category: 'technology',
+  referrer: 'strict-origin-when-cross-origin',
 };
 
 export const viewport: Viewport = {
@@ -98,65 +192,204 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#f59e0b' },
-    { media: '(prefers-color-scheme: dark)', color: '#0f172a' }
-  ],
+  viewportFit: 'cover',
 };
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${poppins.variable} scroll-smooth`}>
+    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <head>
         {/* Preconnect to external domains for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link rel="preconnect" href="https://images.unsplash.com" />
-        <link rel="preconnect" href="https://media.istockphoto.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
-        {/* DNS prefetch for performance */}
-        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="//images.unsplash.com" />
-        <link rel="dns-prefetch" href="//media.istockphoto.com" />
-        
-        {/* Favicon and App Icons */}
+        {/* Favicon and app icons */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         
-        {/* Structured Data for SEO */}
+        {/* DNS prefetch for performance */}
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+        
+        {/* Schema.org structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(generateOrganizationSchema())
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "ElegantCodes",
+              "url": "https://www.elegantcodes.com",
+              "logo": "https://www.elegantcodes.com/logo.png",
+              "description": "Global IT solutions provider offering software development, cloud services, cybersecurity, and AI solutions across Kenya, Europe, USA, Australia, Canada, Germany, France, and UK.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "Kenya",
+                "addressLocality": "Nairobi",
+                "addressRegion": "Nairobi",
+                "postalCode": "00100"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+254-XXX-XXX-XXX",
+                "contactType": "customer service",
+                "availableLanguage": "English"
+              },
+              "sameAs": [
+                "https://www.linkedin.com/company/elegantcodes",
+                "https://twitter.com/elegantcodes",
+                "https://www.facebook.com/elegantcodes",
+                "https://www.instagram.com/elegantcodes"
+              ],
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "IT Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Software Development",
+                      "description": "Custom software development, mobile apps, web applications"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Cloud Services",
+                      "description": "AWS, Azure, Google Cloud consulting and migration"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Cybersecurity",
+                      "description": "Security solutions, penetration testing, threat management"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "AI Development",
+                      "description": "Machine learning, natural language processing, computer vision"
+                    }
+                  }
+                ]
+              },
+              "areaServed": [
+                {
+                  "@type": "Country",
+                  "name": "Kenya"
+                },
+                {
+                  "@type": "Country",
+                  "name": "Germany"
+                },
+                {
+                  "@type": "Country",
+                  "name": "United Kingdom"
+                },
+                {
+                  "@type": "Country",
+                  "name": "United States"
+                },
+                {
+                  "@type": "Country",
+                  "name": "Australia"
+                },
+                {
+                  "@type": "Country",
+                  "name": "Canada"
+                },
+                {
+                  "@type": "Country",
+                  "name": "France"
+                }
+              ],
+              "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                  "@type": "GeoCoordinates",
+                  "latitude": -1.2921,
+                  "longitude": 36.8219
+                },
+                "geoRadius": "20000"
+              },
+              "foundingDate": "2020",
+              "numberOfEmployees": "50+",
+              "award": [
+                "Best IT Company 2023",
+                "Excellence in Innovation 2024",
+                "Customer Choice Award 2024"
+              ],
+              "knowsAbout": [
+                "Software Development",
+                "Cloud Computing",
+                "Cybersecurity",
+                "Artificial Intelligence",
+                "DevOps",
+                "Digital Transformation"
+              ]
+            })
           }}
         />
+        
+        {/* Additional business schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(generateWebsiteSchema())
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "ElegantCodes",
+              "image": "https://www.elegantcodes.com/office.jpg",
+              "telephone": "+254-XXX-XXX-XXX",
+              "email": "info@elegantcodes.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Nairobi, Kenya",
+                "addressLocality": "Nairobi",
+                "addressRegion": "Nairobi",
+                "postalCode": "00100",
+                "addressCountry": "KE"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": -1.2921,
+                "longitude": 36.8219
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
+              },
+              "priceRange": "$$",
+              "paymentAccepted": "Credit Card, Bank Transfer, Mobile Money",
+              "currenciesAccepted": "USD, EUR, KES"
+            })
           }}
         />
       </head>
-      <body className="font-inter antialiased">
-        <div id="__next">{children}</div>
-        
-        {/* Skip to main content for accessibility */}
-        <a 
-          href="#main-content" 
-          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-amber-500 text-slate-900 px-4 py-2 rounded-lg font-semibold z-50 focus:outline-none"
-        >
-          Skip to main content
-        </a>
-        
-        {/* Performance Monitor (Development Only) */}
+      <body className={`${inter.className} antialiased`}>
         <PerformanceMonitor />
+        {children}
       </body>
     </html>
-  );
+  )
 }
