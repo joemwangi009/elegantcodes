@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  // Pillar pages for each cluster
+  // Pillar pages for each cluster - Updated with new comprehensive service pages
   const pillarPages = [
     {
       url: `${baseUrl}/it-consulting-solutions`,
@@ -84,7 +84,38 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/industry-solutions`,
+      url: `${baseUrl}/industry-it-solutions`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    // New comprehensive service pages
+    {
+      url: `${baseUrl}/ecommerce-website-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/mobile-app-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/custom-software-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/pos-system-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/regional-it-providers`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.9,
@@ -155,14 +186,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/${region}/industry-solutions`,
+      url: `${baseUrl}/${region}/industry-it-solutions`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    // New regional service pages
+    {
+      url: `${baseUrl}/${region}/ecommerce-website-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/${region}/mobile-app-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/${region}/custom-software-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/${region}/pos-system-development`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     },
   ])
 
-  // Service-specific pages for each cluster
+  // Service-specific pages for each cluster - Updated with new comprehensive services
   const servicePages = [
     // IT Consulting Services
     {
@@ -484,55 +540,135 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Industry-Specific Solutions
     {
-      url: `${baseUrl}/industry-solutions/fintech-software-development`,
+      url: `${baseUrl}/industry-it-solutions/fintech-software-development`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/industry-solutions/healthcare-it-solutions`,
+      url: `${baseUrl}/industry-it-solutions/healthcare-it-solutions`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/industry-solutions/retail-it-consulting`,
+      url: `${baseUrl}/industry-it-solutions/retail-it-consulting`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/industry-solutions/logistics-it-solutions`,
+      url: `${baseUrl}/industry-it-solutions/logistics-it-solutions`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/industry-solutions/education-technology-development`,
+      url: `${baseUrl}/industry-it-solutions/education-technology-development`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/industry-solutions/manufacturing-it-systems`,
+      url: `${baseUrl}/industry-it-solutions/manufacturing-it-systems`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/industry-solutions/government-it-services`,
+      url: `${baseUrl}/industry-it-solutions/government-it-services`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/industry-solutions/real-estate-software-solutions`,
+      url: `${baseUrl}/industry-it-solutions/real-estate-software-solutions`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/industry-solutions/travel-app-development`,
+      url: `${baseUrl}/industry-it-solutions/travel-app-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+
+    // New comprehensive service pages
+    {
+      url: `${baseUrl}/ecommerce-website-development/custom-ecommerce-solutions`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/ecommerce-website-development/shopify-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/ecommerce-website-development/woocommerce-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/mobile-app-development/ios-app-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/mobile-app-development/android-app-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/mobile-app-development/flutter-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/custom-software-development/enterprise-software`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/custom-software-development/business-automation`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/pos-system-development/retail-pos-systems`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/pos-system-development/restaurant-pos-systems`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/regional-it-providers/kenya-it-solutions`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/regional-it-providers/europe-it-solutions`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/regional-it-providers/usa-it-solutions`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.7,
@@ -751,6 +887,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/${region}/travel-app-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    // New regional comprehensive service pages
+    {
+      url: `${baseUrl}/${region}/ecommerce-website-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/${region}/mobile-app-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/${region}/custom-software-development`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/${region}/pos-system-development`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.7,
