@@ -3,33 +3,33 @@ import { KEYWORD_CLUSTERS } from '@/lib/seo'
 import SEOHead from '@/components/SEOHead'
 
 export const metadata: Metadata = {
-  title: 'Cybersecurity Company | IT Security Solutions & Penetration Testing Services',
-  description: 'Leading cybersecurity company offering IT security solutions, penetration testing services, ethical hacking company services, data protection solutions, and managed security services globally.',
+  title: 'Cybersecurity Company | IT Security Services & Cyber Protection Solutions',
+  description: 'Leading cybersecurity company offering IT security services, cyber protection solutions, network security, data protection, and comprehensive security consulting for businesses worldwide.',
   keywords: [
     'cybersecurity company',
-    'IT security solutions',
-    'penetration testing services',
-    'ethical hacking company',
-    'data protection solutions',
-    'managed security services',
-    'SOC as a service',
-    'cyber threat management',
+    'IT security services',
+    'cyber protection solutions',
     'network security services',
-    'cybersecurity company Kenya',
-    'cybersecurity company Europe',
-    'cybersecurity company USA',
-    'cybersecurity company Canada',
-    'cybersecurity company Australia',
-    'cybersecurity company UK',
-    'cybersecurity company Germany',
-    'cybersecurity company France',
-    'IT security solutions Kenya',
-    'penetration testing services Europe',
-    'ethical hacking company USA'
+    'data protection services',
+    'information security consulting',
+    'cyber threat protection',
+    'security audit services',
+    'penetration testing',
+    'vulnerability assessment',
+    'incident response services',
+    'security compliance solutions',
+    'cloud security services',
+    'endpoint security solutions',
+    'identity and access management',
+    'security monitoring services',
+    'cyber risk assessment',
+    'security training services',
+    'GDPR compliance services',
+    'SOC 2 compliance services'
   ],
   openGraph: {
-    title: 'Cybersecurity Company | IT Security Solutions & Penetration Testing Services',
-    description: 'Leading cybersecurity company offering IT security solutions, penetration testing services, ethical hacking company services, data protection solutions, and managed security services globally.',
+    title: 'Cybersecurity Company | IT Security Services & Cyber Protection Solutions',
+    description: 'Leading cybersecurity company offering IT security services, cyber protection solutions, network security, data protection, and comprehensive security consulting for businesses worldwide.',
     url: 'https://www.elegantcodes.com/cybersecurity',
     siteName: 'ElegantCodes - Global IT Solutions',
     images: [
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cybersecurity Company | IT Security Solutions & Penetration Testing Services',
-    description: 'Leading cybersecurity company offering IT security solutions, penetration testing services, ethical hacking company services, data protection solutions, and managed security services globally.',
+    title: 'Cybersecurity Company | IT Security Services & Cyber Protection Solutions',
+    description: 'Leading cybersecurity company offering IT security services, cyber protection solutions, network security, data protection, and comprehensive security consulting for businesses worldwide.',
     images: ['https://www.elegantcodes.com/og-image-cybersecurity.jpg'],
   },
   alternates: {
@@ -57,31 +57,38 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "What cybersecurity services does ElegantCodes offer?",
-    answer: "ElegantCodes offers comprehensive cybersecurity services including penetration testing, ethical hacking, data protection, managed security services, SOC as a service, cyber threat management, and network security solutions for businesses worldwide."
+    answer: "ElegantCodes offers comprehensive cybersecurity services including IT security consulting, network security, data protection, penetration testing, security audits, incident response, and compliance solutions for all business types."
   },
   {
-    question: "How does ElegantCodes ensure quality in penetration testing services?",
-    answer: "Our penetration testing services follow industry best practices including thorough vulnerability assessment, ethical hacking methodologies, comprehensive reporting, and ongoing security recommendations to protect your business from cyber threats."
+    question: "How do you protect against cyber threats?",
+    answer: "We implement multi-layered security strategies including network security, endpoint protection, identity management, threat monitoring, and regular security assessments to protect against evolving cyber threats."
   },
   {
-    question: "What makes ElegantCodes a leading cybersecurity company?",
-    answer: "We are recognized as a leading cybersecurity company due to our technical expertise, certified security professionals, proven track record, innovative security solutions, and commitment to protecting businesses from evolving cyber threats."
+    question: "What industries do you serve with cybersecurity?",
+    answer: "We serve various industries including finance, healthcare, manufacturing, retail, technology, and government with industry-specific cybersecurity solutions and compliance requirements."
   },
   {
-    question: "How does ElegantCodes approach data protection solutions?",
-    answer: "Our data protection approach includes comprehensive security assessments, encryption implementation, access control, compliance management, and ongoing monitoring to ensure your sensitive data remains secure and compliant."
+    question: "Do you provide 24/7 security monitoring?",
+    answer: "Yes, we provide 24/7 security monitoring services with real-time threat detection, incident response, and continuous security oversight to protect your business around the clock."
   },
   {
-    question: "What managed security services does ElegantCodes provide?",
-    answer: "We provide comprehensive managed security services including 24/7 monitoring, threat detection and response, security incident management, compliance reporting, and ongoing security optimization for your business."
+    question: "Can you help with compliance requirements?",
+    answer: "Absolutely! We specialize in helping businesses meet various compliance requirements including GDPR, SOC 2, HIPAA, PCI DSS, and industry-specific security standards."
   }
 ]
 
 export default function CybersecurityPage() {
   const seoConfig = {
-    title: 'Cybersecurity Company | IT Security Solutions & Penetration Testing Services',
-    description: 'Leading cybersecurity company offering IT security solutions, penetration testing services, ethical hacking company services, data protection solutions, and managed security services globally.',
-    keywords: KEYWORD_CLUSTERS.CYBERSECURITY,
+    title: 'Cybersecurity Company | IT Security Services & Cyber Protection Solutions',
+    description: 'Leading cybersecurity company offering IT security services, cyber protection solutions, network security, data protection, and comprehensive security consulting for businesses worldwide.',
+    keywords: [
+      'cybersecurity company',
+      'IT security services',
+      'cyber protection solutions',
+      'network security services',
+      'data protection services',
+      'information security consulting'
+    ],
     canonical: 'https://www.elegantcodes.com/cybersecurity',
     ogImage: 'https://www.elegantcodes.com/og-image-cybersecurity.jpg',
     ogType: 'website' as const,
@@ -89,6 +96,7 @@ export default function CybersecurityPage() {
 
   const breadcrumbs = [
     { name: 'Home', url: 'https://www.elegantcodes.com' },
+    { name: 'Services', url: 'https://www.elegantcodes.com/services' },
     { name: 'Cybersecurity', url: 'https://www.elegantcodes.com/cybersecurity' }
   ]
 
@@ -110,8 +118,9 @@ export default function CybersecurityPage() {
                 Cybersecurity Company
               </h1>
               <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-4xl mx-auto">
-                Leading cybersecurity company offering IT security solutions, penetration testing services, 
-                ethical hacking company services, data protection solutions, and managed security services globally.
+                Leading cybersecurity company offering IT security services, 
+                cyber protection solutions, network security, data protection, 
+                and comprehensive security consulting for businesses worldwide.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
@@ -125,7 +134,7 @@ export default function CybersecurityPage() {
           </div>
         </section>
 
-        {/* Services Overview */}
+        {/* Cybersecurity Services Overview */}
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-900 mb-12">
@@ -134,104 +143,104 @@ export default function CybersecurityPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-red-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                  🛡️ Cybersecurity Company
+                  🛡️ IT Security Consulting
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  Full-service cybersecurity company specializing in protecting businesses 
-                  from evolving cyber threats with comprehensive security solutions.
+                  Strategic cybersecurity consulting with risk assessment, 
+                  security strategy development, and compliance guidance.
                 </p>
                 <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• Security Strategy</li>
                   <li>• Risk Assessment</li>
-                  <li>• Compliance Management</li>
-                  <li>• Security Training</li>
+                  <li>• Security Strategy</li>
+                  <li>• Compliance Guidance</li>
+                  <li>• Security Architecture</li>
                 </ul>
               </div>
               
               <div className="bg-red-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                  🔒 IT Security Solutions
+                  🌐 Network Security Services
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  Comprehensive IT security solutions designed to protect your business 
-                  infrastructure, data, and systems from cyber threats.
+                  Comprehensive network security solutions with firewall management, 
+                  intrusion detection, and network monitoring.
                 </p>
                 <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• Infrastructure Security</li>
-                  <li>• Endpoint Protection</li>
-                  <li>• Network Security</li>
-                  <li>• Cloud Security</li>
+                  <li>• Firewall Management</li>
+                  <li>• Intrusion Detection</li>
+                  <li>• Network Monitoring</li>
+                  <li>• Traffic Analysis</li>
                 </ul>
               </div>
               
               <div className="bg-red-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                  🔍 Penetration Testing Services
+                  🔒 Data Protection Services
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  Professional penetration testing services to identify vulnerabilities 
-                  in your systems and provide actionable security recommendations.
-                </p>
-                <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• Web Application Testing</li>
-                  <li>• Network Penetration Testing</li>
-                  <li>• Social Engineering</li>
-                  <li>• Physical Security Testing</li>
-                </ul>
-              </div>
-              
-              <div className="bg-red-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                  ⚔️ Ethical Hacking Company
-                </h3>
-                <p className="text-slate-600 mb-4">
-                  Certified ethical hackers using advanced techniques to identify 
-                  security weaknesses and help strengthen your security posture.
-                </p>
-                <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• Certified Ethical Hackers</li>
-                  <li>• Advanced Testing Methods</li>
-                  <li>• Red Team Operations</li>
-                  <li>• Security Research</li>
-                </ul>
-              </div>
-              
-              <div className="bg-red-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                  🗄️ Data Protection Solutions
-                </h3>
-                <p className="text-slate-600 mb-4">
-                  Comprehensive data protection solutions including encryption, access control, 
-                  backup strategies, and compliance management.
+                  Advanced data protection with encryption, access controls, 
+                  and data loss prevention strategies.
                 </p>
                 <ul className="text-sm text-slate-600 space-y-2">
                   <li>• Data Encryption</li>
-                  <li>• Access Control</li>
-                  <li>• Backup & Recovery</li>
-                  <li>• Compliance Management</li>
+                  <li>• Access Controls</li>
+                  <li>• Data Loss Prevention</li>
+                  <li>• Backup Security</li>
                 </ul>
               </div>
               
               <div className="bg-red-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                  🚨 Managed Security Services
+                  🧪 Penetration Testing
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  Proactive managed security services including monitoring, threat detection, 
-                  incident response, and ongoing security optimization.
+                  Comprehensive penetration testing with vulnerability assessment, 
+                  security testing, and remediation recommendations.
                 </p>
                 <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• 24/7 Monitoring</li>
-                  <li>• Threat Detection</li>
-                  <li>• Incident Response</li>
-                  <li>• Security Optimization</li>
+                  <li>• Vulnerability Assessment</li>
+                  <li>• Security Testing</li>
+                  <li>• Remediation Guidance</li>
+                  <li>• Security Reports</li>
+                </ul>
+              </div>
+              
+              <div className="bg-red-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-slate-900 mb-4">
+                  📊 Security Audit Services
+                </h3>
+                <p className="text-slate-600 mb-4">
+                  Comprehensive security audits with compliance assessment, 
+                  policy review, and security gap analysis.
+                </p>
+                <ul className="text-sm text-slate-600 space-y-2">
+                  <li>• Compliance Assessment</li>
+                  <li>• Policy Review</li>
+                  <li>• Gap Analysis</li>
+                  <li>• Security Recommendations</li>
+                </ul>
+              </div>
+              
+              <div className="bg-red-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-slate-900 mb-4">
+                  🚨 Incident Response Services
+                </h3>
+                <p className="text-slate-600 mb-4">
+                  Rapid incident response with threat containment, 
+                  investigation, and recovery services.
+                </p>
+                <ul className="text-sm text-slate-600 space-y-2">
+                  <li>• Threat Containment</li>
+                  <li>• Incident Investigation</li>
+                  <li>• Recovery Services</li>
+                  <li>• Post-Incident Analysis</li>
                 </ul>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Advanced Security Services */}
+        {/* Security Solutions */}
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-900 mb-12">
@@ -240,81 +249,33 @@ export default function CybersecurityPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                  🏢 SOC as a Service
+                  ☁️ Cloud Security Services
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  Security Operations Center as a service providing continuous monitoring, 
-                  threat detection, and incident response capabilities.
+                  Comprehensive cloud security with identity management, 
+                  data protection, and compliance monitoring.
                 </p>
                 <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• 24/7 Security Monitoring</li>
-                  <li>• Real-time Threat Detection</li>
-                  <li>• Incident Response</li>
-                  <li>• Security Analytics</li>
-                </ul>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                  🎯 Cyber Threat Management
-                </h3>
-                <p className="text-slate-600 mb-4">
-                  Comprehensive cyber threat management including threat intelligence, 
-                  risk assessment, and proactive threat mitigation strategies.
-                </p>
-                <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• Threat Intelligence</li>
-                  <li>• Risk Assessment</li>
-                  <li>• Threat Mitigation</li>
-                  <li>• Security Strategy</li>
-                </ul>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                  🌐 Network Security Services
-                </h3>
-                <p className="text-slate-600 mb-4">
-                  Advanced network security services including firewall management, 
-                  intrusion detection, and network segmentation strategies.
-                </p>
-                <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• Firewall Management</li>
-                  <li>• Intrusion Detection</li>
-                  <li>• Network Segmentation</li>
-                  <li>• VPN Solutions</li>
-                </ul>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                  ☁️ Cloud Security
-                </h3>
-                <p className="text-slate-600 mb-4">
-                  Comprehensive cloud security solutions for AWS, Azure, and Google Cloud 
-                  platforms with compliance and monitoring capabilities.
-                </p>
-                <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• Cloud Compliance</li>
                   <li>• Identity Management</li>
                   <li>• Data Protection</li>
-                  <li>• Security Monitoring</li>
+                  <li>• Compliance Monitoring</li>
+                  <li>• Cloud Access Security</li>
                 </ul>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                  📱 Mobile Security
+                  💻 Endpoint Security Solutions
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  Mobile security solutions including app security testing, device management, 
-                  and mobile threat defense for enterprise mobility.
+                  Advanced endpoint protection with antivirus, 
+                  device control, and threat prevention.
                 </p>
                 <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• App Security Testing</li>
-                  <li>• Device Management</li>
-                  <li>• Mobile Threat Defense</li>
-                  <li>• BYOD Security</li>
+                  <li>• Antivirus Protection</li>
+                  <li>• Device Control</li>
+                  <li>• Threat Prevention</li>
+                  <li>• Endpoint Monitoring</li>
                 </ul>
               </div>
               
@@ -323,22 +284,108 @@ export default function CybersecurityPage() {
                   🔐 Identity & Access Management
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  Comprehensive identity and access management solutions including 
-                  single sign-on, multi-factor authentication, and privileged access management.
+                  Comprehensive IAM solutions with single sign-on, 
+                  multi-factor authentication, and access controls.
                 </p>
                 <ul className="text-sm text-slate-600 space-y-2">
-                  <li>• Single Sign-On (SSO)</li>
+                  <li>• Single Sign-On</li>
                   <li>• Multi-Factor Authentication</li>
-                  <li>• Privileged Access Management</li>
-                  <li>• Identity Governance</li>
+                  <li>• Access Controls</li>
+                  <li>• User Provisioning</li>
+                </ul>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-slate-900 mb-4">
+                  📡 Security Monitoring Services
+                </h3>
+                <p className="text-slate-600 mb-4">
+                  24/7 security monitoring with threat detection, 
+                  alert management, and incident response.
+                </p>
+                <ul className="text-sm text-slate-600 space-y-2">
+                  <li>• Threat Detection</li>
+                  <li>• Alert Management</li>
+                  <li>• Incident Response</li>
+                  <li>• Security Analytics</li>
+                </ul>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-slate-900 mb-4">
+                  📋 Compliance Solutions
+                </h3>
+                <p className="text-slate-600 mb-4">
+                  Comprehensive compliance services with GDPR, SOC 2, 
+                  HIPAA, and industry-specific standards.
+                </p>
+                <ul className="text-sm text-slate-600 space-y-2">
+                  <li>• GDPR Compliance</li>
+                  <li>• SOC 2 Compliance</li>
+                  <li>• HIPAA Compliance</li>
+                  <li>• Industry Standards</li>
+                </ul>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold text-slate-900 mb-4">
+                  🎓 Security Training Services
+                </h3>
+                <p className="text-slate-600 mb-4">
+                  Employee security training with awareness programs, 
+                  phishing simulations, and best practices education.
+                </p>
+                <ul className="text-sm text-slate-600 space-y-2">
+                  <li>• Awareness Programs</li>
+                  <li>• Phishing Simulations</li>
+                  <li>• Best Practices</li>
+                  <li>• Compliance Training</li>
                 </ul>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Security Process */}
+        {/* Technology Stack */}
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-900 mb-12">
+              Advanced Cybersecurity Technology Stack
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="text-center">
+                <h3 className="text-lg font-semibold text-slate-900 mb-3">Security Tools</h3>
+                <p className="text-slate-600 text-sm">
+                  SIEM, IDS/IPS, Firewalls, and security platforms
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <h3 className="text-lg font-semibold text-slate-900 mb-3">Monitoring</h3>
+                <p className="text-slate-600 text-sm">
+                  Real-time monitoring, threat intelligence, and analytics
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <h3 className="text-lg font-semibold text-slate-900 mb-3">Compliance</h3>
+                <p className="text-slate-600 text-sm">
+                  GDPR, SOC 2, HIPAA, PCI DSS, and industry standards
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <h3 className="text-lg font-semibold text-slate-900 mb-3">Response</h3>
+                <p className="text-slate-600 text-sm">
+                  Incident response, forensics, and recovery tools
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Security Process */}
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-900 mb-12">
               Our Cybersecurity Process
@@ -349,11 +396,11 @@ export default function CybersecurityPage() {
                   <span className="text-2xl font-bold text-red-600">1</span>
                 </div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-3">
-                  Assessment
+                  Security Assessment
                 </h3>
                 <p className="text-slate-600">
-                  Comprehensive security assessment including vulnerability scanning, 
-                  risk analysis, and compliance review
+                  Comprehensive security assessment, risk analysis, 
+                  and vulnerability identification
                 </p>
               </div>
               
@@ -362,11 +409,11 @@ export default function CybersecurityPage() {
                   <span className="text-2xl font-bold text-red-600">2</span>
                 </div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-3">
-                  Testing
+                  Strategy Development
                 </h3>
                 <p className="text-slate-600">
-                  Penetration testing, ethical hacking, and security testing to 
-                  identify vulnerabilities and security weaknesses
+                  Security strategy planning, architecture design, 
+                  and implementation roadmap
                 </p>
               </div>
               
@@ -378,8 +425,8 @@ export default function CybersecurityPage() {
                   Implementation
                 </h3>
                 <p className="text-slate-600">
-                  Security solution implementation, configuration, and integration 
-                  with your existing infrastructure
+                  Security solution deployment, configuration, 
+                  and testing
                 </p>
               </div>
               
@@ -388,63 +435,11 @@ export default function CybersecurityPage() {
                   <span className="text-2xl font-bold text-red-600">4</span>
                 </div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-3">
-                  Monitoring
+                  Monitoring & Support
                 </h3>
                 <p className="text-slate-600">
-                  Continuous security monitoring, threat detection, incident response, 
-                  and ongoing security optimization
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Compliance & Standards */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-900 mb-12">
-              Security Compliance & Standards
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold text-slate-900 mb-3">ISO 27001</h3>
-                <p className="text-slate-600 text-sm">
-                  Information Security Management System certification for comprehensive security framework
-                </p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold text-slate-900 mb-3">SOC 2 Type II</h3>
-                <p className="text-slate-600 text-sm">
-                  Service Organization Control certification for security, availability, and confidentiality
-                </p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold text-slate-900 mb-3">GDPR</h3>
-                <p className="text-slate-600 text-sm">
-                  General Data Protection Regulation compliance for EU data protection requirements
-                </p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold text-slate-900 mb-3">PCI DSS</h3>
-                <p className="text-slate-600 text-sm">
-                  Payment Card Industry Data Security Standard for payment security compliance
-                </p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold text-slate-900 mb-3">HIPAA</h3>
-                <p className="text-slate-600 text-sm">
-                  Health Insurance Portability and Accountability Act for healthcare data security
-                </p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold text-slate-900 mb-3">NIST</h3>
-                <p className="text-slate-600 text-sm">
-                  National Institute of Standards and Technology cybersecurity framework
+                  Continuous monitoring, incident response, 
+                  and ongoing security support
                 </p>
               </div>
             </div>
@@ -479,15 +474,15 @@ export default function CybersecurityPage() {
               Ready to Secure Your Business?
             </h2>
             <p className="text-xl text-red-100 mb-8">
-              Contact ElegantCodes today for a comprehensive security assessment and discover how our 
+              Contact ElegantCodes today for a free security consultation and discover how our 
               cybersecurity services can protect your business from evolving cyber threats.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-red-600 hover:bg-red-50 px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
-                Security Assessment
+                Secure Your Business
               </button>
               <button className="border-2 border-white text-white hover:bg-white hover:text-red-600 px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
-                View Security Solutions
+                Security Assessment
               </button>
             </div>
           </div>
