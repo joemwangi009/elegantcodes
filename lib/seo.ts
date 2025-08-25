@@ -619,4 +619,149 @@ export function generateDescription(primaryKeyword: string, region?: string, cal
   }
   
   return description;
+}
+
+// Generate Article schema for blog posts
+export function generateArticleSchema(article: {
+  title: string;
+  description: string;
+  author: string;
+  publishedDate: string;
+  modifiedDate: string;
+  image: string;
+  url: string;
+}): string {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.title,
+    "description": article.description,
+    "image": article.image,
+    "author": {
+      "@type": "Person",
+      "name": article.author
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Elegant Codes",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.elegantcodes.com/logo.png"
+      }
+    },
+    "datePublished": article.publishedDate,
+    "dateModified": article.modifiedDate,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": article.url
+    }
+  });
+}
+
+// Generate Review schema for testimonials
+export function generateReviewSchema(review: {
+  author: string;
+  rating: number;
+  reviewBody: string;
+  itemReviewed: string;
+  datePublished: string;
+}): string {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
+      "name": review.author
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": review.rating,
+      "bestRating": 5
+    },
+    "reviewBody": review.reviewBody,
+    "itemReviewed": {
+      "@type": "Service",
+      "name": review.itemReviewed
+    },
+    "datePublished": review.datePublished
+  });
+}
+
+// Generate HowTo schema for service processes
+export function generateHowToSchema(howTo: {
+  title: string;
+  description: string;
+  steps: Array<{name: string, text: string}>;
+  totalTime: string;
+  difficulty: string;
+}): string {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": howTo.title,
+    "description": howTo.description,
+    "totalTime": howTo.totalTime,
+    "difficulty": howTo.difficulty,
+    "step": howTo.steps.map((step, index) => ({
+      "@type": "HowToStep",
+      "position": index + 1,
+      "name": step.name,
+      "text": step.text
+    }))
+  });
+}
+
+// Generate SoftwareApplication schema for software services
+export function generateSoftwareApplicationSchema(software: {
+  name: string;
+  description: string;
+  applicationCategory: string;
+  operatingSystem: string;
+  offers: {
+    price: string;
+    priceCurrency: string;
+  };
+}): string {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": software.name,
+    "description": software.description,
+    "applicationCategory": software.applicationCategory,
+    "operatingSystem": software.operatingSystem,
+    "offers": {
+      "@type": "Offer",
+      "price": software.offers.price,
+      "priceCurrency": software.offers.priceCurrency
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "Elegant Codes"
+    }
+  });
+}
+
+// Generate VideoObject schema for video content
+export function generateVideoObjectSchema(video: {
+  name: string;
+  description: string;
+  thumbnailUrl: string;
+  uploadDate: string;
+  duration: string;
+  url: string;
+}): string {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": video.name,
+    "description": video.description,
+    "thumbnailUrl": video.thumbnailUrl,
+    "uploadDate": video.uploadDate,
+    "duration": video.duration,
+    "url": video.url,
+    "publisher": {
+      "@type": "Organization",
+      "name": "Elegant Codes"
+    }
+  });
 } 

@@ -108,7 +108,7 @@ export default function SEOHead({
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-      <meta name="apple-mobile-web-app-title" content="ElegantCodes" />
+      <meta name="apple-mobile-web-app-title" content="Elegant Codes" />
       
       {/* Favicon and App Icons */}
       <link rel="icon" href="/favicon.ico" />
@@ -119,7 +119,7 @@ export default function SEOHead({
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       
-      {/* Schema.org Structured Data */}
+      {/* Advanced Schema.org Structured Data */}
       {additionalSchemas.map((schemaMarkup, index) => (
         <script
           key={index}

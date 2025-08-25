@@ -13,9 +13,21 @@ import ContactQuoteSection from '@/components/ContactQuoteSection';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Custom Software Development Solutions | ElegantCodes',
-  description: 'Transform your business with custom IT solutions. Expert mobile app development, web applications, e-commerce platforms, POS systems, and business automation services.',
+  title: 'Elegant Codes | Leading Global IT Solutions & Custom Software Development Company',
+  description: 'Elegant Codes is your trusted partner for custom software development, mobile apps, web solutions, and IT consulting. Transform your business with Elegant Codes - the premier IT solutions provider across Kenya, Europe, USA, Australia, Canada, Germany, France, and UK.',
   keywords: [
+    'Elegant Codes',
+    'Elegant Codes software development',
+    'Elegant Codes IT solutions',
+    'Elegant Codes company',
+    'Elegant Codes Kenya',
+    'Elegant Codes Europe',
+    'Elegant Codes USA',
+    'Elegant Codes Australia',
+    'Elegant Codes Canada',
+    'Elegant Codes Germany',
+    'Elegant Codes France',
+    'Elegant Codes UK',
     'custom software development',
     'mobile app development',
     'web application development',
@@ -28,26 +40,26 @@ export const metadata: Metadata = {
     'cloud computing services'
   ],
   openGraph: {
-    title: 'Custom Software Development Solutions | ElegantCodes',
-    description: 'Transform your business with custom IT solutions. Expert mobile app development, web applications, e-commerce platforms, POS systems, and business automation services.',
+    title: 'Elegant Codes | Leading Global IT Solutions & Custom Software Development Company',
+    description: 'Elegant Codes is your trusted partner for custom software development, mobile apps, web solutions, and IT consulting. Transform your business with Elegant Codes.',
     type: 'website',
     images: [
       {
         url: 'https://elegantcodes.com/og-homepage.jpg',
         width: 1200,
         height: 630,
-        alt: 'ElegantCodes - Custom Software Development Solutions'
+        alt: 'Elegant Codes - Global IT Solutions Provider'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Custom Software Development Solutions | ElegantCodes',
-    description: 'Transform your business with custom IT solutions. Expert mobile app development, web applications, e-commerce platforms, POS systems, and business automation services.',
+    title: 'Elegant Codes | Leading Global IT Solutions & Custom Software Development Company',
+    description: 'Elegant Codes is your trusted partner for custom software development, mobile apps, web solutions, and IT consulting.',
     images: ['https://elegantcodes.com/og-homepage.jpg']
   },
   alternates: {
-    canonical: 'https://elegantcodes.com/'
+    canonical: 'https://www.elegantcodes.com/'
   }
 };
 

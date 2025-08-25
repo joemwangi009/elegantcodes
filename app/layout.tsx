@@ -217,17 +217,44 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
         
-        {/* Schema.org structured data */}
+        {/* Google Search Console Verification */}
+        <meta name="google-site-verification" content="your-google-verification-code" />
+        
+        {/* WebSite Schema - Critical for brand visibility */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Elegant Codes",
+              "url": "https://www.elegantcodes.com",
+              "description": "Elegant Codes - Leading Global IT Solutions & Custom Software Development Company",
+              "publisher": {
+                "@type": "Organization",
+                "name": "Elegant Codes"
+              },
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.elegantcodes.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
+        
+        {/* Organization Schema - Enhanced for brand dominance */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "ElegantCodes",
+              "name": "Elegant Codes",
+              "alternateName": "ElegantCodes",
               "url": "https://www.elegantcodes.com",
               "logo": "https://www.elegantcodes.com/logo.png",
-              "description": "Global IT solutions provider offering software development, cloud services, cybersecurity, and AI solutions across Kenya, Europe, USA, Australia, Canada, Germany, France, and UK.",
+              "description": "Elegant Codes is a leading global IT solutions provider offering comprehensive software development, cloud services, cybersecurity, and AI solutions across Kenya, Europe, USA, Australia, Canada, Germany, France, and UK.",
               "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "Kenya",

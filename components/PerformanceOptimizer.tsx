@@ -11,6 +11,83 @@ interface PerformanceOptimizerProps {
   className?: string;
 }
 
+// Core Web Vitals Monitoring
+function useCoreWebVitals() {
+  useEffect(() => {
+    if (typeof window !== 'undefined' && 'PerformanceObserver' in window) {
+      // LCP (Largest Contentful Paint)
+      const lcpObserver = new PerformanceObserver((list) => {
+        const entries = list.getEntries();
+        const lastEntry = entries[entries.length - 1];
+        if (lastEntry) {
+          const lcp = lastEntry.startTime;
+          console.log('LCP:', lcp);
+          // Send to analytics
+          if (window.gtag) {
+            window.gtag('event', 'core_web_vitals', {
+              event_category: 'Web Vitals',
+              event_label: 'LCP',
+              value: Math.round(lcp)
+            });
+          }
+        }
+      });
+      lcpObserver.observe({ entryTypes: ['largest-contentful-paint'] });
+
+      // FID (First Input Delay)
+      const fidObserver = new PerformanceObserver((list) => {
+        const entries = list.getEntries();
+        entries.forEach((entry) => {
+          // Type assertion for FirstInputEntry
+          const firstInputEntry = entry as PerformanceEntry & {
+            processingStart?: number;
+            startTime: number;
+          };
+          
+          if (firstInputEntry.processingStart) {
+            const fid = firstInputEntry.processingStart - firstInputEntry.startTime;
+            console.log('FID:', fid);
+            if (window.gtag) {
+              window.gtag('event', 'core_web_vitals', {
+                event_category: 'Web Vitals',
+                event_label: 'FID',
+                value: Math.round(fid)
+              });
+            }
+          }
+        });
+      });
+      fidObserver.observe({ entryTypes: ['first-input'] });
+
+      // CLS (Cumulative Layout Shift)
+      let clsValue = 0;
+      const clsObserver = new PerformanceObserver((list) => {
+        const entries = list.getEntries();
+        entries.forEach((entry: any) => {
+          if (!entry.hadRecentInput) {
+            clsValue += entry.value;
+            console.log('CLS:', clsValue);
+            if (window.gtag) {
+              window.gtag('event', 'core_web_vitals', {
+                event_category: 'Web Vitals',
+                event_label: 'CLS',
+                value: Math.round(clsValue * 1000) / 1000
+              });
+            }
+          }
+        });
+      });
+      clsObserver.observe({ entryTypes: ['layout-shift'] });
+
+      return () => {
+        lcpObserver.disconnect();
+        fidObserver.disconnect();
+        clsObserver.disconnect();
+      };
+    }
+  }, []);
+}
+
 export default function PerformanceOptimizer({
   children,
   threshold = 0.1,
@@ -18,6 +95,8 @@ export default function PerformanceOptimizer({
   triggerOnce = true,
   className = ''
 }: PerformanceOptimizerProps) {
+  useCoreWebVitals();
+  
   const [ref, inView] = useInView({
     threshold,
     rootMargin,

@@ -190,11 +190,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo - Far Left */}
           <div className="flex items-center flex-shrink-0">
-            <Link href="#home" className="flex items-center space-x-2 group">
+            <Link href="#home" className="flex items-center space-x-2 group" aria-label="Elegant Codes - Home">
               <div className="w-8 h-8 flex items-center justify-center bg-amber-500 rounded-lg group-hover:bg-amber-400 transition-colors duration-200">
                 <i className="ri-code-s-slash-line text-slate-900 text-lg"></i>
               </div>
-              <span className="text-white font-bold text-xl font-inter">ElegantCodes</span>
+              <span className="text-white font-bold text-xl font-inter">Elegant Codes</span>
             </Link>
           </div>
 

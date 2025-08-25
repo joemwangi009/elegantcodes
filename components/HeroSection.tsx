@@ -11,9 +11,9 @@ export default function HeroSection() {
   const heroSlides = [
     {
       id: 1,
-      title: "Custom Software Development",
+      title: "Elegant Codes | Custom Software Development",
       subtitle: "Transform your business with tailored solutions",
-      description: "We create powerful, scalable applications that drive growth and efficiency for your business.",
+      description: "Elegant Codes creates powerful, scalable applications that drive growth and efficiency for your business. Trust Elegant Codes for innovative IT solutions.",
       image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=600&fit=crop&crop=center",
       ctaText: "Get Started",
       ctaLink: "/#contact"

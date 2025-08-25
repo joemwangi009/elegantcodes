@@ -38,17 +38,17 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
             <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 font-poppins">
-              About <span className="text-amber-500">ElegantCodes</span>
+              About <span className="text-amber-500">Elegant Codes</span>
             </h2>
             <p className="text-lg text-slate-600 mb-6 font-inter leading-relaxed">
-              We are a team of passionate developers, designers, and strategists dedicated to creating 
+              <strong>Elegant Codes</strong> is a team of passionate developers, designers, and strategists dedicated to creating 
               exceptional digital solutions. With years of experience in the IT industry, we understand 
               the unique challenges businesses face in today's digital landscape.
             </p>
             <p className="text-lg text-slate-600 mb-8 font-inter leading-relaxed">
               Our mission is to transform your ideas into powerful, scalable, and user-friendly applications 
-              that drive business growth and enhance operational efficiency. We pride ourselves on delivering 
-              elegant code that stands the test of time.
+              that drive business growth and enhance operational efficiency. <strong>Elegant Codes</strong> prides itself on delivering 
+              elegant code that stands the test of time and exceeds client expectations.
             </p>
             
             <div className="grid grid-cols-2 gap-6">

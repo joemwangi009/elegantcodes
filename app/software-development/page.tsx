@@ -3,9 +3,13 @@ import { KEYWORD_CLUSTERS } from '@/lib/seo'
 import SEOHead from '@/components/SEOHead'
 
 export const metadata: Metadata = {
-  title: 'Custom Software Development Company | Enterprise Software Solutions Provider',
-  description: 'Leading custom software development company offering enterprise software solutions, offshore software development, and progressive web apps. Expert software development services across Kenya, Europe, USA, Australia, Canada, Germany, France, and UK.',
+  title: 'Elegant Codes | Custom Software Development Company | Enterprise Software Solutions Provider',
+  description: 'Elegant Codes is your trusted partner for custom software development, enterprise solutions, and offshore development services. Leading software development company across Kenya, Europe, USA, Australia, Canada, Germany, France, and UK.',
   keywords: [
+    'Elegant Codes software development',
+    'Elegant Codes custom software',
+    'Elegant Codes enterprise solutions',
+    'Elegant Codes offshore development',
     'custom software development',
     'offshore software development',
     'enterprise software company',
@@ -29,16 +33,16 @@ export const metadata: Metadata = {
     'offshore software development France'
   ],
   openGraph: {
-    title: 'Custom Software Development Company | Enterprise Software Solutions Provider',
-    description: 'Leading custom software development company offering enterprise software solutions, offshore software development, and progressive web apps.',
+    title: 'Elegant Codes | Custom Software Development Company | Enterprise Software Solutions Provider',
+    description: 'Elegant Codes is your trusted partner for custom software development, enterprise solutions, and offshore development services.',
     url: 'https://www.elegantcodes.com/software-development',
-    siteName: 'ElegantCodes - Global IT Solutions',
+    siteName: 'Elegant Codes - Global IT Solutions',
     images: [
       {
         url: 'https://www.elegantcodes.com/og-image-software-development.jpg',
         width: 1200,
         height: 630,
-        alt: 'Custom Software Development Company',
+        alt: 'Elegant Codes - Custom Software Development Company',
       }
     ],
     locale: 'en_US',
@@ -46,8 +50,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Custom Software Development Company | Enterprise Software Solutions Provider',
-    description: 'Leading custom software development company offering enterprise software solutions, offshore software development, and progressive web apps.',
+    title: 'Elegant Codes | Custom Software Development Company | Enterprise Software Solutions Provider',
+    description: 'Elegant Codes is your trusted partner for custom software development, enterprise solutions, and offshore development services.',
     images: ['https://www.elegantcodes.com/og-image-software-development.jpg'],
   },
   alternates: {
@@ -57,23 +61,23 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: "What types of custom software development services does ElegantCodes offer?",
-    answer: "ElegantCodes offers comprehensive custom software development services including web applications, mobile apps, enterprise software, business automation systems, CRM solutions, ERP systems, and industry-specific software tailored to your business needs."
+    question: "What types of custom software development services does Elegant Codes offer?",
+    answer: "Elegant Codes offers comprehensive custom software development services including web applications, mobile apps, enterprise software, business automation systems, CRM solutions, ERP systems, and industry-specific software tailored to your business needs."
   },
   {
-    question: "How does ElegantCodes ensure quality in offshore software development?",
+    question: "How does Elegant Codes ensure quality in offshore software development?",
     answer: "Our offshore software development follows strict quality standards including code reviews, automated testing, continuous integration, regular client communication, and adherence to international development best practices and standards."
   },
   {
-    question: "What makes ElegantCodes a leading software development firm?",
+    question: "What makes Elegant Codes a leading software development firm?",
     answer: "We are recognized as a leading software development firm due to our technical expertise, proven track record, client satisfaction, innovative solutions, modern technology stack, and commitment to delivering high-quality software on time and within budget."
   },
   {
-    question: "How does ElegantCodes approach enterprise software development?",
+    question: "How does Elegant Codes approach enterprise software development?",
     answer: "Our enterprise software development approach includes thorough requirements analysis, scalable architecture design, security-first development, comprehensive testing, deployment automation, and ongoing maintenance and support."
   },
   {
-    question: "What progressive web app development services does ElegantCodes provide?",
+    question: "What progressive web app development services does Elegant Codes provide?",
     answer: "We develop progressive web apps (PWAs) that offer native app-like experiences including offline functionality, push notifications, fast loading, responsive design, and cross-platform compatibility for modern web applications."
   }
 ]
