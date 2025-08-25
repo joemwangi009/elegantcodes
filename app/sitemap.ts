@@ -1,5 +1,4 @@
 import { MetadataRoute } from 'next'
-import { KEYWORD_CLUSTERS } from '@/lib/seo'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.elegantcodes.com'
