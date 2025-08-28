@@ -328,5 +328,159 @@ export const projectsData: Record<string, ProjectData> = {
       "95% customer satisfaction rating",
       "40% increase in event attendance"
     ]
+  },
+
+  "smartcity-iot": {
+    id: 8,
+    title: "SmartCity IoT Platform",
+    category: "IoT & Smart Cities",
+    client: "SmartCity Municipal",
+    duration: "12 months",
+    technologies: ["Python", "React", "MongoDB", "AWS IoT", "MQTT", "TensorFlow"],
+    heroImage: "https://images.unsplash.com/photo-1511795409834-ef04bbd61?w=800&h=600&fit=crop&crop=center",
+    description: "A comprehensive IoT platform for smart city management, monitoring urban infrastructure, traffic patterns, and environmental conditions in real-time.",
+    overview: "SmartCity IoT Platform revolutionizes urban management by providing real-time monitoring and control of city infrastructure. The platform collects data from thousands of IoT sensors to optimize traffic flow, reduce energy consumption, and improve public safety.",
+    challenges: [
+      "Managing thousands of IoT devices and sensors",
+      "Real-time data processing and analytics",
+      "Scalable infrastructure for massive data volumes",
+      "Integration with existing city systems and databases"
+    ],
+    solutions: [
+      "Built IoT device management system with automated provisioning",
+      "Implemented real-time data processing pipeline with Apache Kafka",
+      "Created scalable cloud infrastructure with auto-scaling capabilities",
+      "Developed comprehensive API for city system integration"
+    ],
+    gallery: [
+      {
+        image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61?w=800&h=600&fit=crop&crop=center",
+        caption: "IoT Dashboard"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
+        caption: "Traffic Monitoring"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&crop=center",
+        caption: "Environmental Sensors"
+      }
+    ],
+    features: [
+      "Real-time IoT device monitoring and management",
+      "Advanced analytics and predictive modeling",
+      "Traffic optimization and congestion management",
+      "Environmental monitoring and air quality tracking",
+      "Energy consumption optimization",
+      "Public safety monitoring and alerting"
+    ],
+    results: [
+      "25% reduction in traffic congestion",
+      "30% improvement in energy efficiency",
+      "40% faster emergency response times",
+      "99.9% system reliability and uptime"
+    ]
+  },
+  "healthcare-analytics": {
+    id: 9,
+    title: "Healthcare Analytics Platform",
+    category: "Healthcare",
+    client: "HealthTech Solutions",
+    duration: "14 months",
+    technologies: ["React", "Python", "PostgreSQL", "AWS", "TensorFlow", "HIPAA"],
+    heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
+    description: "A HIPAA-compliant healthcare analytics platform providing insights into patient outcomes, treatment effectiveness, and operational efficiency for healthcare providers.",
+    overview: "Healthcare Analytics Platform empowers healthcare providers with data-driven insights to improve patient care and operational efficiency. The platform analyzes patient data, treatment outcomes, and operational metrics while maintaining strict HIPAA compliance.",
+    challenges: [
+      "HIPAA compliance and data security requirements",
+      "Complex healthcare data integration and standardization",
+      "Real-time analytics for critical patient care decisions",
+      "Integration with existing hospital information systems"
+    ],
+    solutions: [
+      "Implemented comprehensive HIPAA compliance framework",
+      "Built healthcare data integration and standardization engine",
+      "Created real-time analytics dashboard for critical care",
+      "Developed secure API for hospital system integration"
+    ],
+    gallery: [
+      {
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
+        caption: "Analytics Dashboard"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
+        caption: "Patient Outcomes"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&crop=center",
+        caption: "Treatment Analytics"
+      }
+    ],
+    features: [
+      "HIPAA-compliant data security and privacy",
+      "Real-time patient analytics and monitoring",
+      "Treatment effectiveness and outcome analysis",
+      "Operational efficiency and resource optimization",
+      "Predictive analytics for patient care",
+      "Comprehensive reporting and compliance tools"
+    ],
+    results: [
+      "35% improvement in patient outcomes",
+      "25% reduction in operational costs",
+      "40% faster diagnosis and treatment decisions",
+      "100% HIPAA compliance audit success"
+    ]
+  },
+  "fintech-mobile-app": {
+    id: 10,
+    title: "FinTech Mobile App",
+    category: "Financial Technology",
+    client: "FinTech Innovations",
+    duration: "8 months",
+    technologies: ["React Native", "Node.js", "MongoDB", "AWS", "Stripe", "Plaid"],
+    heroImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
+    description: "A cutting-edge mobile financial application offering digital banking, investment management, and cryptocurrency trading with advanced security features.",
+    overview: "FinTech Mobile App revolutionizes personal finance management by providing a comprehensive platform for digital banking, investment tracking, and cryptocurrency trading. The app combines user-friendly design with enterprise-grade security.",
+    challenges: [
+      "Real-time financial data synchronization",
+      "Secure payment processing and fraud detection",
+      "Multi-platform compatibility and performance",
+      "Integration with banking and investment APIs"
+    ],
+    solutions: [
+      "Built real-time data sync with WebSocket connections",
+      "Implemented advanced fraud detection algorithms",
+      "Created cross-platform native performance optimization",
+      "Integrated multiple banking and investment APIs"
+    ],
+    gallery: [
+      {
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
+        caption: "Mobile Banking Interface"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
+        caption: "Investment Dashboard"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&crop=center",
+        caption: "Crypto Trading View"
+      }
+    ],
+    features: [
+      "Digital banking and account management",
+      "Investment portfolio tracking and analysis",
+      "Cryptocurrency trading and wallet management",
+      "Real-time market data and notifications",
+      "Advanced security and biometric authentication",
+      "Multi-currency support and international transfers"
+    ],
+    results: [
+      "100,000+ active users",
+      "500% increase in trading volume",
+      "99.9% security audit compliance",
+      "4.8/5 star app store rating"
+    ]
   }
 }; 
