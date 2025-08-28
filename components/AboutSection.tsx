@@ -35,20 +35,19 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 font-poppins">
+            About <span className="text-amber-500">ElegantCodes</span>
+          </h2>
+          <p className="text-xl text-slate-600 max-w-4xl mx-auto font-inter leading-relaxed">
+            <strong>ElegantCodes</strong> is a team of passionate developers, designers, and IT consultants dedicated to transforming businesses through innovative technology solutions. We specialize in custom software development, mobile applications, and comprehensive IT consulting services.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 font-poppins">
-              About <span className="text-amber-500">Elegant Codes</span>
-            </h2>
             <p className="text-lg text-slate-600 mb-6 font-inter leading-relaxed">
-              <strong>Elegant Codes</strong> is a team of passionate developers, designers, and strategists dedicated to creating 
-              exceptional digital solutions. With years of experience in the IT industry, we understand 
-              the unique challenges businesses face in today's digital landscape.
-            </p>
-            <p className="text-lg text-slate-600 mb-8 font-inter leading-relaxed">
-              Our mission is to transform your ideas into powerful, scalable, and user-friendly applications 
-              that drive business growth and enhance operational efficiency. <strong>Elegant Codes</strong> prides itself on delivering 
-              elegant code that stands the test of time and exceeds client expectations.
+              <strong>ElegantCodes</strong> prides itself on delivering cutting-edge solutions that drive real business value. Our expertise spans across web development, mobile apps, e-commerce platforms, and enterprise software solutions.
             </p>
             
             <div className="grid grid-cols-2 gap-6">

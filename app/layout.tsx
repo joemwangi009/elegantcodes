@@ -23,75 +23,32 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.elegantcodes.com'),
   title: {
-    default: 'ElegantCodes - Global IT Solutions Provider | Software Development, Cloud Services & Cybersecurity',
-    template: '%s | ElegantCodes - Global IT Solutions'
+    default: 'ElegantCodes - Premier IT Consulting & Custom Software Development',
+    template: '%s | ElegantCodes - Premier IT Consulting'
   },
-  description: 'Leading global IT solutions provider offering comprehensive software development, cloud services, cybersecurity, AI development, and DevOps consulting across Kenya, Europe, USA, Australia, Canada, Germany, France, and UK.',
+  description: 'Leading IT consulting and custom software development company offering comprehensive solutions across Kenya, Europe, USA, Australia, Canada, Germany, France, and UK.',
   keywords: [
     // IT Consulting and Solutions
     'IT consulting services',
-    'IT solutions company',
-    'global IT services',
-    'IT outsourcing company',
-    'end-to-end IT services',
-    'technology consulting Europe',
-    'best IT company worldwide',
-    'trusted IT solutions provider',
-    'scalable IT services',
-    'next-gen IT solutions',
-    'enterprise IT solutions',
-    'tech companies in Nairobi',
-    
-    // Software Development
     'custom software development',
-    'offshore software development',
-    'enterprise software company',
-    'leading software development firm',
+    'mobile app development',
+    'web application development',
+    'e-commerce solutions',
+    'POS systems',
+    'business automation',
+    'enterprise software solutions',
+    'cloud computing services',
+    'cybersecurity solutions',
+    'AI development services',
+    'DevOps consulting',
+    'digital transformation',
+    'business process automation',
+    'API development services',
+    'database design services',
+    'software testing services',
+    'UI/UX design services',
     'progressive web apps',
-    
-    // App Development
-    'mobile app development company',
-    'Android app development',
-    'iOS app development',
-    'cross-platform app development',
-    'Flutter app development',
-    'React development services',
-    'Node.js developers',
-    
-    // Web Development
-    'web development company',
-    'ecommerce website development',
-    'web3 development services',
-    
-    // Cloud Services
-    'cloud application development',
-    'cloud migration services',
-    'cloud infrastructure management',
-    'AWS cloud consulting',
-    'Azure cloud services',
-    'Google Cloud partner',
-    'cloud security provider',
-    
-    // Cybersecurity
-    'cybersecurity company',
-    'IT security solutions',
-    'penetration testing services',
-    'ethical hacking company',
-    'data protection solutions',
-    'managed security services',
-    'SOC as a service',
-    'cyber threat management',
-    'network security services',
-    
-    // AI and Machine Learning
-    'AI development company',
-    'machine learning services',
-    'natural language processing solutions',
-    'AI chatbot development',
-    'computer vision services',
-    
-    // Emerging Technologies
-    'blockchain development company',
+    'cross-platform development',
     'IoT solutions provider',
     'metaverse development company',
     
@@ -134,15 +91,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.elegantcodes.com',
-    siteName: 'ElegantCodes - Global IT Solutions',
-    title: 'ElegantCodes - Global IT Solutions Provider | Software Development, Cloud Services & Cybersecurity',
-    description: 'Leading global IT solutions provider offering comprehensive software development, cloud services, cybersecurity, AI development, and DevOps consulting across Kenya, Europe, USA, Australia, Canada, Germany, France, and UK.',
+    siteName: 'ElegantCodes - Premier IT Consulting',
+    title: 'ElegantCodes - Premier IT Consulting & Custom Software Development',
+    description: 'Leading IT consulting and custom software development company offering comprehensive solutions across Kenya, Europe, USA, Australia, Canada, Germany, France, and UK.',
     images: [
       {
         url: 'https://www.elegantcodes.com/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'ElegantCodes - Global IT Solutions Provider',
+        alt: 'ElegantCodes - Premier IT Consulting & Custom Software Development',
       }
     ],
   },
@@ -150,8 +107,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@elegantcodes',
     creator: '@elegantcodes',
-    title: 'ElegantCodes - Global IT Solutions Provider',
-    description: 'Leading global IT solutions provider offering comprehensive software development, cloud services, cybersecurity, AI development, and DevOps consulting.',
+    title: 'ElegantCodes - Premier IT Consulting & Custom Software Development',
+    description: 'Leading IT consulting and custom software development company offering comprehensive solutions across Kenya, Europe, USA, Australia, Canada, Germany, France, and UK.',
     images: ['https://www.elegantcodes.com/og-image.jpg'],
   },
   robots: {
@@ -227,12 +184,12 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "Elegant Codes",
+              "name": "ElegantCodes",
               "url": "https://www.elegantcodes.com",
-              "description": "Elegant Codes - Leading Global IT Solutions & Custom Software Development Company",
+              "description": "ElegantCodes - Premier IT Consulting & Custom Software Development",
               "publisher": {
                 "@type": "Organization",
-                "name": "Elegant Codes"
+                "name": "ElegantCodes"
               },
               "potentialAction": {
                 "@type": "SearchAction",
@@ -243,129 +200,32 @@ export default function RootLayout({
           }}
         />
         
-        {/* Organization Schema - Enhanced for brand dominance */}
+        {/* Organization Schema - Critical for branding and knowledge panel triggering */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Elegant Codes",
-              "alternateName": "ElegantCodes",
+              "name": "ElegantCodes",
               "url": "https://www.elegantcodes.com",
               "logo": "https://www.elegantcodes.com/logo.png",
-              "description": "Elegant Codes is a leading global IT solutions provider offering comprehensive software development, cloud services, cybersecurity, and AI solutions across Kenya, Europe, USA, Australia, Canada, Germany, France, and UK.",
+              "sameAs": [
+                "https://www.linkedin.com/company/elegantcodes",
+                "https://www.instagram.com/elegantcodes",
+                "https://www.techbehemoths.com/company/elegant-codes"
+              ],
+              "description": "ElegantCodes provides expert IT consulting and custom software development services.",
               "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "Kenya",
-                "addressLocality": "Nairobi",
-                "addressRegion": "Nairobi",
-                "postalCode": "00100"
+                "addressLocality": "Nairobi"
               },
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+254-XXX-XXX-XXX",
                 "contactType": "customer service",
-                "availableLanguage": "English"
-              },
-              "sameAs": [
-                "https://www.linkedin.com/company/elegantcodes",
-                "https://twitter.com/elegantcodes",
-                "https://www.facebook.com/elegantcodes",
-                "https://www.instagram.com/elegantcodes"
-              ],
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "IT Services",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Software Development",
-                      "description": "Custom software development, mobile apps, web applications"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Cloud Services",
-                      "description": "AWS, Azure, Google Cloud consulting and migration"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Cybersecurity",
-                      "description": "Security solutions, penetration testing, threat management"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "AI Development",
-                      "description": "Machine learning, natural language processing, computer vision"
-                    }
-                  }
-                ]
-              },
-              "areaServed": [
-                {
-                  "@type": "Country",
-                  "name": "Kenya"
-                },
-                {
-                  "@type": "Country",
-                  "name": "Germany"
-                },
-                {
-                  "@type": "Country",
-                  "name": "United Kingdom"
-                },
-                {
-                  "@type": "Country",
-                  "name": "United States"
-                },
-                {
-                  "@type": "Country",
-                  "name": "Australia"
-                },
-                {
-                  "@type": "Country",
-                  "name": "Canada"
-                },
-                {
-                  "@type": "Country",
-                  "name": "France"
-                }
-              ],
-              "serviceArea": {
-                "@type": "GeoCircle",
-                "geoMidpoint": {
-                  "@type": "GeoCoordinates",
-                  "latitude": -1.2921,
-                  "longitude": 36.8219
-                },
-                "geoRadius": "20000"
-              },
-              "foundingDate": "2020",
-              "numberOfEmployees": "50+",
-              "award": [
-                "Best IT Company 2023",
-                "Excellence in Innovation 2024",
-                "Customer Choice Award 2024"
-              ],
-              "knowsAbout": [
-                "Software Development",
-                "Cloud Computing",
-                "Cybersecurity",
-                "Artificial Intelligence",
-                "DevOps",
-                "Digital Transformation"
-              ]
+                "email": "info@elegantcodes.com"
+              }
             })
           }}
         />

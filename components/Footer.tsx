@@ -3,9 +3,9 @@
 
 export default function Footer() {
   const socialLinks = [
-    { name: 'LinkedIn', icon: 'ri-linkedin-fill', href: '#' },
-    { name: 'Twitter', icon: 'ri-twitter-x-fill', href: '#' },
-    { name: 'GitHub', icon: 'ri-github-fill', href: '#' },
+    { name: 'LinkedIn', icon: 'ri-linkedin-fill', href: 'https://www.linkedin.com/company/elegantcodes' },
+    { name: 'Instagram', icon: 'ri-instagram-fill', href: 'https://www.instagram.com/elegantcodes' },
+    { name: 'TechBehemoths', icon: 'ri-global-line', href: 'https://www.techbehemoths.com/company/elegant-codes' }
   ];
 
   const quickLinks = [

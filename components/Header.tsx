@@ -24,10 +24,18 @@ export default function Header() {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
+    { 
+      name: 'Services', 
+      href: '/services',
+      dropdown: [
+        { name: 'IT Consulting', href: '/services/it-consulting' },
+        { name: 'Software Development', href: '/services/software-development' },
+        { name: 'Mobile Apps', href: '/services/mobile-apps' },
+        { name: 'Cloud Solutions', href: '/services/cloud-solutions' }
+      ]
+    },
     { name: 'Portfolio', href: '/portfolio' },
-    { name: 'About', href: '/#about' },
-    { name: 'Blog', href: '/blog' },
+    { name: 'About Us', href: '/about' },
     { name: 'Contact', href: '/#contact' },
   ];
 
@@ -190,25 +198,48 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo - Far Left */}
           <div className="flex items-center flex-shrink-0">
-            <Link href="#home" className="flex items-center space-x-2 group" aria-label="Elegant Codes - Home">
+            <Link href="#home" className="flex items-center space-x-2 group" aria-label="ElegantCodes - Home">
               <div className="w-8 h-8 flex items-center justify-center bg-amber-500 rounded-lg group-hover:bg-amber-400 transition-colors duration-200">
                 <i className="ri-code-s-slash-line text-slate-900 text-lg"></i>
               </div>
-              <span className="text-white font-bold text-xl font-inter">Elegant Codes</span>
+              <span className="text-white font-bold text-xl font-inter">ElegantCodes</span>
             </Link>
           </div>
 
           {/* Desktop Navigation - Center */}
           <nav className="hidden lg:flex items-center space-x-8 flex-shrink-0">
             {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-slate-300 hover:text-amber-400 transition-colors duration-200 font-medium whitespace-nowrap cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-50 rounded px-2 py-1"
-                aria-label={`Navigate to ${item.name}`}
-              >
-                {item.name}
-              </a>
+              <div key={item.name} className="relative group">
+                {item.dropdown ? (
+                  <div className="relative">
+                    <button className="text-slate-300 hover:text-amber-400 transition-colors duration-200 font-medium whitespace-nowrap cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-50 rounded px-2 py-1 flex items-center">
+                      {item.name}
+                      <i className="ri-arrow-down-s-line ml-1 text-sm"></i>
+                    </button>
+                    <div className="absolute top-full left-0 mt-2 w-64 bg-slate-800 border border-slate-700 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                      <div className="py-2">
+                        {item.dropdown.map((dropdownItem) => (
+                          <a
+                            key={dropdownItem.name}
+                            href={dropdownItem.href}
+                            className="block px-4 py-3 text-slate-300 hover:text-amber-400 hover:bg-slate-700 transition-colors duration-200"
+                          >
+                            {dropdownItem.name}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <a
+                    href={item.href}
+                    className="text-slate-300 hover:text-amber-400 transition-colors duration-200 font-medium whitespace-nowrap cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-50 rounded px-2 py-1"
+                    aria-label={`Navigate to ${item.name}`}
+                  >
+                    {item.name}
+                  </a>
+                )}
+              </div>
             ))}
           </nav>
 

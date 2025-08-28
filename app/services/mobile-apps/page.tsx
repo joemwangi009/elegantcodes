@@ -4,31 +4,31 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Cloud Solutions & DevOps Services | ElegantCodes',
-  description: 'Expert cloud solutions including AWS, Azure, GCP, DevOps automation, and infrastructure management. Scale your business with ElegantCodes cloud services.',
+  title: 'Mobile App Development Company | ElegantCodes',
+  description: 'Expert mobile app development services including native iOS, Android, and cross-platform solutions. Create engaging mobile experiences with ElegantCodes.',
   keywords: [
-    'cloud solutions',
-    'DevOps services',
-    'AWS consulting',
-    'Azure services',
-    'Google Cloud Platform',
-    'ElegantCodes cloud solutions',
-    'cloud infrastructure',
-    'DevOps automation',
-    'cloud migration',
-    'infrastructure management'
+    'mobile app development',
+    'iOS app development',
+    'Android app development',
+    'cross-platform development',
+    'mobile app company',
+    'ElegantCodes mobile apps',
+    'app development services',
+    'mobile application development',
+    'React Native development',
+    'Flutter app development'
   ],
   openGraph: {
-    title: 'Cloud Solutions & DevOps Services | ElegantCodes',
-    description: 'Expert cloud solutions including AWS, Azure, GCP, DevOps automation, and infrastructure management.',
-    url: 'https://www.elegantcodes.com/services/cloud-solutions',
+    title: 'Mobile App Development Company | ElegantCodes',
+    description: 'Expert mobile app development services including native iOS, Android, and cross-platform solutions.',
+    url: 'https://www.elegantcodes.com/services/mobile-apps',
     siteName: 'ElegantCodes - Premier IT Consulting',
     images: [
       {
-        url: 'https://www.elegantcodes.com/og-image-cloud-solutions.jpg',
+        url: 'https://www.elegantcodes.com/og-image-mobile-apps.jpg',
         width: 1200,
         height: 630,
-        alt: 'ElegantCodes - Cloud Solutions & DevOps Services',
+        alt: 'ElegantCodes - Mobile App Development Company',
       }
     ],
     locale: 'en_US',
@@ -36,34 +36,34 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cloud Solutions & DevOps Services | ElegantCodes',
-    description: 'Expert cloud solutions including AWS, Azure, GCP, DevOps automation, and infrastructure management.',
-    images: ['https://www.elegantcodes.com/og-image-cloud-solutions.jpg'],
+    title: 'Mobile App Development Company | ElegantCodes',
+    description: 'Expert mobile app development services including native iOS, Android, and cross-platform solutions.',
+    images: ['https://www.elegantcodes.com/og-image-mobile-apps.jpg'],
   },
   alternates: {
-    canonical: 'https://www.elegantcodes.com/services/cloud-solutions'
+    canonical: 'https://www.elegantcodes.com/services/mobile-apps'
   }
 };
 
-export default function CloudSolutionsPage() {
+export default function MobileAppsPage() {
   const breadcrumbs = [
     { name: 'Home', url: 'https://www.elegantcodes.com' },
     { name: 'Services', url: 'https://www.elegantcodes.com/services' },
-    { name: 'Cloud Solutions', url: 'https://www.elegantcodes.com/services/cloud-solutions' }
+    { name: 'Mobile Apps', url: 'https://www.elegantcodes.com/services/mobile-apps' }
   ];
 
   const faqs = [
     {
-      question: "What cloud platforms does ElegantCodes support?",
-      answer: "ElegantCodes provides comprehensive support for AWS, Microsoft Azure, Google Cloud Platform (GCP), and hybrid cloud solutions. We help you choose the best platform for your business needs."
+      question: "What mobile platforms does ElegantCodes develop for?",
+      answer: "ElegantCodes develops for iOS, Android, and cross-platform solutions using React Native and Flutter. We also create progressive web apps (PWAs) for web-based mobile experiences."
     },
     {
-      question: "How can cloud solutions benefit my business?",
-      answer: "Cloud solutions offer scalability, cost efficiency, improved security, disaster recovery, and global accessibility. They enable businesses to focus on core operations while reducing IT infrastructure costs."
+      question: "How long does mobile app development take?",
+      answer: "Mobile app development typically takes 8-16 weeks for basic apps, 12-24 weeks for moderate complexity, and 20-32 weeks for complex enterprise applications. We provide detailed timelines upfront."
     },
     {
-      question: "Does ElegantCodes provide ongoing cloud management?",
-      answer: "Yes, ElegantCodes offers 24/7 cloud monitoring, maintenance, optimization, and support services to ensure your cloud infrastructure runs efficiently and securely."
+      question: "Does ElegantCodes provide app store optimization services?",
+      answer: "Yes, ElegantCodes offers comprehensive app store optimization (ASO) including keyword research, metadata optimization, and performance tracking to maximize your app's visibility and downloads."
     }
   ];
 
@@ -76,18 +76,18 @@ export default function CloudSolutionsPage() {
         <section className="pt-32 pb-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 font-poppins">
-              Cloud Solutions & <span className="text-amber-500">DevOps</span>
+              Mobile App <span className="text-amber-500">Development</span>
             </h1>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto font-inter leading-relaxed">
-              Scale your business with cloud solutions from ElegantCodes. We provide AWS, Azure, GCP consulting, 
-              DevOps automation, and infrastructure management services.
+              Create engaging mobile experiences with ElegantCodes. We develop native iOS, Android, and cross-platform 
+              applications that connect with your customers on every device.
             </p>
             <div className="mt-8">
               <a 
                 href="/#contact" 
                 className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 inline-block"
               >
-                Get Cloud Ready
+                Start Your App
               </a>
             </div>
           </div>
@@ -98,41 +98,41 @@ export default function CloudSolutionsPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-slate-900 mb-6 font-poppins">
-                Our <span className="text-amber-500">Cloud Solutions</span> Services
+                Our <span className="text-amber-500">Mobile Development</span> Services
               </h2>
               <p className="text-xl text-slate-600 max-w-3xl mx-auto font-inter">
-                We deliver scalable cloud infrastructure and DevOps solutions that drive business growth and operational efficiency.
+                We deliver cutting-edge mobile applications that provide exceptional user experiences and drive business growth.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-slate-50 rounded-xl p-8 hover:shadow-lg transition-all duration-300">
                 <div className="w-16 h-16 bg-amber-500 rounded-xl flex items-center justify-center mb-6">
-                  <i className="ri-cloud-line text-3xl text-slate-900"></i>
+                  <i className="ri-apple-line text-3xl text-slate-900"></i>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-4 font-poppins">Cloud Consulting</h3>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4 font-poppins">iOS Development</h3>
                 <p className="text-slate-600 font-inter leading-relaxed">
-                  Expert guidance on AWS, Azure, and GCP platform selection, architecture design, and migration strategies.
+                  Native iOS applications built with Swift and SwiftUI, optimized for iPhone and iPad performance.
                 </p>
               </div>
 
               <div className="bg-slate-50 rounded-xl p-8 hover:shadow-lg transition-all duration-300">
                 <div className="w-16 h-16 bg-amber-500 rounded-xl flex items-center justify-center mb-6">
-                  <i className="ri-settings-3-line text-3xl text-slate-900"></i>
+                  <i className="ri-android-line text-3xl text-slate-900"></i>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-4 font-poppins">DevOps Automation</h3>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4 font-poppins">Android Development</h3>
                 <p className="text-slate-600 font-inter leading-relaxed">
-                  CI/CD pipelines, infrastructure as code, and automated deployment processes for faster delivery.
+                  Native Android applications using Kotlin and Jetpack Compose for modern Android devices.
                 </p>
               </div>
 
               <div className="bg-slate-50 rounded-xl p-8 hover:shadow-lg transition-all duration-300">
                 <div className="w-16 h-16 bg-amber-500 rounded-xl flex items-center justify-center mb-6">
-                  <i className="ri-shield-check-line text-3xl text-slate-900"></i>
+                  <i className="ri-smartphone-line text-3xl text-slate-900"></i>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-4 font-poppins">Infrastructure Management</h3>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4 font-poppins">Cross-Platform</h3>
                 <p className="text-slate-600 font-inter leading-relaxed">
-                  Comprehensive cloud infrastructure management including monitoring, security, and optimization.
+                  React Native and Flutter applications that work seamlessly across iOS and Android platforms.
                 </p>
               </div>
             </div>
@@ -179,12 +179,12 @@ export default function CloudSolutionsPage() {
               </div>
 
               <div className="bg-white rounded-xl p-8 hover:shadow-lg transition-all duration-300">
-                <h3 className="text-2xl font-bold text-slate-900 mb-4 font-poppins">Mobile Apps</h3>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4 font-poppins">Cloud Solutions</h3>
                 <p className="text-slate-600 font-inter mb-6">
-                  Native and cross-platform mobile applications for modern businesses.
+                  Scalable cloud infrastructure and DevOps automation services.
                 </p>
                 <a 
-                  href="/services/mobile-apps" 
+                  href="/services/cloud-solutions" 
                   className="text-amber-500 hover:text-amber-600 font-semibold transition-colors duration-200"
                 >
                   Learn More →
@@ -198,17 +198,17 @@ export default function CloudSolutionsPage() {
         <section className="py-20 bg-slate-900">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-bold text-white mb-6 font-poppins">
-              Ready to Scale with Cloud?
+              Ready to Build Your Mobile App?
             </h2>
             <p className="text-xl text-slate-300 mb-8 font-inter">
-              Let ElegantCodes help you leverage the power of cloud computing and DevOps automation to transform your business operations.
+              Let ElegantCodes create the perfect mobile application to engage your customers and drive business growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
                 href="/#contact" 
                 className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200"
               >
-                Get Cloud Ready
+                Start Your App
               </a>
               <a 
                 href="/services" 
@@ -225,11 +225,11 @@ export default function CloudSolutionsPage() {
       
       <SEOHead 
         config={{
-          title: 'Cloud Solutions & DevOps Services | ElegantCodes',
-          description: 'Expert cloud solutions including AWS, Azure, GCP, DevOps automation, and infrastructure management. Scale your business with ElegantCodes cloud services.',
-          keywords: ['cloud solutions', 'DevOps services', 'AWS consulting', 'Azure services', 'ElegantCodes'],
-          canonical: 'https://www.elegantcodes.com/services/cloud-solutions',
-          ogImage: 'https://www.elegantcodes.com/og-image-cloud-solutions.jpg',
+          title: 'Mobile App Development Company | ElegantCodes',
+          description: 'Expert mobile app development services including native iOS, Android, and cross-platform solutions. Create engaging mobile experiences with ElegantCodes.',
+          keywords: ['mobile app development', 'iOS development', 'Android development', 'ElegantCodes'],
+          canonical: 'https://www.elegantcodes.com/services/mobile-apps',
+          ogImage: 'https://www.elegantcodes.com/og-image-mobile-apps.jpg',
           ogType: 'website'
         }}
         breadcrumbs={breadcrumbs}

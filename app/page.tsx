@@ -13,21 +13,21 @@ import ContactQuoteSection from '@/components/ContactQuoteSection';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Elegant Codes | Leading Global IT Solutions & Custom Software Development Company',
-  description: 'Elegant Codes is your trusted partner for custom software development, mobile apps, web solutions, and IT consulting. Transform your business with Elegant Codes - the premier IT solutions provider across Kenya, Europe, USA, Australia, Canada, Germany, France, and UK.',
+  title: 'ElegantCodes – Premier IT Consulting & Custom Software Development',
+  description: 'ElegantCodes provides expert IT consulting, custom software, and mobile app development services for businesses worldwide. Trusted to deliver innovation and results.',
   keywords: [
-    'Elegant Codes',
-    'Elegant Codes software development',
-    'Elegant Codes IT solutions',
-    'Elegant Codes company',
-    'Elegant Codes Kenya',
-    'Elegant Codes Europe',
-    'Elegant Codes USA',
-    'Elegant Codes Australia',
-    'Elegant Codes Canada',
-    'Elegant Codes Germany',
-    'Elegant Codes France',
-    'Elegant Codes UK',
+    'ElegantCodes',
+    'ElegantCodes software development',
+    'ElegantCodes IT solutions',
+    'ElegantCodes company',
+    'ElegantCodes Kenya',
+    'ElegantCodes Europe',
+    'ElegantCodes USA',
+    'ElegantCodes Australia',
+    'ElegantCodes Canada',
+    'ElegantCodes Germany',
+    'ElegantCodes France',
+    'ElegantCodes UK',
     'custom software development',
     'mobile app development',
     'web application development',
@@ -40,22 +40,22 @@ export const metadata: Metadata = {
     'cloud computing services'
   ],
   openGraph: {
-    title: 'Elegant Codes | Leading Global IT Solutions & Custom Software Development Company',
-    description: 'Elegant Codes is your trusted partner for custom software development, mobile apps, web solutions, and IT consulting. Transform your business with Elegant Codes.',
+    title: 'ElegantCodes – Premier IT Consulting & Custom Software Development',
+    description: 'ElegantCodes provides expert IT consulting, custom software, and mobile app development services for businesses worldwide. Trusted to deliver innovation and results.',
     type: 'website',
     images: [
       {
         url: 'https://elegantcodes.com/og-homepage.jpg',
         width: 1200,
         height: 630,
-        alt: 'Elegant Codes - Global IT Solutions Provider'
+        alt: 'ElegantCodes - Premier IT Consulting & Custom Software Development'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Elegant Codes | Leading Global IT Solutions & Custom Software Development Company',
-    description: 'Elegant Codes is your trusted partner for custom software development, mobile apps, web solutions, and IT consulting.',
+    title: 'ElegantCodes – Premier IT Consulting & Custom Software Development',
+    description: 'ElegantCodes provides expert IT consulting, custom software, and mobile app development services for businesses worldwide. Trusted to deliver innovation and results.',
     images: ['https://elegantcodes.com/og-homepage.jpg']
   },
   alternates: {
