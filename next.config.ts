@@ -81,44 +81,14 @@ const nextConfig: NextConfig = {
     ];
   },
   
-  // Redirects for SEO
+  // Redirects for SEO - Removed old redirects that conflict with new structure
   async redirects() {
     return [
-      {
-        source: '/services/mobile-apps',
-        destination: '/services/mobile-development',
-        permanent: true,
-      },
-      {
-        source: '/services/web-apps',
-        destination: '/services/web-development',
-        permanent: true,
-      },
-      {
-        source: '/services/ecommerce',
-        destination: '/services/ecommerce-solutions',
-        permanent: true,
-      },
+      // All old redirects removed as they conflict with new clean structure
     ];
   },
   
-  // Rewrites for clean URLs
-  async rewrites() {
-    return [
-      {
-        source: '/services/:slug',
-        destination: '/services/[slug]',
-      },
-      {
-        source: '/portfolio/:slug',
-        destination: '/portfolio/[slug]',
-      },
-      {
-        source: '/blog/:slug',
-        destination: '/blog/[slug]',
-      },
-    ];
-  },
+  // Rewrites removed - not needed for static pages and can cause routing conflicts
   
   // Output configuration
   output: 'standalone',
