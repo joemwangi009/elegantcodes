@@ -16,7 +16,68 @@ export const metadata: Metadata = {
     'technology solutions portfolio',
     'digital transformation projects',
     'enterprise software portfolio',
-    'mobile application projects'
+    'mobile application projects',
+    'ElegantCodes work examples',
+    'ElegantCodes project showcase',
+    'ElegantCodes case studies',
+    'ElegantCodes success stories',
+    'ElegantCodes client projects',
+    'ElegantCodes project portfolio',
+    'ElegantCodes development work',
+    'ElegantCodes app development',
+    'ElegantCodes web development',
+    'ElegantCodes software development',
+    'ElegantCodes mobile apps',
+    'ElegantCodes cloud solutions',
+    'ElegantCodes IT consulting',
+    'ElegantCodes project results',
+    'ElegantCodes project outcomes',
+    'ElegantCodes project metrics',
+    'ElegantCodes project performance',
+    'ElegantCodes project testimonials',
+    'ElegantCodes client feedback',
+    'ElegantCodes project reviews',
+    'ElegantCodes project ratings',
+    'ElegantCodes project success rate',
+    'ElegantCodes project delivery',
+    'ElegantCodes project timeline',
+    'ElegantCodes project cost',
+    'ElegantCodes project budget',
+    'ElegantCodes project scope',
+    'ElegantCodes project features',
+    'ElegantCodes project technology',
+    'ElegantCodes project stack',
+    'ElegantCodes project architecture',
+    'ElegantCodes project design',
+    'ElegantCodes project UI/UX',
+    'ElegantCodes project backend',
+    'ElegantCodes project frontend',
+    'ElegantCodes project database',
+    'ElegantCodes project API',
+    'ElegantCodes project integration',
+    'ElegantCodes project deployment',
+    'ElegantCodes project maintenance',
+    'ElegantCodes project support',
+    'ElegantCodes project updates',
+    'ElegantCodes project scaling',
+    'ElegantCodes project optimization',
+    'ElegantCodes project security',
+    'ElegantCodes project testing',
+    'ElegantCodes project quality',
+    'ElegantCodes project standards',
+    'ElegantCodes project methodology',
+    'ElegantCodes project process',
+    'ElegantCodes project management',
+    'ElegantCodes project team',
+    'ElegantCodes project collaboration',
+    'ElegantCodes project communication',
+    'ElegantCodes project reporting',
+    'ElegantCodes project documentation',
+    'ElegantCodes project handover',
+    'ElegantCodes project training',
+    'ElegantCodes project support',
+    'ElegantCodes project warranty',
+    'ElegantCodes project guarantee'
   ],
   openGraph: {
     title: 'Portfolio | ElegantCodes - Custom Software Development & IT Solutions',
@@ -133,7 +194,7 @@ export default function PortfolioPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 font-poppins">
               Our <span className="text-amber-500">Portfolio</span>
-            </h1>
+              </h1>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto font-inter leading-relaxed">
               Explore our successful projects and see how ElegantCodes transforms businesses through innovative 
               technology solutions across various industries and technologies.
@@ -182,8 +243,8 @@ export default function PortfolioPage() {
                       <h4 className="text-sm font-semibold text-slate-700 mb-2">Technologies Used:</h4>
                       <div className="flex flex-wrap gap-2">
                         {project.technologies.map((tech, index) => (
-                          <span
-                            key={index}
+                          <span 
+                            key={index} 
                             className="bg-slate-200 text-slate-700 px-2 py-1 rounded text-xs font-medium"
                           >
                             {tech}
@@ -212,11 +273,11 @@ export default function PortfolioPage() {
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-slate-900 mb-6 font-poppins">
                 Our <span className="text-amber-500">Services</span>
-              </h2>
+                      </h2>
               <p className="text-xl text-slate-600 max-w-3xl mx-auto font-inter">
                 Ready to start your next project? Explore our comprehensive range of IT solutions and services.
-              </p>
-            </div>
+                      </p>
+                    </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 text-center">
@@ -230,12 +291,12 @@ export default function PortfolioPage() {
                 >
                   Learn More →
                 </a>
-              </div>
+                        </div>
 
               <div className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 text-center">
                 <div className="w-16 h-16 bg-amber-500 rounded-xl flex items-center justify-center mb-4 mx-auto">
                   <i className="ri-code-s-slash-line text-3xl text-slate-900"></i>
-                </div>
+                              </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3 font-poppins">Software Development</h3>
                 <a 
                   href="/services/software-development" 
@@ -243,12 +304,12 @@ export default function PortfolioPage() {
                 >
                   Learn More →
                 </a>
-              </div>
+                          </div>
 
               <div className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 text-center">
                 <div className="w-16 h-16 bg-amber-500 rounded-xl flex items-center justify-center mb-4 mx-auto">
                   <i className="ri-smartphone-line text-3xl text-slate-900"></i>
-                </div>
+                          </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3 font-poppins">Mobile Apps</h3>
                 <a 
                   href="/services/mobile-apps" 
@@ -256,7 +317,7 @@ export default function PortfolioPage() {
                 >
                   Learn More →
                 </a>
-              </div>
+                        </div>
 
               <div className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 text-center">
                 <div className="w-16 h-16 bg-amber-500 rounded-xl flex items-center justify-center mb-4 mx-auto">
